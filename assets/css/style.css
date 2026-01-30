@@ -283,6 +283,11 @@ a:focus-visible {
 ====================================================== */
 
 /* HOME */
+body.home .card {
+    display: flex;
+    flex-direction: column;
+}
+
 body.home .card .actions {
     margin-top: 10px;
 }
