@@ -1,0 +1,210 @@
+:root{
+    --bg:#0b1020;
+    --panel:#111a33;
+    --card:#0f1730;
+    --text:#e8ecff;
+    --muted:#b8c0e6;
+    --line:rgba(232,236,255,.12);
+    --accent:#6ea8ff;
+    --accent2:#7cffa7;
+    --shadow: 0 12px 30px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: radial-gradient(1200px 600px at 20% 10%, rgba(110,168,255,.22), transparent 55%),
+    radial-gradient(900px 500px at 70% 15%, rgba(124,255,167,.14), transparent 55%),
+    var(--bg);
+    color:var(--text);
+    line-height:1.55;
+}
+
+a{color:inherit}
+a:hover{opacity:.9}
+
+.wrap{
+    width:min(1100px, 92vw);
+    margin:0 auto;
+}
+
+.skip{
+    position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+}
+.skip:focus{
+    left:16px; top:16px; width:auto; height:auto; padding:10px 12px;
+    background:var(--panel); border:1px solid var(--line); border-radius:10px;
+    box-shadow:var(--shadow);
+}
+
+.hero{
+    border-bottom:1px solid var(--line);
+    background: linear-gradient(180deg, rgba(17,26,51,.75), rgba(17,26,51,.25));
+    padding:40px 0 24px;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns: 1.4fr .9fr;
+    gap:18px;
+    align-items:start;
+}
+
+.name{
+    font-size: clamp(28px, 3.2vw, 42px);
+    line-height:1.1;
+    margin:0 0 10px;
+    letter-spacing:.2px;
+}
+
+.headline{
+    margin:0 0 8px;
+    color:var(--muted);
+    font-size: clamp(14px, 1.2vw, 16px);
+}
+
+.sub{
+    margin:0 0 18px;
+    color:rgba(232,236,255,.72);
+}
+
+.actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 12px;
+    border-radius:12px;
+    border:1px solid var(--line);
+    background: rgba(110,168,255,.18);
+    text-decoration:none;
+    font-weight:600;
+}
+.btn:hover{transform: translateY(-1px)}
+.btn-ghost{background: rgba(232,236,255,.06)}
+
+.card{
+    background: rgba(15,23,48,.65);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:16px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+}
+
+.contact h2{margin:0 0 10px; font-size:16px}
+.list{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.list li{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    padding:8px 0;
+    border-top:1px dashed rgba(232,236,255,.10);
+}
+.list li:first-child{border-top:none}
+.k{color:rgba(232,236,255,.70)}
+.v a{color:var(--text); text-decoration:none}
+.v a:hover{color:var(--accent)}
+
+.content{padding:26px 0 40px}
+
+.section{margin:22px 0}
+.section h2{
+    margin:0 0 10px;
+    font-size:18px;
+    letter-spacing:.2px;
+}
+.section p{margin:0; color:rgba(232,236,255,.88)}
+
+.timeline{
+    padding:14px 14px 10px;
+    border:1px solid var(--line);
+    border-radius:16px;
+    background: rgba(15,23,48,.40);
+    margin:12px 0;
+}
+
+.t-head{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    margin-bottom:8px;
+}
+.t-head h3{
+    margin:0;
+    font-size:16px;
+}
+.t-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 14px;
+    color:rgba(232,236,255,.70);
+    font-size:13px;
+}
+
+.bullets{
+    margin:10px 0 0 18px;
+    color:rgba(232,236,255,.88);
+}
+.bullets li{margin:6px 0}
+
+.chips{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.chip{
+    padding:8px 10px;
+    border-radius:999px;
+    border:1px solid rgba(232,236,255,.14);
+    background: rgba(232,236,255,.06);
+    font-size:13px;
+    color:rgba(232,236,255,.92);
+}
+
+.grid-2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:14px;
+}
+
+.mt{margin-top:16px}
+
+.footer{
+    margin-top:26px;
+    padding-top:16px;
+    border-top:1px solid var(--line);
+    color:rgba(232,236,255,.70);
+    font-size:13px;
+}
+.small{margin:6px 0 0; font-size:12px; color:rgba(232,236,255,.55)}
+
+/* Responsivo */
+@media (max-width: 900px){
+    .hero-grid{grid-template-columns:1fr}
+}
+
+/* Impressão (fica currículo limpo em PDF) */
+@media print{
+    :root{
+        --bg:#fff; --panel:#fff; --card:#fff; --text:#111; --muted:#222; --line:#ddd; --accent:#000;
+        --shadow:none;
+    }
+    body{background:#fff; color:#111}
+    .hero{background:#fff; padding:0}
+    .card, .timeline{box-shadow:none; backdrop-filter:none}
+    .btn, .actions{display:none !important}
+    a{color:#111; text-decoration:none}
+    .wrap{width:100%; margin:0}
+}
