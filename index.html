@@ -23,6 +23,7 @@
 
     <div class="actions">
       <a class="btn" href="html/resume.html">Ver Currículo</a>
+      <a class="btn btn-ghost" href="html/projects.html">Projetos</a>
       <a class="btn btn-ghost" href="https://github.com/hirleicarlos" target="_blank" rel="noopener">GitHub</a>
       <a class="btn btn-ghost" href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
@@ -36,7 +37,7 @@
     <h2>Resumo</h2>
     <p>
       Desenvolvedor Web com experiência em PHP e Joomla, atuando em projetos corporativos,
-      governamentais e educacionais. Também possuo trajetória consolidada como professor técnico
+      governamentais e educacionais. Possuo trajetória consolidada como professor técnico
       e universitário em disciplinas de tecnologia.
     </p>
   </section>
@@ -46,29 +47,32 @@
     <h2>Acesso rápido</h2>
 
     <div class="grid-2">
-      <div class="card">
-        <h2>Currículo</h2>
-        <p>
+      <!-- CARD PRINCIPAL -->
+      <div class="card card-primary">
+        <h3 class="card-title">Currículo</h3>
+        <p class="card-text">
           Experiências profissionais, formação acadêmica, competências técnicas e cursos.
         </p>
         <div class="actions">
-          <a class="btn" href="html/resume.html">Abrir</a>
+          <a class="btn" href="html/resume.html">Ver currículo completo</a>
         </div>
       </div>
 
+      <!-- CARD SECUNDÁRIO -->
       <div class="card">
-        <h2>Projetos</h2>
-        <p>
-          Repositórios, estudos e experimentos publicados no GitHub.
+        <h3 class="card-title">Projetos</h3>
+        <p class="card-text">
+          Casos selecionados, contexto, tecnologias e links para código quando público.
         </p>
         <div class="actions">
-          <a class="btn" href="https://github.com/hirleicarlos" target="_blank" rel="noopener">Ver GitHub</a>
+          <a class="btn" href="html/projects.html">Ver projetos</a>
+          <a class="btn btn-ghost" href="https://github.com/hirleicarlos" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTATO (DISCRETO E PROFISSIONAL) -->
+  <!-- CONTATO -->
   <section class="section">
     <h2>Contato</h2>
 
@@ -85,7 +89,11 @@
 
   <footer class="footer">
     <p>© 2026 — Hirlei Carlos</p>
-    <p class="small">Página principal • Para informações completas, acesse o Currículo.</p>
+    <p class="small">
+      Página principal •
+      <a href="html/resume.html">Currículo</a> •
+      <a href="html/projects.html">Projetos</a>
+    </p>
   </footer>
 
 </main>
