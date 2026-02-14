@@ -386,20 +386,19 @@ a:focus-visible {
 
 /* ======================================================
    MASONRY (MOSAICO) APENAS PARA CASES/PROJETOS
-   - Evita buracos quando um card é maior que o outro
 ====================================================== */
 body.projects .grid-2 {
-    display: block; /* desliga grid */
-    columns: 2; /* 2 colunas */
-    column-gap: 14px; /* mesmo gap do seu layout */
+    display: block;
+    columns: 2;
+    column-gap: 14px;
 }
 
 body.projects .grid-2 > .card,
 body.projects .grid-2 > article.card {
-    display: inline-block; /* necessário para columns */
+    display: inline-block;
     width: 100%;
-    margin: 0 0 14px; /* espaçamento vertical */
-    break-inside: avoid; /* não quebra o card no meio */
+    margin: 0 0 14px;
+    break-inside: avoid;
 }
 
 /* ======================================================
@@ -437,9 +436,8 @@ body.projects .grid-2 > article.card {
 }
 
 /* ======================================================
-   AJUSTES POR PÁGINA
+   HOME - AJUSTES
 ====================================================== */
-/* HOME */
 body.home .card {
     display: flex;
     flex-direction: column;
@@ -461,6 +459,56 @@ body.home .section h2 {
 body.home .card-primary {
     border-color: rgba(134, 174, 252, .22);
     background: linear-gradient(180deg, rgba(134, 174, 252, .08), rgba(255, 255, 255, .03));
+}
+
+/* HOME: indicadores mais “fortes” visualmente */
+body.home .stats-cards .stat-value {
+    font-size: 18px;
+}
+
+/* ======================================================
+   MINI-GRID (PROJETOS ISOLADOS) — HOME
+====================================================== */
+.projects-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.mini {
+    display: block;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    background: rgba(255, 255, 255, .02);
+    text-decoration: none;
+    transition: transform .15s ease, border-color .15s ease, background .15s ease;
+}
+
+.mini strong {
+    display: block;
+    font-size: 14px;
+    letter-spacing: .2px;
+    color: rgba(255, 255, 255, .94);
+}
+
+.mini span {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, .70);
+}
+
+.mini:hover {
+    border-color: rgba(255, 255, 255, .22);
+    background: rgba(255, 255, 255, .03);
+    transform: translateY(-2px);
+}
+
+/* Garante que o “master” com mini-grid fique confortável */
+body.home .card-primary .projects-mini-grid {
+    margin-top: 16px;
 }
 
 /* RESUME */
@@ -494,6 +542,17 @@ body.projects .headline {
     font-size: 12px;
 }
 
+/* âncoras: dá um espaçamento e realça o card alvo */
+:target {
+    scroll-margin-top: 16px;
+}
+
+.card:target {
+    border-color: rgba(134, 174, 252, .45);
+    background: linear-gradient(180deg, rgba(134, 174, 252, .08), rgba(255, 255, 255, .03));
+}
+
+
 /* ======================================================
    RESPONSIVO
 ====================================================== */
@@ -512,7 +571,6 @@ body.projects .headline {
         grid-template-columns: 78px 1fr;
     }
 
-    /* mosaico vira 1 coluna no mobile */
     body.projects .grid-2 {
         columns: 1;
     }
