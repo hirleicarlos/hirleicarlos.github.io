@@ -12,10 +12,9 @@
     <meta property="og:description"
           content="Arquitetura e evolução de portais institucionais e sistemas web em PHP & Joomla — do requisito à sustentação, com foco em escala, estabilidade e resultado."/>
     <meta property="og:type" content="website"/>
-    <!-- Se você tiver uma imagem de preview, descomente e aponte o caminho -->
+    <!-- (Opcional) -->
     <!-- <meta property="og:image" content="assets/img/og-cover.webp" /> -->
-
-    <!-- (Opcional, mas recomendado quando estiver no GitHub Pages) -->
+    <!-- (Opcional, recomendado no GitHub Pages) -->
     <!-- <link rel="canonical" href="https://hirleicarlos.github.io/" /> -->
 
     <link rel="stylesheet" href="assets/css/style.css"/>
@@ -40,13 +39,12 @@
         <p class="sub">Distrito Federal, Brasil</p>
 
         <div class="actions">
-            <a class="btn" href="html/resume.html">Ver Currículo</a>
+            <a class="btn" href="html/projects.html">Cases e Atuação</a>
+            <a class="btn btn-ghost" href="html/resume.html">Ver Currículo</a>
 
-            <a class="btn" href="assets/file/Curriculo_Hirlei_Carlos_RH.pdf" target="_blank" rel="noopener">
+            <a class="btn btn-ghost" href="assets/file/Curriculo_Hirlei_Carlos_RH.pdf" target="_blank" rel="noopener">
                 Baixar CV (PDF)
             </a>
-
-            <a class="btn btn-ghost" href="html/projects.html">Cases e Atuação</a>
 
             <a class="btn btn-ghost" href="https://github.com/hirleicarlos" target="_blank" rel="noopener">
                 GitHub
@@ -94,7 +92,7 @@
         <div class="grid-2 stats-cards">
             <div class="card stat-card">
                 <div class="stat-label">Experiência</div>
-                <div class="stat-value">+13 anos</div>
+                <div class="stat-value">13+ anos</div>
             </div>
 
             <div class="card stat-card">
@@ -103,18 +101,18 @@
             </div>
 
             <div class="card stat-card">
-                <div class="stat-label">Escala</div>
-                <div class="stat-value">28+ portais</div>
+                <div class="stat-label">Portais & sistemas</div>
+                <div class="stat-value">30+ entregas</div>
             </div>
 
             <div class="card stat-card stat-total">
-                <div class="stat-label">Atuação</div>
-                <div class="stat-value">Produto • Corporativo</div>
+                <div class="stat-label">Ecossistemas</div>
+                <div class="stat-value">Coop • Edu • Gov</div>
             </div>
         </div>
 
         <p class="small" style="margin-top:10px;">
-            *Os números representam recortes do portfólio e evolução contínua dos projetos.
+            *Indicadores de portfólio (recorte). Alguns projetos têm detalhes limitados por NDA.
         </p>
     </section>
 
@@ -124,6 +122,17 @@
 
         <div class="grid-2">
             <div class="card card-primary">
+                <h3 class="card-title">Cases e atuação</h3>
+                <p class="card-text">
+                    Portfólio em formato de cases: contexto, entregas e tecnologias.
+                    Ecossistemas por setor (Sistema OCB, Engenharia Joomla e UFG).
+                </p>
+                <div class="actions">
+                    <a class="btn" href="html/projects.html">Explorar cases</a>
+                </div>
+            </div>
+
+            <div class="card">
                 <h3 class="card-title">Currículo</h3>
                 <p class="card-text">
                     Histórico profissional detalhado, experiências por empresa,
@@ -131,16 +140,6 @@
                 </p>
                 <div class="actions">
                     <a class="btn" href="html/resume.html">Ver currículo completo</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">Cases organizados por setor</h3>
-                <p class="card-text">
-                    Projetos em formato de cases isolados e também agrupados por ecossistema/área de atuação.
-                </p>
-                <div class="actions">
-                    <a class="btn" href="html/projects.html">Explorar cases</a>
                 </div>
             </div>
         </div>
@@ -178,9 +177,9 @@
                 </div>
             </div>
 
-            <!-- Card institucional geral (substitui o antigo Sistema OCB) -->
+            <!-- Ecossistemas -->
             <div class="card">
-                <h3 class="card-title">🏛️ Projetos Institucionais — Governo, Cooperativismo e Educação</h3>
+                <h3 class="card-title">🏛️ Ecossistemas — Cooperativismo e Educação</h3>
 
                 <p class="card-text">
                     Atuação em ecossistemas com múltiplos portais e necessidades de sustentação:
@@ -290,11 +289,15 @@
         <p>© 2026 — Hirlei Carlos</p>
         <p class="small">
             Página principal •
-            <a href="html/resume.html">Currículo</a> •
-            <a href="html/projects.html">Cases e Atuação</a>
+            <a href="html/projects.html">Cases e Atuação</a> •
+            <a href="html/resume.html">Currículo</a>
         </p>
     </footer>
 
 </main>
+
+<!-- ✅ mantém padrão de JS em arquivo externo (como projects.html) -->
+<script src="assets/js/main.js" defer></script>
+
 </body>
 </html>
