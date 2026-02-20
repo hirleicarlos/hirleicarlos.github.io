@@ -3,15 +3,17 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Currículo | Hirlei Carlos Pereira de Araújo</title>
-    <meta name="description" content="Currículo de Hirlei Carlos Pereira de Araújo — Desenvolvedor Web Sênior (PHP/Joomla), Professor Técnico e Universitário."/>
-    <link rel="stylesheet" href="../assets/css/style.css"/>
-    <link rel="icon" href="../assets/img/favicon.ico" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+    <title>Currículo — Hirlei Carlos</title>
+    <meta name="robots" content="noindex,nofollow"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/cv-print.css"/>
 </head>
 
-<body class="resume">
-<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<body class="cv-print">
 
 <header class="hero pdf1">
     <div class="wrap hero-grid">
@@ -20,18 +22,17 @@
             <p class="headline">
                 Desenvolvedor Web Sênior | PHP &amp; Joomla | Sistemas Corporativos, Governo e Educação | Professor Técnico e Universitário
             </p>
-            <p class="sub">Águas Claras, Distrito Federal, Brasil •
+            <p class="sub">Águas Claras, Distrito Federal, Brasil<br/>
                 Tel: <a href="tel:+5561986056392">+55 (61) 98605-6392</a> •
                 E-mail: <a href="mailto:prof.hirleicarlos@gmail.com">prof.hirleicarlos@gmail.com</a> •
                 Linkedin: <a href="https://linkedin.com/in/hirleicarlos">linkedin.com/in/hirleicarlos</a> •
                 Github: <a href="https://github.com/hirleicarlos">github.com/hirleicarlos</a> •
                 Site: <a href="https://hirleicarlos.github.io">hirleicarlos.github.io</a>
             </p>
-
             <div class="actions">
                 <a class="btn" href="../index.html">Voltar para o início</a>
                 <a class="btn btn-ghost" href="projects.html">Cases e Atuação</a>
-                <a class="btn" href="../assets/file/Curriculo_Hirlei_Carlos_RH.pdf" target="_blank" rel="noopener">
+                <a class="btn" href="../assets/file/Curriculo_Hirlei_Carlos_RH.pdf" rel="noopener" target="_blank">
                     Baixar CV (PDF)
                 </a>
             </div>
@@ -39,9 +40,7 @@
     </div>
 </header>
 
-<main id="conteudo" class="wrap content">
-
-    <!-- RESUMO -->
+<main class="wrap content" id="conteudo">
     <section class="section pdf2">
         <h2>Resumo Profissional</h2>
         <p>
@@ -51,44 +50,18 @@
             e engenharia de software. Experiência também com WordPress (Elementor Pro), PostgreSQL e integrações via APIs/robôs.
         </p>
     </section>
-
-    <!-- RESUMO DE EXPERIÊNCIA -->
-    <section class="section" aria-label="Resumo de experiência">
-        <h2>Resumo de Experiência</h2>
-
-        <div class="grid-2 stats-cards">
-
-            <div class="card stat-card">
-                <div class="stat-label">Desenvolvimento</div>
-                <div class="stat-value">13 anos e 10 meses</div>
-            </div>
-
-            <div class="card stat-card">
-                <div class="stat-label">Docência</div>
-                <div class="stat-value">5 anos e 8 meses</div>
-            </div>
-
-            <div class="card stat-card">
-                <div class="stat-label">Contabilidade</div>
-                <div class="stat-value">9 anos e 3 meses</div>
-            </div>
-
-            <div class="card stat-card stat-total">
-                <div class="stat-label">Total</div>
-                <div class="stat-value">24 anos e 1 mês</div>
-            </div>
-
+    <div class="card pdf3">
+        <h2>Competências Técnicas</h2>
+        <div class="chips">
+            PHP • Joomla • WordPress • Elementor Pro • HTML5 • CSS • JavaScript • jQuery • AJAX • XML •
+            MySQL • PostgreSQL • SQL • Oracle • APEX • JasperReports • Zend • CakePHP • FormDin • Delphi •
+            Bootstrap • Integrações • APIs • Robôs/Automação • Revisão de Código • Programação • OOP •
+            Analista de Sistemas • Analista de Requisitos • Professor Universitário • Professor Técnico •
+            Adobe Dreamweaver • Photoshop • Fireworks • Illustrator • InDesign • Corel Draw • Microsoft Office • PageMaker • Windows • Web Designer • Web 2.0
         </div>
-
-        <p class="small" style="margin-top:10px;">
-            *Períodos calculados por área. Podem existir sobreposições entre funções.
-        </p>
-    </section>
-
-    <!-- EXPERIÊNCIA (SEPARADA, EMPRESA POR EMPRESA) -->
+    </div>
     <section class="section pdf4">
         <h2>Experiência Profissional</h2>
-
         <!-- THS / Sistema OCB -->
         <article class="timeline">
             <div class="t-head">
@@ -104,7 +77,6 @@
                 <li>Integrações com robôs e APIs, conforme necessidade do sistema.</li>
             </ul>
         </article>
-
         <!-- POL -->
         <article class="timeline">
             <div class="t-head">
@@ -120,7 +92,6 @@
                 <li>Integrações com robôs e APIs, conforme necessidade do sistema.</li>
             </ul>
         </article>
-
         <!-- UFG -->
         <article class="timeline">
             <div class="t-head">
@@ -137,7 +108,6 @@
                 <li>Uso de jQuery, CSS, Ajax, JavaScript, Bootstrap e integrações conforme demanda.</li>
             </ul>
         </article>
-
         <!-- Central IT -->
         <article class="timeline">
             <div class="t-head">
@@ -152,7 +122,6 @@
                 <li>Atuação com módulo de estatística, barramento, protocolo integrado e WSSEI.</li>
             </ul>
         </article>
-
         <!-- BASIS -->
         <article class="timeline">
             <div class="t-head">
@@ -167,7 +136,6 @@
                 <li>Uso de jQuery, CSS, Ajax, JavaScript e Bootstrap.</li>
             </ul>
         </article>
-
         <!-- IOS -->
         <article class="timeline">
             <div class="t-head">
@@ -183,7 +151,6 @@
                 <li>Atuação com APEX, Oracle e JasperReports (conforme projeto).</li>
             </ul>
         </article>
-
         <!-- Bancoob -->
         <article class="timeline">
             <div class="t-head">
@@ -200,7 +167,6 @@
                 <li>SGDBs: MySQL, PostgreSQL e Oracle.</li>
             </ul>
         </article>
-
         <!-- Anhanguera -->
         <article class="timeline">
             <div class="t-head">
@@ -215,7 +181,6 @@
                 <li>Outras disciplinas: Contabilidade (conforme contexto acadêmico).</li>
             </ul>
         </article>
-
         <!-- Softimais -->
         <article class="timeline">
             <div class="t-head">
@@ -229,7 +194,6 @@
                 <li>Ferramentas/framework: PHP, MySQL, FormDin, Zend, jQuery, CSS, Ajax, JavaScript e Bootstrap.</li>
             </ul>
         </article>
-
         <!-- Transoft -->
         <article class="timeline">
             <div class="t-head">
@@ -244,7 +208,6 @@
                 <li>Stack de apoio conforme projeto: PHP, MySQL, jQuery, CSS, Ajax, JavaScript e Bootstrap.</li>
             </ul>
         </article>
-
         <!-- Projeção -->
         <article class="timeline">
             <div class="t-head">
@@ -258,7 +221,6 @@
                 <li>Fundamentos da Computação, Lógica Matemática e Programação / Designer para Web.</li>
             </ul>
         </article>
-
         <!-- UNIDESC -->
         <article class="timeline">
             <div class="t-head">
@@ -274,7 +236,6 @@
                 <li>Sistemas de Informação: Sistemas Distribuídos e Lógica de Programação.</li>
             </ul>
         </article>
-
         <!-- UEG -->
         <article class="timeline">
             <div class="t-head">
@@ -288,7 +249,6 @@
                 <li>Administração: Elaboração e Avaliação de Projetos Empresariais e Introdução à Informática.</li>
             </ul>
         </article>
-
         <!-- Rhox -->
         <article class="timeline">
             <div class="t-head">
@@ -302,7 +262,6 @@
                 <li>Ferramentas/framework: PHP, CakePHP, MySQL, jQuery, CSS, Ajax, JavaScript e Bootstrap.</li>
             </ul>
         </article>
-
         <!-- IESB -->
         <article class="timeline">
             <div class="t-head">
@@ -317,7 +276,6 @@
                 <li>Tecnologia: Lógica de Programação.</li>
             </ul>
         </article>
-
         <!-- UNISABER -->
         <article class="timeline">
             <div class="t-head">
@@ -332,7 +290,6 @@
                 <li>Tecnologia: Sistema Operacional e Lógica de Programação.</li>
             </ul>
         </article>
-
         <!-- SESC -->
         <article class="timeline">
             <div class="t-head">
@@ -347,43 +304,23 @@
                 <li>Atuação com PHP e MySQL, conforme demandas internas.</li>
             </ul>
         </article>
-
     </section>
-
-    <!-- EDUCAÇÃO / COMPETÊNCIAS -->
-    <section class="section grid-2">
-        <div class="card pdf5">
-            <h2>Formação Acadêmica</h2>
-            <ul class="bullets">
-                <li><strong>Faculdades ICESP</strong> — Pós-Graduação, Sistema de Informação aplicado a Web (2007–2008)</li>
-                <li><strong>Faculdades ICESP</strong> — Pós-Graduação, Orientação Objeto (2006–2007)</li>
-                <li><strong>UNIP - Universidade Paulista</strong> — Graduação, Ciência da Computação (2001–2005)</li>
-            </ul>
-
-            <h2 class="mt">Formação Técnica</h2>
-            <ul class="bullets">
-                <li><strong>Fundação Educacional</strong> — 2º Grau, Técnico em Contabilidade (1995)</li>
-            </ul>
-
-            <h2 class="mt">Idiomas</h2>
-            <ul class="bullets">
-                <li><strong>Inglês:</strong> técnico instrumental (básico) para comunicação e entendimento de softwares/hardwares.</li>
-            </ul>
-        </div>
-
-        <div class="card pdf3">
-            <h2>Competências Técnicas</h2>
-            <div class="chips">
-                PHP • Joomla • WordPress • Elementor Pro • HTML5 • CSS • JavaScript • jQuery • AJAX • XML •
-                MySQL • PostgreSQL • SQL • Oracle • APEX • JasperReports • Zend • CakePHP • FormDin • Delphi •
-                Bootstrap • Integrações • APIs • Robôs/Automação • Revisão de Código • Programação • OOP •
-                Analista de Sistemas • Analista de Requisitos • Professor Universitário • Professor Técnico •
-                Adobe Dreamweaver • Photoshop • Fireworks • Illustrator • InDesign • Corel Draw • Microsoft Office • PageMaker • Windows • Web Designer • Web 2.0
-            </div>
-        </div>
-    </section>
-
-    <!-- CURSOS -->
+    <div class="card pdf5">
+        <h2>Formação Acadêmica</h2>
+        <ul class="bullets">
+            <li><strong>Faculdades ICESP</strong> — Pós-Graduação, Sistema de Informação aplicado a Web (2007–2008)</li>
+            <li><strong>Faculdades ICESP</strong> — Pós-Graduação, Orientação Objeto (2006–2007)</li>
+            <li><strong>UNIP - Universidade Paulista</strong> — Graduação, Ciência da Computação (2001–2005)</li>
+        </ul>
+        <h2 class="mt">Formação Técnica</h2>
+        <ul class="bullets">
+            <li><strong>Fundação Educacional</strong> — 2º Grau, Técnico em Contabilidade (1995)</li>
+        </ul>
+        <h2 class="mt">Idiomas</h2>
+        <ul class="bullets">
+            <li><strong>Inglês:</strong> técnico instrumental (básico) para comunicação e entendimento de softwares/hardwares.</li>
+        </ul>
+    </div>
     <section class="section pdf6">
         <h2>Cursos / Conhecimentos</h2>
         <ul class="bullets">
@@ -394,12 +331,7 @@
             <li>Uso de inglês técnico instrumental básico para comunicação e entendimento de softwares/hardwares</li>
         </ul>
     </section>
-
-    <footer class="footer">
-        <p>© 2026 — Hirlei Carlos</p>
-        <p class="small">Currículo profissional • Contatos disponíveis na página principal</p>
-    </footer>
-
 </main>
+
 </body>
 </html>
