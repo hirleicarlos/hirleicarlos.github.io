@@ -235,6 +235,7 @@ a:focus-visible {
     aspect-ratio: 16 / 9;
     object-fit: cover;
     height: auto;
+    object-position: top left;
 }
 
 /* se quiser thumbs fixas, use a classe is-thumb no figure */
