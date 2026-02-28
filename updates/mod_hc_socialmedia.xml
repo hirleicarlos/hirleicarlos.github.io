@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <updates>
     <update>
-        <name>mod_hc_socialmedia</name>
+        <name>HC - Social Media</name>
         <description>
             Social media module with multiple layouts and per-item customization.
             Compatible with Joomla 4, 5 and 6.
         </description>
 
-        <element>mod_hc_socialmedia</element>
+        <element>hc_socialmedia</element>
         <type>module</type>
         <client>site</client>
 
         <version>1.0.0</version>
 
-        <infourl title="mod_hc_socialmedia">
+        <infourl title="HC - Social Media">
             https://github.com/hirleicarlos/mod_hc_socialmedia
         </infourl>
 

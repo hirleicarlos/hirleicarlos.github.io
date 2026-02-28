@@ -22,7 +22,7 @@
 
         <targetplatform name="joomla" version="4.0-6.0" />
 
-        <php_minimum>7.4</php_minimum>
+        <php_minimum>8.0</php_minimum>
 
     </update>
 
