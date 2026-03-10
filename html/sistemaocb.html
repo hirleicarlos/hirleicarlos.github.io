@@ -4,10 +4,41 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Sistema OCB | Ecossistema Cooperativista</title>
-    <meta name="description" content="Ecossistema Sistema OCB — portais e plataformas do cooperativismo, com atuação em Joomla, migrações e sustentação."/>
+    <meta name="description" content="Ecossistema Sistema OCB — portais e plataformas do cooperativismo, com atuação em Joomla, migrações, sustentação e evolução contínua."/>
     <link rel="stylesheet" href="../assets/css/style.css"/>
     <link rel="icon" href="../assets/img/favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+
+    <style>
+        .resume-ecosystem-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px 18px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .resume-ecosystem-grid li {
+            margin: 0;
+            padding: 10px 12px;
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 12px;
+            background: rgba(255,255,255,.02);
+        }
+
+        @media (max-width: 980px) {
+            .resume-ecosystem-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 560px) {
+            .resume-ecosystem-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body class="projects">
@@ -38,8 +69,8 @@
         <h2>Visão geral</h2>
         <p>
             Este setor reúne os projetos ligados ao <strong>ecossistema cooperativista</strong>. Aqui entram portais institucionais,
-            plataformas de serviços e iniciativas digitais. A página existe para concentrar os itens relacionados e permitir crescimento
-            (ex.: <strong>28+ sites</strong>) sem tornar a listagem principal pesada.
+            plataformas de serviços e iniciativas digitais. A página concentra os itens relacionados e permite crescimento contínuo
+            do ecossistema sem tornar a listagem principal pesada.
         </p>
 
         <div class="chips" style="margin-top:12px;">
@@ -50,38 +81,35 @@
             <span class="chip">Sustentação</span>
         </div>
 
-        <!-- Resumo (THS / Sistema OCB) -->
         <div class="card" style="margin-top:16px;">
             <h3 class="card-title">Resumo (THS / Sistema OCB)</h3>
 
-            <!-- 3 colunas (responsivo) -->
-            <ul class="bullets"
-                style="
-        display:grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 10px 18px;
-        list-style: none;
-        padding-left: 0;
-        margin: 0;
-      ">
-                <li style="margin:0;">
-                    <strong>Início:</strong> out/2023 até hoje.
+            <ul class="resume-ecosystem-grid">
+                <li>
+                    <strong>Início:</strong><br/>
+                    out/2023 até hoje
                 </li>
 
-                <li style="margin:0;">
-                    <strong>Tempo até hoje:</strong> <strong>2 anos e 4 meses</strong><br/>
+                <li>
+                    <strong>Tempo de atuação:</strong><br/>
+                    <strong>2 anos e 5 meses</strong>
                 </li>
 
-                <li style="margin:0;">
-                    <strong>Itens nesta página:</strong> <strong>21</strong><br/>
+                <li>
+                    <strong>Itens nesta página:</strong><br/>
+                    <strong>22 portais/plataformas</strong>
+                </li>
+
+                <li>
+                    <strong>Extensões Joomla:</strong><br/>
+                    <strong>100+</strong>
                 </li>
             </ul>
 
             <p class="small" style="margin-top:10px;">
-                *J5 = migrado/atualizado • J4 = em produção, com migração planejada para receber atualizações de componentes/módulos/plugins.
+                *J5 = migrado/atualizado • J4 = em produção, com migração planejada para receber atualizações de componentes, módulos e plugins.
             </p>
         </div>
-
     </section>
 
     <section class="section">
@@ -89,13 +117,13 @@
 
         <div class="grid-2">
 
-            <!-- SomosCooperativismo -->
+            <!-- NAC -->
             <article class="card">
                 <figure class="project-media">
                     <img src="../assets/img/somoscooperativismo.webp"
                          alt="SomosCooperativismo.coop.br — portal institucional em Joomla"
                          loading="lazy"/>
-                    <figcaption>Portal institucional — migração Laravel → Joomla (J4 → J5)</figcaption>
+                    <figcaption>Portal institucional nacional — migração Laravel → Joomla (J4 → J5)</figcaption>
                 </figure>
 
                 <h3 class="card-title">SomosCooperativismo — Portal do cooperativismo nacional</h3>
@@ -106,7 +134,7 @@
 
                 <ul class="bullets">
                     <li><strong>Contexto:</strong> Portal público • Produção</li>
-                    <li><strong>Entregas:</strong> instalação Joomla, migração de conteúdo, atualização J4→J5, modernização</li>
+                    <li><strong>Entregas:</strong> instalação Joomla, migração de conteúdo, atualização J4→J5 e modernização</li>
                     <li><strong>Tecnologias:</strong> Joomla 4/5, PHP, jQuery, Bootstrap, Helix, SP Page Builder, Component Creator</li>
                     <li><strong>Status:</strong> Ativo em produção</li>
                 </ul>
@@ -116,25 +144,25 @@
                 </div>
             </article>
 
-            <!-- Somos.coop -->
+            <!-- Somos -->
             <article class="card">
                 <figure class="project-media">
                     <img src="../assets/img/somos.webp"
-                         alt="Somos.coop.br — Portal institucional do cooperativismo"
+                         alt="Somos.coop.br — portal institucional do cooperativismo"
                          loading="lazy"/>
-                    <figcaption>Portal institucional nacional — Joomla 4 / Joomla 5</figcaption>
+                    <figcaption>Portal institucional nacional — Joomla 5</figcaption>
                 </figure>
 
-                <h3 class="card-title">Somoscoop — Portal Institucional do Cooperativismo</h3>
+                <h3 class="card-title">Somos.coop — Portal institucional do cooperativismo</h3>
 
                 <p class="card-text">
-                    Atuação em migração, manutenção e evolução do portal, com foco em escalabilidade e padronização visual.
+                    Atuação em migração, manutenção e evolução do portal, com foco em escalabilidade, padronização visual e sustentação contínua.
                 </p>
 
                 <ul class="bullets">
                     <li><strong>Contexto:</strong> Institucional • Produção</li>
-                    <li><strong>Entregas:</strong> migração, manutenção evolutiva, extensões sob demanda, suporte</li>
-                    <li><strong>Tecnologias:</strong> Joomla 4→5, PHP, jQuery, Bootstrap, Helix, SP Page Builder, Component Creator</li>
+                    <li><strong>Plataforma:</strong> Joomla 5</li>
+                    <li><strong>Entregas:</strong> migração, manutenção evolutiva, extensões sob demanda e suporte</li>
                     <li><strong>Status:</strong> Ativo em produção</li>
                 </ul>
 
@@ -143,13 +171,13 @@
                 </div>
             </article>
 
-            <!-- InovaCoop -->
+            <!-- Inovacoop -->
             <article class="card">
                 <figure class="project-media">
                     <img src="../assets/img/inovacoop.webp"
                          alt="InovaCoop — portal de inovação no cooperativismo"
                          loading="lazy"/>
-                    <figcaption>Portal de inovação — Joomla • Conteúdo • Experiência digital</figcaption>
+                    <figcaption>Portal de inovação — Joomla 5 • Conteúdo • Experiência digital</figcaption>
                 </figure>
 
                 <h3 class="card-title">InovaCoop — Portal de inovação no cooperativismo</h3>
@@ -160,8 +188,8 @@
 
                 <ul class="bullets">
                     <li><strong>Contexto:</strong> Portal público • Produção</li>
+                    <li><strong>Plataforma:</strong> Joomla 5</li>
                     <li><strong>Entregas:</strong> sustentação, melhorias estruturais, ajustes de layout e conteúdo</li>
-                    <li><strong>Tecnologias:</strong> Joomla, PHP, jQuery, Bootstrap, Helix, SP Page Builder</li>
                     <li><strong>Status:</strong> Ativo em produção</li>
                 </ul>
 
@@ -174,15 +202,15 @@
             <article class="card">
                 <figure class="project-media">
                     <img src="../assets/img/centralmarca.webp"
-                         alt="Central da Marca (SomosCoop) — plataforma de materiais e identidade"
+                         alt="Central da Marca — plataforma de materiais institucionais"
                          loading="lazy"/>
-                    <figcaption>Central da Marca — catálogo • login • downloads (sem pagamento)</figcaption>
+                    <figcaption>Central da Marca — catálogo • login • downloads</figcaption>
                 </figure>
 
                 <h3 class="card-title">Central da Marca — Plataforma de materiais institucionais</h3>
 
                 <p class="card-text">
-                    Evolução e sustentação da plataforma de materiais oficiais (catálogo e fluxo de disponibilização).
+                    Evolução e sustentação da plataforma de materiais oficiais, com foco em organização do catálogo e fluxo de disponibilização.
                 </p>
 
                 <ul class="bullets">
@@ -197,11 +225,11 @@
                 </div>
             </article>
 
-            <!-- Acesso.coop.br -->
+            <!-- Acesso -->
             <article class="card">
                 <figure class="project-media">
                     <img src="../assets/img/acesso.webp"
-                         alt="Acesso.coop.br — Portal de autenticação unificada (SSO) do Sistema OCB"
+                         alt="Acesso.coop.br — portal de autenticação unificada do Sistema OCB"
                          loading="lazy"/>
                     <figcaption>Portal de autenticação unificada (SSO) • Joomla 5 • Keycloak • Integração via API</figcaption>
                 </figure>
@@ -209,14 +237,13 @@
                 <h3 class="card-title">Acesso.coop.br — Portal de acessos (SSO)</h3>
 
                 <p class="card-text">
-                    Plataforma central de autenticação dos sistemas internos do Sistema OCB.
-                    O colaborador realiza login uma única vez e acessa múltiplas plataformas integradas,
-                    mantendo a mesma identidade digital.
+                    Plataforma central de autenticação dos sistemas internos do Sistema OCB, permitindo acesso integrado com a mesma identidade digital.
                 </p>
 
                 <ul class="bullets">
                     <li><strong>Contexto:</strong> Portal/Sistema interno de autenticação • Produção</li>
-                    <li><strong>Entregas:</strong> Joomla 5, base de usuários e integração de logins</li>
+                    <li><strong>Plataforma:</strong> Joomla 5</li>
+                    <li><strong>Entregas:</strong> base de usuários e integração de logins</li>
                     <li><strong>Integrações:</strong> Keycloak (SSO) • conexão via API</li>
                     <li><strong>Status:</strong> Ativo em produção</li>
                 </ul>
@@ -226,13 +253,15 @@
                 </div>
             </article>
 
-            <!-- SomosCooperativismo AC -->
+            <!-- ESTADOS EM ORDEM POR UF -->
+
+            <!-- AC -->
             <article class="card">
                 <figure class="project-media">
                     <img src="../assets/img/ac.webp"
-                         alt="SomosCooperativismo AC — Portal institucional estadual do cooperativismo"
+                         alt="SomosCooperativismo AC — portal estadual do cooperativismo"
                          loading="lazy"/>
-                    <figcaption>Portal estadual (padrão SomosCooperativismo) • Joomla 4 • Migração planejada para Joomla 5</figcaption>
+                    <figcaption>Portal estadual • Joomla 4 • Migração planejada para Joomla 5</figcaption>
                 </figure>
 
                 <h3 class="card-title">SomosCooperativismo AC — Portal estadual</h3>
@@ -243,8 +272,8 @@
 
                 <ul class="bullets">
                     <li><strong>UF:</strong> AC</li>
-                    <li><strong>Plataforma:</strong> Joomla 4 (migração planejada para Joomla 5)</li>
-                    <li><strong>Status:</strong> Ativo em produção</li>
+                    <li><strong>Plataforma:</strong> Joomla 4</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
                 </ul>
 
                 <div class="actions">
@@ -252,213 +281,227 @@
                 </div>
             </article>
 
-            <!-- AM (J4) -->
-            <article class="card">
-                <h3 class="card-title">SomosCooperativismo AM — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
-                <ul class="bullets">
-                    <li><strong>UF:</strong> AM</li>
-                    <li><strong>Plataforma:</strong> Joomla 4</li>
-                    <li><strong>Status:</strong> Produção • migração planejada para Joomla 5</li>
-                </ul>
-                <div class="actions">
-                    <a class="btn" href="https://somoscooperativismo-am.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
-                </div>
-            </article>
-
-            <!-- AL (J4) -->
+            <!-- AL -->
             <article class="card">
                 <h3 class="card-title">SomosCooperativismo AL — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
                 <ul class="bullets">
                     <li><strong>UF:</strong> AL</li>
                     <li><strong>Plataforma:</strong> Joomla 4</li>
-                    <li><strong>Status:</strong> Produção • migração planejada para Joomla 5</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
                 </ul>
                 <div class="actions">
                     <a class="btn" href="https://somoscooperativismo-al.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
                 </div>
             </article>
 
-            <!-- MT (J4) -->
+            <!-- AM -->
             <article class="card">
-                <h3 class="card-title">SomosCooperativismo MT — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
+                <h3 class="card-title">SomosCooperativismo AM — Portal estadual</h3>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
                 <ul class="bullets">
-                    <li><strong>UF:</strong> MT</li>
+                    <li><strong>UF:</strong> AM</li>
                     <li><strong>Plataforma:</strong> Joomla 4</li>
-                    <li><strong>Status:</strong> Produção • migração planejada para Joomla 5</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
                 </ul>
                 <div class="actions">
-                    <a class="btn" href="https://sistemaocbmt.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
+                    <a class="btn" href="https://somoscooperativismo-am.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
                 </div>
             </article>
 
-            <!-- TO (J4) -->
-            <article class="card">
-                <h3 class="card-title">SomosCooperativismo TO — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
-                <ul class="bullets">
-                    <li><strong>UF:</strong> TO</li>
-                    <li><strong>Plataforma:</strong> Joomla 4</li>
-                    <li><strong>Status:</strong> Produção • migração planejada para Joomla 5</li>
-                </ul>
-                <div class="actions">
-                    <a class="btn" href="https://somoscooperativismo-to.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
-                </div>
-            </article>
-
-            <!-- PR (J4) -->
-            <article class="card">
-                <h3 class="card-title">SomosCooperativismo PR — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
-                <ul class="bullets">
-                    <li><strong>UF:</strong> PR</li>
-                    <li><strong>Plataforma:</strong> Joomla 4</li>
-                    <li><strong>Status:</strong> Produção • migração planejada para Joomla 5</li>
-                </ul>
-                <div class="actions">
-                    <a class="btn" href="http://paranacooperativo.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
-                </div>
-            </article>
-
-            <!-- RS (J4) -->
-            <article class="card">
-                <h3 class="card-title">SomosCooperativismo RS — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
-                <ul class="bullets">
-                    <li><strong>UF:</strong> RS</li>
-                    <li><strong>Plataforma:</strong> Joomla 4</li>
-                    <li><strong>Status:</strong> Produção • migração planejada para Joomla 5</li>
-                </ul>
-                <div class="actions">
-                    <a class="btn" href="https://somoscooperativismo-rs.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
-                </div>
-            </article>
-
-            <!-- PE (J4) -->
-            <article class="card">
-                <h3 class="card-title">SomosCooperativismo PE — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
-                <ul class="bullets">
-                    <li><strong>UF:</strong> PE</li>
-                    <li><strong>Plataforma:</strong> Joomla 4</li>
-                    <li><strong>Status:</strong> Produção • migração planejada para Joomla 5</li>
-                </ul>
-                <div class="actions">
-                    <a class="btn" href="https://somoscooperativismo-pe.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
-                </div>
-            </article>
-
-            <!-- MA (J4) -->
-            <article class="card">
-                <h3 class="card-title">SomosCooperativismo MA — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
-                <ul class="bullets">
-                    <li><strong>UF:</strong> MA</li>
-                    <li><strong>Plataforma:</strong> Joomla 4</li>
-                    <li><strong>Status:</strong> Produção • migração planejada para Joomla 5</li>
-                </ul>
-                <div class="actions">
-                    <a class="btn" href="https://somoscooperativismo-ma.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
-                </div>
-            </article>
-
-            <!-- CE (J4) -->
-            <article class="card">
-                <h3 class="card-title">SomosCooperativismo CE — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
-                <ul class="bullets">
-                    <li><strong>UF:</strong> CE</li>
-                    <li><strong>Plataforma:</strong> Joomla 4</li>
-                    <li><strong>Status:</strong> Produção • migração planejada para Joomla 5</li>
-                </ul>
-                <div class="actions">
-                    <a class="btn" href="https://somoscooperativismo-ce.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
-                </div>
-            </article>
-
-            <!-- DF (J4) -->
-            <article class="card">
-                <h3 class="card-title">SomosCooperativismo DF — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
-                <ul class="bullets">
-                    <li><strong>UF:</strong> DF</li>
-                    <li><strong>Plataforma:</strong> Joomla 4</li>
-                    <li><strong>Status:</strong> Produção • migração planejada para Joomla 5</li>
-                </ul>
-                <div class="actions">
-                    <a class="btn" href="https://somoscooperativismo-df.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
-                </div>
-            </article>
-
-            <!-- BA (J4) -->
+            <!-- BA -->
             <article class="card">
                 <h3 class="card-title">SomosCooperativismo BA — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
                 <ul class="bullets">
                     <li><strong>UF:</strong> BA</li>
                     <li><strong>Plataforma:</strong> Joomla 4</li>
-                    <li><strong>Status:</strong> Produção • migração planejada para Joomla 5</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
                 </ul>
                 <div class="actions">
                     <a class="btn" href="https://somoscooperativismo-ba.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
                 </div>
             </article>
 
-            <!-- PA (J5) -->
+            <!-- CE -->
             <article class="card">
-                <h3 class="card-title">SomosCooperativismo PA — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
+                <h3 class="card-title">SomosCooperativismo CE — Portal estadual</h3>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
                 <ul class="bullets">
-                    <li><strong>UF:</strong> PA</li>
-                    <li><strong>Plataforma:</strong> Joomla 5</li>
-                    <li><strong>Status:</strong> Produção • migrado e atualizado</li>
+                    <li><strong>UF:</strong> CE</li>
+                    <li><strong>Plataforma:</strong> Joomla 4</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
                 </ul>
                 <div class="actions">
-                    <a class="btn" href="https://paracooperativo.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
+                    <a class="btn" href="https://somoscooperativismo-ce.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
                 </div>
             </article>
 
-            <!-- MS (J5) -->
+            <!-- DF -->
+            <article class="card">
+                <h3 class="card-title">SomosCooperativismo DF — Portal estadual</h3>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
+                <ul class="bullets">
+                    <li><strong>UF:</strong> DF</li>
+                    <li><strong>Plataforma:</strong> Joomla 4</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
+                </ul>
+                <div class="actions">
+                    <a class="btn" href="https://somoscooperativismo-df.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
+                </div>
+            </article>
+
+            <!-- MA -->
+            <article class="card">
+                <h3 class="card-title">SomosCooperativismo MA — Portal estadual</h3>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
+                <ul class="bullets">
+                    <li><strong>UF:</strong> MA</li>
+                    <li><strong>Plataforma:</strong> Joomla 4</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
+                </ul>
+                <div class="actions">
+                    <a class="btn" href="https://somoscooperativismo-ma.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
+                </div>
+            </article>
+
+            <!-- MS -->
             <article class="card">
                 <h3 class="card-title">SomosCooperativismo MS — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
                 <ul class="bullets">
                     <li><strong>UF:</strong> MS</li>
                     <li><strong>Plataforma:</strong> Joomla 5</li>
-                    <li><strong>Status:</strong> Produção • migrado e atualizado</li>
+                    <li><strong>Status:</strong> Em produção • migrado e atualizado</li>
                 </ul>
                 <div class="actions">
                     <a class="btn" href="https://somoscooperativismo-ms.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
                 </div>
             </article>
 
-            <!-- RN (J4) -->
+            <!-- MT -->
+            <article class="card">
+                <h3 class="card-title">SomosCooperativismo MT — Portal estadual</h3>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
+                <ul class="bullets">
+                    <li><strong>UF:</strong> MT</li>
+                    <li><strong>Plataforma:</strong> Joomla 4</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
+                </ul>
+                <div class="actions">
+                    <a class="btn" href="https://sistemaocbmt.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
+                </div>
+            </article>
+
+            <!-- PA -->
+            <article class="card">
+                <h3 class="card-title">SomosCooperativismo PA — Portal estadual</h3>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
+                <ul class="bullets">
+                    <li><strong>UF:</strong> PA</li>
+                    <li><strong>Plataforma:</strong> Joomla 5</li>
+                    <li><strong>Status:</strong> Em produção • migrado e atualizado</li>
+                </ul>
+                <div class="actions">
+                    <a class="btn" href="https://paracooperativo.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
+                </div>
+            </article>
+
+            <!-- PE -->
+            <article class="card">
+                <h3 class="card-title">SomosCooperativismo PE — Portal estadual</h3>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
+                <ul class="bullets">
+                    <li><strong>UF:</strong> PE</li>
+                    <li><strong>Plataforma:</strong> Joomla 4</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
+                </ul>
+                <div class="actions">
+                    <a class="btn" href="https://somoscooperativismo-pe.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
+                </div>
+            </article>
+
+            <!-- PR -->
+            <article class="card">
+                <h3 class="card-title">SomosCooperativismo PR — Portal estadual</h3>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
+                <ul class="bullets">
+                    <li><strong>UF:</strong> PR</li>
+                    <li><strong>Plataforma:</strong> Joomla 4</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
+                </ul>
+                <div class="actions">
+                    <a class="btn" href="http://paranacooperativo.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
+                </div>
+            </article>
+
+            <!-- RN -->
             <article class="card">
                 <h3 class="card-title">SomosCooperativismo RN — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
                 <ul class="bullets">
                     <li><strong>UF:</strong> RN</li>
                     <li><strong>Plataforma:</strong> Joomla 4</li>
-                    <li><strong>Status:</strong> Produção • migração planejada para Joomla 5</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
                 </ul>
                 <div class="actions">
                     <a class="btn" href="https://somoscooperativismo-rn.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
                 </div>
             </article>
 
-            <!-- SC (J5) -->
+            <!-- RS -->
+            <article class="card">
+                <h3 class="card-title">SomosCooperativismo RS — Portal estadual</h3>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
+                <ul class="bullets">
+                    <li><strong>UF:</strong> RS</li>
+                    <li><strong>Plataforma:</strong> Joomla 4</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
+                </ul>
+                <div class="actions">
+                    <a class="btn" href="https://somoscooperativismo-rs.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
+                </div>
+            </article>
+
+            <!-- SC -->
             <article class="card">
                 <h3 class="card-title">SomosCooperativismo SC — Portal estadual</h3>
-                <p class="card-text">Portal estadual em produção no padrão SomosCooperativismo.</p>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
                 <ul class="bullets">
                     <li><strong>UF:</strong> SC</li>
                     <li><strong>Plataforma:</strong> Joomla 5</li>
-                    <li><strong>Status:</strong> Produção • migrado e atualizado</li>
+                    <li><strong>Status:</strong> Em produção • migrado e atualizado</li>
                 </ul>
                 <div class="actions">
                     <a class="btn" href="https://sistemaocesc.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
+                </div>
+            </article>
+
+            <!-- SE -->
+            <article class="card">
+                <h3 class="card-title">SomosCooperativismo SE — Portal estadual</h3>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
+                <ul class="bullets">
+                    <li><strong>UF:</strong> SE</li>
+                    <li><strong>Plataforma:</strong> Joomla 5</li>
+                    <li><strong>Status:</strong> Em produção • migrado e atualizado</li>
+                </ul>
+                <div class="actions">
+                    <a class="btn" href="https://somoscooperativismo-se.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
+                </div>
+            </article>
+
+            <!-- TO -->
+            <article class="card">
+                <h3 class="card-title">SomosCooperativismo TO — Portal estadual</h3>
+                <p class="card-text">Portal estadual em produção seguindo o padrão do ecossistema SomosCooperativismo.</p>
+                <ul class="bullets">
+                    <li><strong>UF:</strong> TO</li>
+                    <li><strong>Plataforma:</strong> Joomla 4</li>
+                    <li><strong>Status:</strong> Em produção • migração planejada para Joomla 5</li>
+                </ul>
+                <div class="actions">
+                    <a class="btn" href="https://somoscooperativismo-to.coop.br/" target="_blank" rel="noopener">Acessar portal</a>
                 </div>
             </article>
 
@@ -466,10 +509,10 @@
     </section>
 
     <section class="section">
-        <h2>Adicionar novos sites (quando vierem os 28+)</h2>
+        <h2>Expansão do ecossistema</h2>
         <p>
-            Quando você for adicionando mais portais, você só duplica um card aqui.
-            Se ficar grande demais, dá pra trocar os cards por uma lista compacta (nome + link) e manter só os destaques em card.
+            A estrutura desta página permite crescimento contínuo do portfólio estadual e institucional.
+            Novos portais podem ser incorporados mantendo o mesmo padrão visual, técnico e descritivo.
         </p>
     </section>
 
