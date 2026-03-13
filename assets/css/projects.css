@@ -1,139 +1,6 @@
-@import url("./variaveis.css");
-
 /* ======================================================
-   BASE
+   HERO / PROJETO
 ====================================================== */
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body.projects-page {
-    margin: 0;
-    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    font-size: var(--p);
-    line-height: 1.7;
-    color: var(--text);
-    background: var(--bg);
-}
-
-body.projects-page::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    background: radial-gradient(950px 520px at 18% 8%, rgba(134, 174, 252, 0.12), transparent 62%),
-    radial-gradient(760px 420px at 85% 10%, rgba(120, 255, 220, 0.07), transparent 64%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(7, 11, 20, 1) 62%);
-}
-
-a {
-    color: var(--text);
-    text-decoration: none;
-}
-
-a:hover {
-    color: #fff;
-}
-
-a:focus-visible {
-    outline: 2px solid rgba(134, 174, 252, 0.75);
-    outline-offset: 3px;
-    border-radius: 10px;
-}
-
-.skip {
-    position: absolute;
-    left: -9999px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.skip:focus {
-    left: 16px;
-    top: 16px;
-    width: auto;
-    height: auto;
-    padding: 10px 12px;
-    background: #0f172a;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    z-index: 50;
-    box-shadow: var(--shadow);
-}
-
-/* ======================================================
-   LAYOUT
-====================================================== */
-
-.wrap {
-    width: min(var(--maxw), 92vw);
-    margin: 0 auto;
-}
-
-.content {
-    padding: 28px 0 44px;
-}
-
-.section {
-    margin: 26px 0 34px;
-}
-
-.section-head {
-    margin-bottom: 14px;
-}
-
-.section h2 {
-    margin: 0 0 8px;
-    font-size: var(--h2);
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.84);
-}
-
-.section p {
-    margin: 0;
-    color: rgba(255, 255, 255, 0.82);
-}
-
-.section-intro {
-    max-width: 920px;
-}
-
-/* ======================================================
-   HERO
-====================================================== */
-
-.hero {
-    padding: 50px 0 28px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.60), rgba(15, 23, 42, 0.10));
-}
-
-.name {
-    margin: 0 0 10px;
-    font-size: var(--h1);
-    line-height: 1.08;
-}
-
-.headline {
-    margin: 0 0 8px;
-    font-size: 14px;
-    color: var(--muted);
-    max-width: 860px;
-}
-
-.sub {
-    margin: 0 0 18px;
-    font-size: 13px;
-    color: var(--muted2);
-}
 
 .hero-panel {
     margin-top: 18px;
@@ -154,48 +21,7 @@ a:focus-visible {
 }
 
 /* ======================================================
-   BOTÕES
-====================================================== */
-
-.actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 14px;
-}
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 42px;
-    padding: 10px 14px;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    background: rgba(255, 255, 255, 0.04);
-    box-shadow: var(--shadowInset);
-    font-weight: 650;
-    color: var(--text);
-    transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
-}
-
-.btn:hover {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: var(--border2);
-    transform: translateY(-1px);
-}
-
-.btn-ghost {
-    background: transparent;
-}
-
-.btn-accent {
-    border-color: rgba(134, 174, 252, 0.34);
-    background: linear-gradient(180deg, rgba(134, 174, 252, 0.14), rgba(255, 255, 255, 0.04));
-}
-
-/* ======================================================
-   NAV DE ÂNCORAS
+   NAVEGAÇÃO DE ÂNCORAS
 ====================================================== */
 
 .anchor-nav {
@@ -240,24 +66,19 @@ a:focus-visible {
 }
 
 /* ======================================================
-   CARDS
+   CARDS DO PROJETO
 ====================================================== */
 
-.card {
+.projects-page .card {
     position: relative;
     padding: 16px;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    background: var(--surface);
-    box-shadow: var(--shadowInset);
     display: flex;
     flex-direction: column;
     gap: 10px;
-    transition: transform 0.14s ease, border-color 0.14s ease, background 0.14s ease;
     overflow: hidden;
 }
 
-.card::after {
+.projects-page .card::after {
     content: "";
     position: absolute;
     inset: 0 auto auto 0;
@@ -267,13 +88,7 @@ a:focus-visible {
     pointer-events: none;
 }
 
-.card:hover {
-    border-color: rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.045);
-    transform: translateY(-1px);
-}
-
-.card-primary {
+.projects-page .card-primary {
     border-color: rgba(134, 174, 252, 0.26);
     background: linear-gradient(180deg, rgba(134, 174, 252, 0.10), rgba(255, 255, 255, 0.03));
 }
@@ -283,7 +98,7 @@ a:focus-visible {
     background: linear-gradient(180deg, rgba(120, 255, 208, 0.08), rgba(255, 255, 255, 0.03));
 }
 
-.card-title {
+.projects-page .card-title {
     margin: 0;
     font-size: var(--h3);
     line-height: 1.4;
@@ -296,8 +111,7 @@ a:focus-visible {
     color: var(--muted2);
 }
 
-.card-text {
-    margin: 0;
+.projects-page .card-text {
     color: rgba(255, 255, 255, 0.80);
 }
 
@@ -320,7 +134,7 @@ a:focus-visible {
     color: rgba(255, 255, 255, 0.80);
 }
 
-.card .actions {
+.projects-page .card .actions {
     margin-top: 4px;
 }
 
@@ -333,14 +147,7 @@ a:focus-visible {
 }
 
 .project-media img {
-    width: 100%;
-    display: block;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
     object-position: top left;
-    background: rgba(255, 255, 255, 0.02);
 }
 
 .project-media figcaption {
@@ -353,17 +160,12 @@ a:focus-visible {
    LISTAS
 ====================================================== */
 
-.bullets {
+.projects-page .bullets {
     margin: 2px 0 0 18px;
     padding: 0;
-    color: rgba(255, 255, 255, 0.84);
 }
 
-.bullets li {
-    margin: 6px 0;
-}
-
-.bullets strong {
+.projects-page .bullets strong {
     color: rgba(255, 255, 255, 0.95);
 }
 
@@ -371,32 +173,13 @@ a:focus-visible {
    CHIPS
 ====================================================== */
 
-.chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+.projects-page .chips {
     margin-top: 2px;
 }
 
-.chip {
-    padding: 7px 10px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    background: rgba(255, 255, 255, 0.03);
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.86);
-}
-
 /* ======================================================
-   CTA / RESUMO
+   RESUMO / CTA
 ====================================================== */
-
-.cta-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin-top: 14px;
-}
 
 .summary-grid {
     display: grid;
@@ -428,35 +211,11 @@ a:focus-visible {
     color: rgba(255, 255, 255, 0.96);
 }
 
-/* ======================================================
-   FOOTER
-====================================================== */
-
-.footer {
-    margin-top: 30px;
-    padding-top: 16px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    font-size: 12.5px;
-    color: var(--muted2);
-}
-
-.small {
-    margin: 6px 0 0;
-    color: rgba(255, 255, 255, 0.48);
-    font-size: 12px;
-}
-
-/* ======================================================
-   ÂNCORAS
-====================================================== */
-
-:target {
-    scroll-margin-top: var(--anchorOffset);
-}
-
-.card:target {
-    border-color: rgba(134, 174, 252, 0.8);
-    background: linear-gradient(180deg, rgba(134, 174, 252, 0.08), rgba(255, 255, 255, 0.03));
+.cta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 14px;
 }
 
 /* ======================================================
@@ -480,15 +239,7 @@ a:focus-visible {
 }
 
 @media (max-width: 640px) {
-    .btn {
-        width: 100%;
-    }
-
     .summary-grid {
         grid-template-columns: 1fr;
-    }
-
-    .hero {
-        padding-top: 40px;
     }
 }
