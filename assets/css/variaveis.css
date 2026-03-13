@@ -1,0 +1,33 @@
+:root {
+    --bg: #070b14;
+
+    --surface: rgba(255, 255, 255, 0.035);
+    --surface2: rgba(255, 255, 255, 0.055);
+
+    --text: rgba(255, 255, 255, 0.92);
+    --muted: rgba(255, 255, 255, 0.70);
+    --muted2: rgba(255, 255, 255, 0.58);
+
+    --border: rgba(255, 255, 255, 0.10);
+    --border2: rgba(255, 255, 255, 0.16);
+
+    --accent: #86aefc;
+    --accent2: #78ffd0;
+
+    --shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+    --shadowInset: 0 1px 0 rgba(255, 255, 255, 0.03) inset;
+
+    --radius: 16px;
+    --radius2: 12px;
+
+    --maxw: 1120px;
+
+    --h1: clamp(30px, 3vw, 46px);
+    --h2: 15px;
+    --h3: 16px;
+    --p: 14px;
+
+    --anchorOffset: 18px;
+
+    --masonryRow: 10px;
+}
