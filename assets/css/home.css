@@ -1,0 +1,167 @@
+/* ======================================================
+   HOME
+====================================================== */
+body.home .hero {
+    padding-bottom: 32px;
+}
+
+body.home .section h2 {
+    font-size: 14px;
+}
+
+body.home .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body.home .card .actions {
+    margin-top: 4px;
+}
+
+body.home .stats-cards .stat-value {
+    font-size: 18px;
+}
+
+/* ======================================================
+   HERO HIGHLIGHT
+====================================================== */
+.hero-highlight {
+    margin-top: 18px;
+    max-width: 960px;
+    padding: 14px 16px;
+    border-radius: var(--radius);
+    border: 1px solid rgba(134, 174, 252, .18);
+    background: linear-gradient(180deg, rgba(134, 174, 252, .10), rgba(255, 255, 255, .03));
+    box-shadow: var(--shadowInset);
+}
+
+.hero-highlight p {
+    margin: 0;
+    color: rgba(255, 255, 255, .84);
+}
+
+/* ======================================================
+   FEATURE GRID
+====================================================== */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.feature-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::after {
+    content: "";
+    position: absolute;
+    inset: auto -10% -40% auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 999px;
+    background: radial-gradient(circle, rgba(134, 174, 252, .16), transparent 68%);
+    pointer-events: none;
+}
+
+.feature-kicker {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .45px;
+    color: var(--muted2);
+    margin-bottom: 8px;
+}
+
+.feature-card .card-title {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.feature-card .small {
+    margin-top: 2px;
+}
+
+.feature-card.is-server {
+    border-color: rgba(120, 255, 208, .20);
+    background: linear-gradient(180deg, rgba(120, 255, 208, .08), rgba(255, 255, 255, .03));
+}
+
+.stack-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.stack-item {
+    padding: 8px 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    background: rgba(255, 255, 255, .025);
+    font-size: 12px;
+    color: rgba(255, 255, 255, .84);
+}
+
+/* ======================================================
+   MINI PROJECTS
+====================================================== */
+.projects-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.mini {
+    display: block;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    background: rgba(255, 255, 255, .02);
+    transition: transform .15s ease, border-color .15s ease, background .15s ease;
+}
+
+.mini strong {
+    display: block;
+    font-size: 14px;
+    letter-spacing: .2px;
+    color: rgba(255, 255, 255, .94);
+}
+
+.mini span {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, .70);
+}
+
+.mini:hover {
+    border-color: rgba(255, 255, 255, .22);
+    background: rgba(255, 255, 255, .03);
+    transform: translateY(-2px);
+}
+
+/* ======================================================
+   CTA
+====================================================== */
+.cta-card {
+    border-color: rgba(134, 174, 252, .18);
+    background: linear-gradient(180deg, rgba(255, 255, 255, .045), rgba(255, 255, 255, .025));
+}
+
+/* ======================================================
+   RESPONSIVO
+====================================================== */
+@media (max-width: 960px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .stack-list {
+        grid-template-columns: 1fr;
+    }
+}
