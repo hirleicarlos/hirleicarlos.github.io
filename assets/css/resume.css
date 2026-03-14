@@ -1,0 +1,175 @@
+/* ======================================================
+   RESUME
+====================================================== */
+.resume-page .headline {
+    max-width: var(--resume-headline-max);
+}
+
+.resume-page .hero {
+    padding-bottom: 28px;
+}
+
+.resume-hero {
+    display: grid;
+    gap: 20px;
+}
+
+.resume-hero__content {
+    display: grid;
+    gap: 0;
+}
+
+.resume-eyebrow {
+    margin: 0 0 10px;
+    font-size: var(--eyebrow-size);
+    letter-spacing: .55px;
+    text-transform: uppercase;
+    color: var(--muted2);
+}
+
+.resume-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    margin: 0 0 18px;
+    font-style: normal;
+}
+
+.resume-contact span {
+    color: var(--muted2);
+}
+
+.resume-note {
+    margin-top: 10px;
+}
+
+.resume-timeline {
+    display: grid;
+    gap: 12px;
+}
+
+.resume-page .timeline {
+    margin: 0;
+    background: var(--surface-soft);
+}
+
+.resume-page .t-meta {
+    margin: 6px 0 0;
+}
+
+.stats-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.stat-card {
+    min-height: 100%;
+    padding: 16px;
+    background: linear-gradient(180deg, var(--surface-strong), var(--surface));
+}
+
+.stat-label {
+    margin: 0 0 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    color: var(--muted2);
+}
+
+.stat-value {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 850;
+    line-height: 1.15;
+    color: var(--text-strong);
+}
+
+.stat-total {
+    border-color: var(--accent-border-strong);
+    background: linear-gradient(180deg, var(--accent-surface), var(--surface));
+}
+
+.resume-columns > .card {
+    height: 100%;
+}
+
+.resume-page .chips {
+    line-height: 2;
+}
+
+.mt {
+    margin-top: 18px;
+}
+
+@media (max-width: 1100px) {
+    .stats-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 960px) {
+    .resume-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .stats-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-contact {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
+
+@media print {
+    :root {
+        --bg: #fff;
+        --text: #111;
+        --muted: #222;
+        --muted2: #333;
+        --border: #ddd;
+        --border2: #ccc;
+        --accent: #111;
+        --shadow: none;
+        --surface: #fff;
+        --surface-soft: #fff;
+        --surface-strong: #fff;
+        --accent-surface: #fff;
+        --text-strong: #111;
+    }
+
+    body {
+        background: #fff;
+        color: #111;
+    }
+
+    body::before {
+        display: none;
+    }
+
+    .btn,
+    .actions,
+    .skip {
+        display: none !important;
+    }
+
+    .card,
+    .timeline {
+        border: 1px solid #ddd !important;
+        background: #fff !important;
+        box-shadow: none !important;
+    }
+
+    .timeline::before {
+        background: #111 !important;
+    }
+
+    a {
+        color: #111 !important;
+        text-decoration: none !important;
+    }
+}

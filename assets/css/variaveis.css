@@ -4,6 +4,17 @@
     --surface: rgba(255, 255, 255, 0.035);
     --surface2: rgba(255, 255, 255, 0.055);
 
+    --surface-soft: rgba(255, 255, 255, 0.03);
+    --surface-strong: rgba(255, 255, 255, 0.04);
+
+    --text-strong: rgba(255, 255, 255, 0.95);
+
+    --accent-surface: rgba(134, 174, 252, 0.12);
+    --accent-border-strong: rgba(134, 174, 252, 0.35);
+
+    --eyebrow-size: 11px;
+    --resume-headline-max: 820px;
+
     --text: rgba(255, 255, 255, 0.92);
     --muted: rgba(255, 255, 255, 0.70);
     --muted2: rgba(255, 255, 255, 0.58);
