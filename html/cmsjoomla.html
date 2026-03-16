@@ -3,14 +3,23 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Joomla | Extensões e Engenharia</title>
-    <meta name="description" content="Extensões Joomla, plugins, módulos, componentes e integrações desenvolvidas por Hirlei Carlos."/>
-    <link rel="stylesheet" href="../assets/css/style.css"/>
+    <title>Joomla | Extensões & Engenharia</title>
+
+    <meta
+            name="description"
+            content="Extensões Joomla, plugins, módulos, componentes, templates e integrações desenvolvidas por Hirlei Carlos."
+    >
+
     <link rel="icon" href="../assets/img/favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+
+    <link rel="stylesheet" href="../assets/css/variaveis.css">
+    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="../assets/css/projects.css">
 </head>
 
-<body class="projects">
+<body class="projects-page">
+
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="hero">
@@ -18,16 +27,27 @@
         <h1 class="name">Joomla — Extensões & Engenharia</h1>
 
         <p class="headline">
-            Plugins, módulos e componentes sob medida. Reutilização, versionamento, compatibilidade e foco em manutenção.
+            Plugins, módulos, componentes, templates e integrações sob medida,
+            com foco em reutilização, versionamento, compatibilidade, manutenção e evolução contínua.
         </p>
 
-        <p class="sub">Plugins • Módulos • Componentes • Integrações • Segurança • Performance</p>
+        <p class="sub">
+            Plugins • Módulos • Componentes • Templates • Integrações • Segurança • Performance
+        </p>
 
         <div class="actions">
-            <a class="btn" href="projects.html">Voltar para Cases</a>
+            <a class="btn btn-accent" href="projects.html">Voltar para Cases</a>
             <a class="btn btn-ghost" href="../index.html">Início</a>
             <a class="btn btn-ghost" href="resume.html">Currículo</a>
             <a class="btn btn-ghost" href="https://github.com/hirleicarlos" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+        <div class="hero-panel">
+            <p>
+                <strong>Base técnica:</strong> desenvolvimento e manutenção de extensões Joomla para projetos open source,
+                ecossistemas institucionais e soluções corporativas, com atenção à compatibilidade entre versões,
+                organização da estrutura e sustentação de longo prazo.
+            </p>
         </div>
     </div>
 </header>
@@ -35,13 +55,63 @@
 <main id="conteudo" class="wrap content">
 
     <section class="section">
-        <h2>Como eu organizo extensões</h2>
-        <p>
-            Extensões geralmente seguem padrões de manutenção: estrutura limpa, parâmetros, compatibilidade com templates,
-            e quando possível documentação e release versionado.
-        </p>
+        <div class="section-head">
+            <h2>Visão geral</h2>
+            <p class="section-intro">
+                Esta página reúne a parte de engenharia aplicada ao Joomla, cobrindo organização de extensões,
+                projetos open source e entregas corporativas sob NDA, mantendo a leitura orientada por tipo de solução.
+            </p>
+        </div>
 
-        <div class="chips" style="margin-top:12px;">
+        <div class="summary-grid">
+            <div class="summary-card">
+                <div class="summary-label">Base técnica</div>
+                <div class="summary-value">Joomla 4/5/6</div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-label">Escopo</div>
+                <div class="summary-value">Extensões e integrações</div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-label">Open source</div>
+                <div class="summary-value">2 projetos públicos</div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-label">Atuação</div>
+                <div class="summary-value">Engenharia e manutenção</div>
+            </div>
+        </div>
+
+        <div class="anchor-nav">
+            <div class="anchor-title">Seções da página</div>
+            <div class="anchor-group">
+                <a class="btn btn-ghost" href="#organizacao">Organização das extensões</a>
+                <a class="btn btn-ghost" href="#open-source">Open source</a>
+                <a class="btn btn-ghost" href="#nda">Projetos corporativos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="organizacao">
+        <div class="section-head">
+            <h2>Como eu organizo extensões</h2>
+            <p class="section-intro">
+                As extensões geralmente seguem padrões de manutenção, estrutura limpa, parametrização administrativa,
+                compatibilidade com templates e, quando possível, documentação e release versionado.
+            </p>
+        </div>
+
+        <div class="hero-panel">
+            <p>
+                <strong>Abordagem:</strong> priorizo clareza estrutural, reaproveitamento, segurança,
+                compatibilidade entre versões e facilidade de manutenção para reduzir retrabalho em evolução futura.
+            </p>
+        </div>
+
+        <div class="chips">
             <span class="chip">MVC / Organização</span>
             <span class="chip">CSRF / validação</span>
             <span class="chip">SEF / Router</span>
@@ -51,10 +121,23 @@
     </section>
 
     <section class="section" id="open-source">
-        <h2>Open source</h2>
+        <div class="section-head">
+            <h2>Open source</h2>
+            <p class="section-intro">
+                Projetos públicos desenvolvidos com foco em reutilização prática, configuração administrativa
+                e compatibilidade com diferentes cenários de uso.
+            </p>
+        </div>
 
-        <div class="grid-2">
-            <article class="card">
+        <div class="projects-masonry">
+
+            <article class="card card-primary">
+                <div class="card-meta">
+                    <span class="meta">Open source</span>
+                    <span class="meta">Módulo</span>
+                    <span class="meta">Joomla 4/5/6</span>
+                </div>
+
                 <h3 class="card-title">Módulo Joomla — HC Mídias Sociais</h3>
 
                 <p class="card-text">
@@ -74,9 +157,17 @@
                     <a class="btn" href="https://github.com/hirleicarlos/mod_hc_socialmedia" target="_blank" rel="noopener">
                         Ver repositório no GitHub
                     </a>
+                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
                 </div>
             </article>
+
             <article class="card">
+                <div class="card-meta">
+                    <span class="meta">Open source</span>
+                    <span class="meta">Plugin System</span>
+                    <span class="meta">WhatsApp</span>
+                </div>
+
                 <h3 class="card-title">Plugin Joomla — Botão Flutuante de WhatsApp</h3>
 
                 <p class="card-text">
@@ -95,41 +186,83 @@
                     <a class="btn" href="https://github.com/hirleicarlos/plg_system_btnwhatsapp" target="_blank" rel="noopener">
                         Ver repositório no GitHub
                     </a>
+                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
                 </div>
             </article>
+
         </div>
     </section>
 
-    <section class="section">
-        <h2>Projetos corporativos (NDA)</h2>
-        <p>
-            Quando a extensão foi feita para cliente/empresa e não pode ser publicada, eu descrevo o tipo de entrega,
-            integração e tecnologia sem expor código ou detalhes sensíveis.
-        </p>
+    <section class="section" id="nda">
+        <div class="section-head">
+            <h2>Projetos corporativos (NDA)</h2>
+            <p class="section-intro">
+                Quando a extensão foi feita para cliente ou empresa e não pode ser publicada,
+                a descrição mantém o tipo de entrega, integração e tecnologia sem expor código ou detalhes sensíveis.
+            </p>
+        </div>
 
-        <div class="grid-2">
+        <div class="projects-masonry">
+
             <article class="card">
+                <div class="card-meta">
+                    <span class="meta">Corporativo</span>
+                    <span class="meta">Sob NDA</span>
+                    <span class="meta">Extensões</span>
+                </div>
+
                 <h3 class="card-title">Componentes e módulos sob medida</h3>
+
                 <p class="card-text">
-                    Extensões para rotinas específicas: filtros, listagens, importações, relatórios, integrações e UI custom.
+                    Extensões para rotinas específicas, incluindo filtros, listagens, importações,
+                    relatórios, integrações e interfaces customizadas.
                 </p>
+
                 <ul class="bullets">
                     <li><strong>Exemplos:</strong> filtros avançados, formulários, rotinas administrativas</li>
                     <li><strong>Tecnologias:</strong> Joomla 4/5, PHP, SQL, Ajax, Bootstrap</li>
                     <li><strong>Status:</strong> Sob NDA</li>
                 </ul>
+
+                <div class="actions">
+                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
+                </div>
             </article>
 
-            <article class="card">
+            <article class="card card-current">
+                <div class="card-meta">
+                    <span class="meta">Corporativo</span>
+                    <span class="meta">Sob NDA</span>
+                    <span class="meta">Integrações</span>
+                </div>
+
                 <h3 class="card-title">Integrações / Automação</h3>
+
                 <p class="card-text">
-                    Integrações com APIs e automações de rotina (quando aplicável), com foco em confiabilidade e manutenção.
+                    Integrações com APIs e automações de rotina, quando aplicável,
+                    com foco em confiabilidade, manutenção e continuidade operacional.
                 </p>
+
                 <ul class="bullets">
                     <li><strong>Tecnologias:</strong> PHP, REST, Webhooks, jobs/rotinas</li>
                     <li><strong>Status:</strong> Sob NDA</li>
                 </ul>
+
+                <div class="actions">
+                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
+                </div>
             </article>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-head">
+            <h2>Direção técnica</h2>
+            <p class="section-intro">
+                A engenharia aplicada aqui busca manter extensões reutilizáveis, sustentáveis e compatíveis
+                com ambientes reais de produção, tanto em projetos próprios quanto corporativos.
+            </p>
         </div>
     </section>
 
@@ -139,5 +272,8 @@
     </footer>
 
 </main>
+
+<script src="../assets/js/masonry.js"></script>
+
 </body>
 </html>
