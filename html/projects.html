@@ -3,695 +3,386 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cases e Atuação | Hirlei Carlos</title>
-
-    <meta
-            name="description"
-            content="Cases e atuação profissional de Hirlei Carlos. Projetos, portais, sistemas, ecossistemas e integrações em PHP, Joomla e ambientes corporativos."
-    >
-
-    <link rel="icon" href="../assets/img/favicon.ico" sizes="any">
-
+    <title>Cases & Atuação | Hirlei Carlos</title>
+    <meta name="description" content="Cases e atuação profissional de Hirlei Carlos. Projetos reais, portais institucionais, sistemas corporativos em PHP, Joomla e ambientes de governo, cooperativismo e educação.">
+    <link rel="icon" href="../assets/img/site/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/site/icon_hirlei.svg">
     <link rel="stylesheet" href="../assets/css/variaveis.css">
-    <link rel="stylesheet" href="../assets/css/default.css"/>
+    <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/projects.css">
 </head>
-
-<body class="projects-page">
-
+<body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-<header class="hero">
-    <div class="wrap">
-        <h1 class="name">Cases e Atuação</h1>
-
-        <p class="headline">
-            Portfólio profissional em formato de cases: projetos reais, plataformas digitais,
-            ecossistemas corporativos e experiências em diferentes setores.
-        </p>
-
-        <p class="sub">
-            PHP • Joomla • Portais • Integrações • Governo • Banco • Educação
-        </p>
-
-        <div class="actions">
-            <a class="btn btn-accent" href="../index.html">Início</a>
-            <a class="btn btn-ghost" href="resume.html">Currículo</a>
-            <a class="btn btn-ghost" href="articles.html">Artigos</a>
-            <a class="btn btn-ghost" href="https://github.com/hirleicarlos" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">LinkedIn</a>
+<nav class="navbar" id="navbar" aria-label="Navegação principal">
+    <div class="wrap navbar__inner">
+        <a class="navbar__logo" href="../index.html" aria-label="Hirlei Carlos — Página inicial">
+            <img src="../assets/img/site/logo_hirlei.svg" alt="Hirlei Carlos">
+        </a>
+        <div class="navbar__links" id="navbar-links">
+            <a href="../index.html" class="home-link" aria-label="Início" title="Início">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                Início
+            </a>
+            <a href="projects.html" aria-current="page">Cases &amp; Atuação</a>
+            <a href="resume.html">Currículo</a>
+            <a href="articles.html">Artigos</a>
+            <a href="../index.html#contato">Contato</a>
         </div>
+        <div class="navbar__right">
+            <a class="navbar__cv" href="../assets/file/Curriculo_Hirlei_Carlos_RH.pdf" target="_blank" rel="noopener">↓ Baixar CV</a>
+            <button class="navbar__toggle" id="navbar-toggle" aria-expanded="false" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
 
-        <div class="hero-panel">
-            <p>
-                <strong>Empresa atual:</strong> Sistema OCB, com foco em ecossistemas institucionais,
-                engenharia em Joomla, sustentação, evolução técnica e padronização de portais.
-            </p>
+<header class="page-hero">
+    <div class="wrap">
+        <p class="page-hero__eyebrow">Portfólio</p>
+        <h1 class="page-hero__title">Cases &amp; Atuação</h1>
+        <p class="page-hero__sub">Portfólio profissional em formato de cases: projetos reais, portais institucionais, ecossistemas corporativos e experiências em governo, cooperativismo e educação.</p>
+        <div class="page-hero__panel">
+            <strong>Empresa atual:</strong> Sistema OCB — ecossistemas institucionais, engenharia Joomla, sustentação, evolução técnica e padronização de portais.
         </div>
     </div>
 </header>
 
-<main id="conteudo" class="wrap content">
+<main id="conteudo">
 
-    <section class="section">
-        <div class="section-head">
-            <h2>Visão geral</h2>
-            <p class="section-intro">
-                A página reúne projetos isolados, ecossistemas institucionais e experiências profissionais,
-                mantendo a leitura por contexto, relevância atual e trajetória técnica.
-            </p>
-        </div>
-
-        <div class="summary-grid">
-            <div class="summary-card">
-                <div class="summary-label">Ecossistemas</div>
-                <div class="summary-value">3</div>
+    <!-- RESUMO DO PORTFÓLIO -->
+    <section class="section section--white" aria-label="Resumo do portfólio">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Visão geral</p><h2 class="section__title">Resumo do Portfólio</h2></div>
             </div>
-
-            <div class="summary-card">
-                <div class="summary-label">Cases em produção</div>
-                <div class="summary-value">3</div>
+            <div class="project-stats">
+                <div class="pstat pstat--accent"><div class="pstat__label">Empresa atual</div><div class="pstat__val">Sistema OCB</div></div>
+                <div class="pstat"><div class="pstat__label">Ecossistemas</div><div class="pstat__val">3 setores</div></div>
+                <div class="pstat"><div class="pstat__label">Cases autorais</div><div class="pstat__val">4+</div></div>
+                <div class="pstat pstat--accent"><div class="pstat__label">Experiência</div><div class="pstat__val">13+ anos</div></div>
             </div>
-
-            <div class="summary-card">
-                <div class="summary-label">Experiência profissional</div>
-                <div class="summary-value">9</div>
-            </div>
-
-            <div class="summary-card">
-                <div class="summary-label">Foco atual</div>
-                <div class="summary-value">OCB • Joomla • Servidor</div>
-            </div>
-        </div>
-
-        <div class="anchor-nav">
-            <div class="anchor-title">Empresa atual e foco técnico</div>
-            <div class="anchor-group">
-                <a class="btn btn-ghost" href="#ocb">Sistema OCB</a>
-                <a class="btn btn-ghost" href="#joomla">Joomla</a>
-                <a class="btn btn-ghost" href="#dockerdev">Servidor</a>
-            </div>
-
-            <div class="anchor-title">Ecossistemas institucionais</div>
-            <div class="anchor-group">
-                <a class="btn btn-ghost" href="#ufg">UFG</a>
-            </div>
-
-            <div class="anchor-title">Cases em produção</div>
-            <div class="anchor-group">
-                <a class="btn btn-ghost" href="#pousada">Pousada Licor de Caju</a>
-                <a class="btn btn-ghost" href="#examerapido">Exame Rápido</a>
-                <a class="btn btn-ghost" href="#icap">ICAP</a>
-            </div>
-
-            <div class="anchor-title">Experiência corporativa e institucional</div>
-            <div class="anchor-group">
-                <a class="btn btn-ghost" href="#pol">POL</a>
-                <a class="btn btn-ghost" href="#centralit">Central IT</a>
-                <a class="btn btn-ghost" href="#basis">BASIS</a>
-                <a class="btn btn-ghost" href="#ios">IOS</a>
-                <a class="btn btn-ghost" href="#bancoob">Bancoob</a>
-                <a class="btn btn-ghost" href="#softimais">Softimais</a>
-                <a class="btn btn-ghost" href="#transoft">Transoft</a>
-                <a class="btn btn-ghost" href="#rhox">Rhox</a>
-                <a class="btn btn-ghost" href="#sesc">SESC</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="section-head">
-            <h2>Empresa atual e foco técnico</h2>
-            <p class="section-intro">
-                Bloco principal com a empresa atual, a stack central da atuação e o ambiente técnico
-                em desenvolvimento que apoia fluxo, infraestrutura local e padronização.
-            </p>
-        </div>
-
-        <div class="projects-masonry">
-
-            <article class="card card-primary" id="ocb">
-                <div class="card-meta">
-                    <span class="meta">Empresa atual</span>
-                    <span class="meta">Cooperativismo</span>
-                    <span class="meta">Ecossistema</span>
+            <div class="anchors-block">
+                <div class="anchors-row">
+                    <p class="anchor-label">Atuação, ecossistemas e stack</p>
+                    <div class="anchor-group">
+                        <a class="btn btn--ghost" href="#ocb">Sistema OCB</a>
+                        <a class="btn btn--ghost" href="#joomla">Engenharia Joomla</a>
+                        <a class="btn btn--ghost" href="#ufg-eco">UFG</a>
+                        <a class="btn btn--ghost" href="#servidor">Docker Dev Server</a>
+                    </div>
                 </div>
-
-                <h3 class="card-title">Sistema OCB — Ecossistema Cooperativista</h3>
-                <p class="card-subtitle">Ambiente atual de atuação</p>
-
-                <p class="card-text">
-                    Portais institucionais, plataformas e iniciativas digitais do cooperativismo.
-                    Inclui migrações, atualização, padronização, sustentação e governança técnica.
-                </p>
-
-                <div class="chips">
-                    <span class="chip">Joomla 4/5</span>
-                    <span class="chip">Helix</span>
-                    <span class="chip">SP Page Builder</span>
-                    <span class="chip">Component Creator</span>
-                    <span class="chip">28+ sites</span>
+                <div class="anchors-row">
+                    <p class="anchor-label">Cases em produção</p>
+                    <div class="anchor-group">
+                        <a class="btn btn--ghost" href="#pousada">Pousada Licor de Caju</a>
+                        <a class="btn btn--ghost" href="#examerapido">Exame Rápido</a>
+                        <a class="btn btn--ghost" href="#icap">ICAP</a>
+                    </div>
                 </div>
-
-                <ul class="bullets">
-                    <li><strong>Foco:</strong> padronização, evolução e governança de múltiplos portais</li>
-                    <li><strong>Atuação:</strong> migração, manutenção, customizações e sustentação</li>
-                    <li><strong>Setor:</strong> cooperativismo nacional</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn" href="sistemaocb.html">Explorar ecossistema</a>
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-            <article class="card card-current" id="joomla">
-                <div class="card-meta">
-                    <span class="meta">Atual</span>
-                    <span class="meta">Stack central</span>
-                </div>
-
-                <h3 class="card-title">Joomla — Extensões, Plugins, Templates e Integrações</h3>
-                <p class="card-subtitle">Base técnica da atuação atual</p>
-
-                <p class="card-text">
-                    Extensões reutilizáveis, plugins, módulos, componentes, templates
-                    e integrações sob medida em projetos open source e corporativos.
-                </p>
-
-                <div class="chips">
-                    <span class="chip">Plugins</span>
-                    <span class="chip">Módulos</span>
-                    <span class="chip">Componentes</span>
-                    <span class="chip">Templates</span>
-                </div>
-
-                <ul class="bullets">
-                    <li><strong>Foco:</strong> engenharia técnica e reaproveitamento de soluções</li>
-                    <li><strong>Atuação:</strong> desenvolvimento, manutenção e evolução</li>
-                    <li><strong>Base:</strong> projetos corporativos e institucionais</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn" href="cmsjoomla.html">Ver engenharia Joomla</a>
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-            <article class="card" id="dockerdev">
-                <div class="card-meta">
-                    <span class="meta">Atual</span>
-                    <span class="meta">Infraestrutura</span>
-                    <span class="meta">Desenvolvimento local</span>
-                </div>
-
-                <h3 class="card-title">Docker Development Server — Ambiente Local com Apache, PHP, MariaDB e SSL</h3>
-                <p class="card-subtitle">Projeto técnico em desenvolvimento</p>
-
-                <p class="card-text">
-                    Ambiente de desenvolvimento web containerizado voltado para execução de múltiplos
-                    projetos locais com Apache, PHP, MariaDB, phpMyAdmin e HTTPS, pensado para CMS,
-                    frameworks, APIs e sites estáticos.
-                </p>
-
-                <div class="chips">
-                    <span class="chip">Docker</span>
-                    <span class="chip">Apache</span>
-                    <span class="chip">PHP 8.3</span>
-                    <span class="chip">MariaDB 11</span>
-                    <span class="chip">SSL local</span>
-                    <span class="chip">Node.js</span>
-                    <span class="chip">Composer</span>
-                </div>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Infraestrutura / Desenvolvimento local</li>
-                    <li><strong>Entregas:</strong> ambiente Docker, virtual hosts, PHP, MariaDB, phpMyAdmin, SSL e múltiplos projetos</li>
-                    <li><strong>Tecnologias:</strong> Docker, Docker Compose, Apache, PHP 8.3, MariaDB 11, phpMyAdmin, Node.js, Composer</li>
-                    <li><strong>Status:</strong> Projeto funcional / repositório técnico</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn" href="https://github.com/hirleicarlos/docker-dev-server" target="_blank" rel="noopener">Ver repositório</a>
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="section-head">
-            <h2>Ecossistemas institucionais</h2>
-            <p class="section-intro">
-                Ecossistemas com múltiplas entregas e valor estrutural na trajetória,
-                organizados separadamente da atuação atual.
-            </p>
-        </div>
-
-        <div class="projects-masonry">
-
-            <article class="card" id="ufg">
-                <div class="card-meta">
-                    <span class="meta">Ecossistema</span>
-                    <span class="meta">Universitário</span>
-                </div>
-
-                <h3 class="card-title">UFG — Ecossistema Universitário</h3>
-                <p class="card-subtitle">Institucional em escala</p>
-
-                <p class="card-text">
-                    Atuação em sites e sistemas institucionais no contexto universitário,
-                    com foco em padronização visual, manutenção evolutiva e sustentação técnica.
-                </p>
-
-                <div class="chips">
-                    <span class="chip">Joomla</span>
-                    <span class="chip">Helix</span>
-                    <span class="chip">SP Page Builder</span>
-                    <span class="chip">Component Creator</span>
-                    <span class="chip">Fabrik</span>
-                    <span class="chip">WordPress</span>
-                    <span class="chip">Elementor</span>
-                </div>
-
-                <ul class="bullets">
-                    <li><strong>Entregas:</strong> sites institucionais, páginas de unidades e soluções internas</li>
-                    <li><strong>Foco:</strong> governança de layout e consistência visual</li>
-                    <li><strong>Atuação:</strong> manutenção, ajustes e evolução contínua</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn" href="ufg.html">Explorar ecossistema</a>
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="section-head">
-            <h2>Cases em produção</h2>
-            <p class="section-intro">
-                Projetos isolados com entrega objetiva, narrativa própria e contexto real de produção.
-            </p>
-        </div>
-
-        <div class="projects-masonry">
-
-            <article class="card" id="pousada">
-                <figure class="project-media">
-                    <img
-                            src="../assets/img/pousada-licor-de-caju.webp"
-                            alt="Pousada Licor de Caju"
-                            loading="lazy"
-                    >
-                    <figcaption>Site institucional e sistema de reservas</figcaption>
-                </figure>
-
-                <div class="card-meta">
-                    <span class="meta">Produção</span>
-                    <span class="meta">Hospitalidade</span>
-                </div>
-
-                <h3 class="card-title">Pousada Licor de Caju — Site & Sistema de Reservas</h3>
-
-                <p class="card-text">
-                    Desenvolvimento e manutenção de site institucional e sistema de reservas
-                    para pousada, incluindo motor de reservas, painel administrativo e
-                    sistema de balcão para gestão diária.
-                </p>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Cliente real / Produção</li>
-                    <li><strong>Entregas:</strong> site público, motor de reservas, painel administrativo</li>
-                    <li><strong>Tecnologias:</strong> Joomla 4.x, PHP 8.3, MySQL, Bootstrap, jQuery</li>
-                    <li><strong>Status:</strong> Sistema ativo em produção</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn" href="https://www.pousadalicordecaju.com.br/" target="_blank" rel="noopener">Acessar site</a>
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-            <article class="card" id="examerapido">
-                <figure class="project-media">
-                    <img
-                            src="../assets/img/examerapido.webp"
-                            alt="Exame Rápido"
-                            loading="lazy"
-                    >
-                    <figcaption>Plataforma digital de saúde e agendamento online</figcaption>
-                </figure>
-
-                <div class="card-meta">
-                    <span class="meta">Produção</span>
-                    <span class="meta">Saúde</span>
-                </div>
-
-                <h3 class="card-title">Exame Rápido — Site e Sistema de Marcação de Consultas e Exames</h3>
-
-                <p class="card-text">
-                    Atuação no desenvolvimento, manutenção e evolução de plataforma digital
-                    voltada para a área da saúde, permitindo ao usuário localizar clínicas,
-                    comparar preços e agendar exames e consultas.
-                </p>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Plataforma nacional / Produção</li>
-                    <li><strong>Entregas:</strong> site institucional, busca, fluxo completo de agendamento</li>
-                    <li><strong>Tecnologias:</strong> PHP, JavaScript, jQuery, HTML, CSS, banco relacional</li>
-                    <li><strong>Status:</strong> Sistema ativo em produção</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn" href="https://www.examerapido.com/br/" target="_blank" rel="noopener">Acessar plataforma</a>
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-            <article class="card" id="icap">
-                <figure class="project-media">
-                    <img
-                            src="../assets/img/icap.webp"
-                            alt="ICAP Instituto"
-                            loading="lazy"
-                    >
-                    <figcaption>Portal educacional e cursos presenciais e online</figcaption>
-                </figure>
-
-                <div class="card-meta">
-                    <span class="meta">Produção</span>
-                    <span class="meta">Educação</span>
-                </div>
-
-                <h3 class="card-title">ICAP Instituto — Portal Educacional e Sistema de Cursos</h3>
-
-                <p class="card-text">
-                    Manutenção, evolução e sustentação do portal institucional e da plataforma de cursos,
-                    com foco em capacitação profissional, gestão de cursos e suporte contínuo.
-                </p>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Educação / Produção</li>
-                    <li><strong>Entregas:</strong> manutenção, atualização Joomla, ajustes e suporte</li>
-                    <li><strong>Tecnologias:</strong> Joomla, PHP, HTML, CSS, JavaScript, banco relacional</li>
-                    <li><strong>Status:</strong> Sistema ativo em produção</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn" href="https://icapinstituto.com.br/" target="_blank" rel="noopener">Acessar site</a>
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="section-head">
-            <h2>Experiência corporativa e institucional</h2>
-            <p class="section-intro">
-                Projetos, equipes e ambientes profissionais em que houve atuação técnica,
-                sustentação, integrações e evolução de sistemas.
-            </p>
-        </div>
-
-        <div class="projects-masonry">
-
-            <article class="card" id="pol">
-                <div class="card-meta">
-                    <span class="meta">Corporativo</span>
-                    <span class="meta">Jurídico</span>
-                </div>
-
-                <h3 class="card-title">POL — Sistemas Jurídicos e Integrações</h3>
-
-                <p class="card-text">
-                    Desenvolvimento e sustentação de módulos e rotinas para captura e processamento de dados,
-                    com integrações e automações conforme necessidade do negócio.
-                </p>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Corporativo / Produção</li>
-                    <li><strong>Entregas:</strong> módulos personalizados, integrações, manutenção corretiva e evolutiva</li>
-                    <li><strong>Tecnologias:</strong> PHP, PostgreSQL, APIs, automações</li>
-                    <li><strong>Status:</strong> Entregas sob NDA</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-            <article class="card" id="centralit">
-                <div class="card-meta">
-                    <span class="meta">Governo</span>
-                    <span class="meta">SEI</span>
-                </div>
-
-                <h3 class="card-title">Central IT — Governança Corporativa (SEI)</h3>
-
-                <p class="card-text">
-                    Atuação em suporte técnico e correções para órgãos que utilizam SEI,
-                    incluindo rotinas de estatística, barramento e integrações.
-                </p>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Governo / Corporativo</li>
-                    <li><strong>Entregas:</strong> atendimento, correções, apoio a integrações (WSSEI)</li>
-                    <li><strong>Tecnologias:</strong> SEI, integrações, suporte e operação</li>
-                    <li><strong>Status:</strong> Projeto concluído</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-            <article class="card" id="basis">
-                <div class="card-meta">
-                    <span class="meta">Governo</span>
-                    <span class="meta">Joomla</span>
-                </div>
-
-                <h3 class="card-title">BASIS — Portais e Sistemas em Joomla</h3>
-
-                <p class="card-text">
-                    Desenvolvimento e manutenção de soluções web com foco em CMS Joomla,
-                    incluindo ajustes de front-end, integrações e evolução contínua.
-                </p>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Governo / Corporativo</li>
-                    <li><strong>Entregas:</strong> sustentação, melhorias, ajustes e evolução</li>
-                    <li><strong>Tecnologias:</strong> PHP, MySQL, Joomla, jQuery, Bootstrap</li>
-                    <li><strong>Status:</strong> Projeto concluído</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-            <article class="card" id="ios">
-                <div class="card-meta">
-                    <span class="meta">Corporativo</span>
-                    <span class="meta">Extensões</span>
-                </div>
-
-                <h3 class="card-title">IOS S.A — Extensões Joomla, RPA e Relatórios</h3>
-
-                <p class="card-text">
-                    Implementação de extensões e automações para rotinas corporativas,
-                    com participação em projetos envolvendo Oracle/APEX e relatórios.
-                </p>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Corporativo</li>
-                    <li><strong>Entregas:</strong> componentes, módulos, plugins, automações (RPA), relatórios</li>
-                    <li><strong>Tecnologias:</strong> Joomla, PHP, MySQL, Oracle/APEX, JasperReports</li>
-                    <li><strong>Status:</strong> Projeto concluído</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-            <article class="card" id="bancoob">
-                <div class="card-meta">
-                    <span class="meta">Financeiro</span>
-                    <span class="meta">Portais</span>
-                </div>
-
-                <h3 class="card-title">Bancoob — Portais, Extensões e Sistemas (Joomla)</h3>
-
-                <p class="card-text">
-                    Atuação em desenvolvimento e evolução de portais e soluções web,
-                    com criação de extensões profissionais e integração com múltiplos bancos de dados.
-                </p>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Instituição financeira</li>
-                    <li><strong>Entregas:</strong> componentes, módulos, plugins, portais, manutenção evolutiva</li>
-                    <li><strong>Tecnologias:</strong> Joomla, PHP, MySQL, PostgreSQL, Oracle, jQuery, Bootstrap</li>
-                    <li><strong>Status:</strong> Projeto concluído</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-            <article class="card" id="softimais">
-                <div class="card-meta">
-                    <span class="meta">Corporativo</span>
-                    <span class="meta">PHP</span>
-                </div>
-
-                <h3 class="card-title">Softimais — Sistemas e Portais (PHP)</h3>
-
-                <p class="card-text">
-                    Desenvolvimento web com stack PHP e frameworks de apoio,
-                    atuando em entregas e manutenção de soluções conforme demanda.
-                </p>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Corporativo</li>
-                    <li><strong>Entregas:</strong> desenvolvimento e manutenção evolutiva</li>
-                    <li><strong>Tecnologias:</strong> PHP, MySQL, FormDin, Zend, jQuery, Bootstrap</li>
-                    <li><strong>Status:</strong> Projeto concluído</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-            <article class="card" id="transoft">
-                <div class="card-meta">
-                    <span class="meta">Corporativo</span>
-                    <span class="meta">Transporte</span>
-                </div>
-
-                <h3 class="card-title">Transoft — Sistemas Corporativos (Transporte)</h3>
-
-                <p class="card-text">
-                    Participação em sistemas corporativos para transporte, apoiando módulos de
-                    financeiro, RH, ponto, escala e contábil.
-                </p>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Corporativo</li>
-                    <li><strong>Entregas:</strong> evolução e sustentação de módulos</li>
-                    <li><strong>Tecnologias:</strong> PHP, MySQL, jQuery, Bootstrap</li>
-                    <li><strong>Status:</strong> Projeto concluído</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-            <article class="card" id="rhox">
-                <div class="card-meta">
-                    <span class="meta">Corporativo</span>
-                    <span class="meta">Framework</span>
-                </div>
-
-                <h3 class="card-title">Rhox Redes Corporativas — Desenvolvimento Web (PHP)</h3>
-
-                <p class="card-text">
-                    Experiência em desenvolvimento web com foco em base PHP e frameworks,
-                    contribuindo para entregas e evolução de sistemas.
-                </p>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Corporativo</li>
-                    <li><strong>Entregas:</strong> desenvolvimento e manutenção</li>
-                    <li><strong>Tecnologias:</strong> PHP, CakePHP, MySQL, jQuery, JavaScript</li>
-                    <li><strong>Status:</strong> Projeto concluído</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-            <article class="card" id="sesc">
-                <div class="card-meta">
-                    <span class="meta">Institucional</span>
-                    <span class="meta">Base profissional</span>
-                </div>
-
-                <h3 class="card-title">SESC DF — Início com Sistemas e PHP</h3>
-
-                <p class="card-text">
-                    Base profissional onde iniciei contato com demandas internas envolvendo sistemas,
-                    conciliando rotinas operacionais e necessidades de automação.
-                </p>
-
-                <ul class="bullets">
-                    <li><strong>Contexto:</strong> Institucional</li>
-                    <li><strong>Entregas:</strong> apoio a rotinas internas e demandas de sistema</li>
-                    <li><strong>Tecnologias:</strong> PHP, MySQL</li>
-                    <li><strong>Status:</strong> Experiência fundamental</li>
-                </ul>
-
-                <div class="actions">
-                    <a class="btn btn-ghost" href="#conteudo">Topo</a>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="section-head">
-            <h2>Mais informações</h2>
-            <p class="section-intro">
-                Acesso rápido para currículo e repositórios técnicos.
-            </p>
-        </div>
-
-        <div class="cta-grid">
-            <div class="card card-primary">
-                <h3 class="card-title">Currículo completo</h3>
-
-                <p class="card-text">
-                    Histórico profissional detalhado, formação, competências e cursos.
-                </p>
-
-                <div class="actions">
-                    <a class="btn" href="resume.html">Abrir currículo</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">GitHub</h3>
-
-                <p class="card-text">
-                    Repositórios públicos, estudos e experimentos técnicos.
-                </p>
-
-                <div class="actions">
-                    <a class="btn" href="https://github.com/hirleicarlos" target="_blank" rel="noopener">Explorar GitHub</a>
+                <div class="anchors-row">
+                    <p class="anchor-label">Experiência corporativa</p>
+                    <div class="anchor-group">
+                        <a class="btn btn--ghost" href="#bancoob">Bancoob</a>
+                        <a class="btn btn--ghost" href="#pol">POL</a>
+                        <a class="btn btn--ghost" href="#ios">IOS</a>
+                        <a class="btn btn--ghost" href="#central-it">Central IT</a>
+                        <a class="btn btn--ghost" href="#basis">BASIS</a>
+                        <a class="btn btn--ghost" href="#transoft">Transoft</a>
+                        <a class="btn btn--ghost" href="#rhox">Rhox</a>
+                        <a class="btn btn--ghost" href="#softimais">Softimais</a>
+                        <a class="btn btn--ghost" href="#sesc">SESC</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <p>© 2026 — Hirlei Carlos</p>
-        <p class="small">Cases e Atuação • Currículo • Contatos na página inicial</p>
-    </footer>
+    <!-- EMPRESA ATUAL & FOCO TÉCNICO -->
+    <section class="section section--alt" aria-labelledby="atual-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Empresa atual, ecossistemas e foco técnico</p><h2 id="atual-h" class="section__title">Atuação, Ecossistemas &amp; Stack</h2></div>
+            </div>
+            <div class="projects-grid-2col">
+
+                <article class="proj proj--featured" id="ocb">
+                    <div class="proj__meta">
+                        <span class="proj__badge proj__badge--accent">Empresa atual</span>
+                        <span class="proj__badge">Cooperativismo</span>
+                    </div>
+                    <h3 class="proj__title">Sistema OCB — Ecossistema Cooperativista</h3>
+                    <p class="proj__sub">Empresa atual · 22+ portais em produção</p>
+                    <p class="proj__text">Portais institucionais, plataformas e iniciativas digitais do cooperativismo nacional. Migrações Joomla 4→5, padronização visual, sustentação técnica, extensões sob medida e governança de 22+ portais.</p>
+                    <div class="tags" style="margin-bottom:14px">
+                        <span class="tag tag--red">Joomla 4/5</span><span class="tag">28+ sites</span><span class="tag">Helix</span><span class="tag">SP Page Builder</span><span class="tag">Component Creator</span>
+                    </div>
+                    <ul class="proj__bullets">
+                        <li><strong>Portais nacionais:</strong> SomosCooperativismo, Somos.coop, InovaCoop, Central da Marca, Acesso (SSO)</li>
+                        <li><strong>Portais estaduais:</strong> AC, AL, AM, BA, CE, DF, MA, MS, MT, PA, PE, PR, RN, RS, SC, SE, TO</li>
+                        <li><strong>Atuação:</strong> migração, manutenção evolutiva, extensões e sustentação contínua</li>
+                    </ul>
+                    <div class="proj__actions">
+                        <a class="btn btn--primary" href="sistemaocb.html">Explorar ecossistema completo</a>
+                    </div>
+                </article>
+
+                <article class="proj" id="joomla">
+                    <div class="proj__meta">
+                        <span class="proj__badge proj__badge--accent">Stack central</span>
+                        <span class="proj__badge">Extensões</span>
+                    </div>
+                    <h3 class="proj__title">Engenharia Joomla — Extensões &amp; Integrações</h3>
+                    <p class="proj__sub">Base técnica da atuação atual</p>
+                    <p class="proj__text">Extensões reutilizáveis, plugins, módulos, componentes, templates e integrações sob medida em projetos open source e corporativos.</p>
+                    <div class="tags" style="margin-bottom:14px">
+                        <span class="tag tag--red">Plugins</span><span class="tag tag--red">Módulos</span><span class="tag tag--red">Componentes</span><span class="tag">REST APIs</span>
+                    </div>
+                    <ul class="proj__bullets">
+                        <li><strong>Foco:</strong> engenharia técnica e reaproveitamento de soluções</li>
+                        <li><strong>Atuação:</strong> desenvolvimento, manutenção e evolução</li>
+                    </ul>
+                    <div class="proj__actions">
+                        <a class="btn btn--primary" href="cmsjoomla.html">Ver engenharia Joomla</a>
+                    </div>
+                </article>
+
+
+                <article class="proj" id="ufg-eco">
+                    <div class="proj__meta">
+                        <span class="proj__badge">Educação</span>
+                        <span class="proj__badge">Universidade</span>
+                        <span class="proj__badge">13 sites</span>
+                    </div>
+                    <h3 class="proj__title">UFG — Ecossistema Universitário</h3>
+                    <p class="proj__sub">Universidade Federal de Goiás</p>
+                    <p class="proj__text">Sites institucionais, portais temáticos e sistema interno da UFG, com atuação em Joomla (Gantry + Fabrik) e WordPress + Elementor. Layout, padronização visual, manutenção evolutiva e sustentação.</p>
+                    <div class="tags" style="margin-bottom:14px">
+                        <span class="tag">Joomla</span><span class="tag">WordPress</span><span class="tag">Elementor</span><span class="tag">Fabrik</span><span class="tag">Gantry</span>
+                    </div>
+                    <ul class="proj__bullets">
+                        <li><strong>Sistema interno:</strong> PITT — Portal de Inovação e Transferência de Tecnologia</li>
+                        <li><strong>Portais temáticos:</strong> Planetário, Centro Cultural, Fotografe, Herbário, Museus, Revistas e outros</li>
+                        <li><strong>Portais institucionais:</strong> COTEC, CETT, EFG e Acervo ROTAS</li>
+                    </ul>
+                    <div class="proj__actions">
+                        <a class="btn btn--primary" href="ufg.html">Explorar ecossistema UFG</a>
+                    </div>
+                </article>
+
+                <article class="proj" id="servidor">
+                    <div class="proj__meta">
+                        <span class="proj__badge proj__badge--accent">Projeto técnico</span>
+                        <span class="proj__badge">Open Source</span>
+                        <span class="proj__badge">Infraestrutura</span>
+                    </div>
+                    <h3 class="proj__title">Docker Development Server</h3>
+                    <p class="proj__sub">Ambiente local autoral para desenvolvimento web</p>
+                    <p class="proj__text">Ambiente Docker com Apache, PHP multi-versão, SSL local, vHosts e Docker Compose para isolar projetos, padronizar setup e acelerar manutenção. Projeto autoral publicado no GitHub.</p>
+                    <div class="tags" style="margin-bottom:14px">
+                        <span class="tag tag--red">Docker Compose</span><span class="tag">Apache</span><span class="tag">PHP</span><span class="tag">SSL local</span><span class="tag">vHosts</span><span class="tag">Open Source</span>
+                    </div>
+                    <div class="proj__actions">
+                        <a class="btn btn--primary" href="https://github.com/hirleicarlos/docker-dev-server" target="_blank" rel="noopener">Ver no GitHub</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS EM PRODUÇÃO -->
+    <section class="section section--white" aria-labelledby="cases-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Cases autorais</p><h2 id="cases-h" class="section__title">Projetos Isolados</h2></div>
+            </div>
+            <div class="projects-grid-3col">
+
+                <article class="proj" id="pousada">
+                    <div class="proj__meta"><span class="proj__badge">Hotelaria</span><span class="proj__badge">Site &amp; Reservas</span></div>
+                    <div class="proj__img"><img src="../assets/img/case/pousada-licor-de-caju.webp" alt="Pousada Licor de Caju" loading="lazy"></div>
+                    <h3 class="proj__title">Pousada Licor de Caju</h3>
+                    <p class="proj__text">Site institucional e sistema de reservas para pousada. Desenvolvimento completo com Joomla, visual personalizado e integração de módulo de reservas online.</p>
+                    <div class="tags" style="margin-bottom:14px"><span class="tag">Joomla</span><span class="tag">PHP</span><span class="tag">Reservas</span></div>
+                    <div class="proj__actions"><a class="btn btn--primary" href="https://www.pousadalicordecaju.com.br/" target="_blank" rel="noopener">Visitar site →</a></div>
+                </article>
+
+                <article class="proj" id="examerapido">
+                    <div class="proj__meta"><span class="proj__badge">Saúde</span><span class="proj__badge">Agendamento</span></div>
+                    <div class="proj__img"><img src="../assets/img/case/examerapido.webp" alt="Exame Rápido" loading="lazy"></div>
+                    <h3 class="proj__title">Exame Rápido</h3>
+                    <p class="proj__text">Plataforma de agendamento de consultas e exames. Sistema completo com gestão de horários, pacientes e notificações em PHP e Joomla.</p>
+                    <div class="tags" style="margin-bottom:14px"><span class="tag">Joomla</span><span class="tag">PHP</span><span class="tag">Agendamento</span></div>
+                    <div class="proj__actions"><a class="btn btn--primary" href="https://www.examerapido.com/br/" target="_blank" rel="noopener">Visitar site →</a></div>
+                </article>
+
+                <article class="proj" id="icap">
+                    <div class="proj__meta"><span class="proj__badge">Educação</span><span class="proj__badge">Portal</span></div>
+                    <div class="proj__img"><img src="../assets/img/case/icap.webp" alt="ICAP Instituto" loading="lazy"></div>
+                    <h3 class="proj__title">ICAP — Instituto de Cursos e Aprendizagem Profissional</h3>
+                    <p class="proj__text">Portal educacional com catálogo de cursos, área do aluno e gestão de matrículas. Desenvolvido em Joomla com extensões customizadas.</p>
+                    <div class="tags" style="margin-bottom:14px"><span class="tag">Joomla</span><span class="tag">PHP</span><span class="tag">Educação</span></div>
+                    <div class="proj__actions"><a class="btn btn--primary" href="https://icapinstituto.com.br" target="_blank" rel="noopener">Visitar site →</a></div>
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIÊNCIA CORPORATIVA -->
+    <section class="section section--alt" aria-labelledby="corp-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Trajetória</p><h2 id="corp-h" class="section__title">Experiência Corporativa</h2></div>
+                <a class="section__more" href="resume.html">Ver currículo completo</a>
+            </div>
+            <div class="companies-grid">
+
+                <div class="company-card" id="bancoob">
+                    <div class="company-card__header">
+                        <div class="company-card__name">Bancoob</div>
+                        <div class="company-card__date">dez/2013 – dez/2017 · 4 anos</div>
+                    </div>
+                    <div class="company-card__role">Analista Desenvolvedor Web</div>
+                    <p class="company-card__desc">Portais Joomla, extensões sob medida, FormDin, Zend, CakePHP, MySQL, PostgreSQL e Oracle.</p>
+                    <div class="company-card__tags"><span class="tag">Joomla</span><span class="tag">PHP</span><span class="tag">CakePHP</span><span class="tag">MySQL</span><span class="tag">Oracle</span></div>
+                </div>
+
+                <div class="company-card" id="pol">
+                    <div class="company-card__header">
+                        <div class="company-card__name">POL — Sistemas Jurídicos e Integrações</div>
+                        <div class="company-card__date">out/2020 – jun/2023</div>
+                    </div>
+                    <div class="company-card__role">Analista Desenvolvedor Sênior</div>
+                    <p class="company-card__desc">PHP, PostgreSQL, módulos personalizados, integração com robôs e APIs em framework proprietário.</p>
+                    <div class="company-card__tags"><span class="tag">PHP</span><span class="tag">PostgreSQL</span><span class="tag">APIs</span></div>
+                </div>
+
+
+                <div class="company-card" id="ios">
+                    <div class="company-card__header">
+                        <div class="company-card__name">IOS — Informática, Organização e Sistemas</div>
+                        <div class="company-card__date">abr/2018 – dez/2018 · 9 meses</div>
+                    </div>
+                    <div class="company-card__role">Analista Desenvolvedor Web</div>
+                    <p class="company-card__desc">Joomla, PHP, RPA (Automation Anywhere), APEX, Oracle, JasperReports.</p>
+                    <div class="company-card__tags"><span class="tag">Joomla</span><span class="tag">PHP</span><span class="tag">RPA</span><span class="tag">Oracle</span></div>
+                </div>
+
+                <div class="company-card" id="central-it">
+                    <div class="company-card__header">
+                        <div class="company-card__name">Central IT — Governança Corporativa</div>
+                        <div class="company-card__date">jun/2020 – set/2020 · 4 meses</div>
+                    </div>
+                    <div class="company-card__role">Analista Desenvolvedor Pleno</div>
+                    <p class="company-card__desc">Suporte ao SEI para órgãos públicos: módulo de estatística, barramento e protocolo integrado.</p>
+                    <div class="company-card__tags"><span class="tag">PHP</span><span class="tag">SEI</span><span class="tag">Gov</span></div>
+                </div>
+
+                <div class="company-card" id="basis">
+                    <div class="company-card__header">
+                        <div class="company-card__name">BASIS — Portais e Sistemas em Joomla</div>
+                        <div class="company-card__date">mar/2019 – jun/2019 · 3 meses</div>
+                    </div>
+                    <div class="company-card__role">Analista Desenvolvedor Web</div>
+                    <p class="company-card__desc">PHP, MySQL, Joomla, jQuery, CSS, JavaScript e Bootstrap.</p>
+                    <div class="company-card__tags"><span class="tag">Joomla</span><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+                </div>
+
+                <div class="company-card" id="transoft">
+                    <div class="company-card__header">
+                        <div class="company-card__name">Transoft Tecnologia da Informação</div>
+                        <div class="company-card__date">abr/2012 – dez/2012 · 9 meses</div>
+                    </div>
+                    <div class="company-card__role">Analista de Sistemas</div>
+                    <p class="company-card__desc">Sistemas para transporte: financeiro, RH, ponto, escala e contábil.</p>
+                    <div class="company-card__tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Sistemas</span></div>
+                </div>
+
+                <div class="company-card" id="rhox">
+                    <div class="company-card__header">
+                        <div class="company-card__name">Rhox Redes Corporativas</div>
+                        <div class="company-card__date">jan/2011 – jul/2011 · 7 meses</div>
+                    </div>
+                    <div class="company-card__role">Analista Desenvolvedor Web</div>
+                    <p class="company-card__desc">PHP, CakePHP, MySQL, jQuery, Bootstrap.</p>
+                    <div class="company-card__tags"><span class="tag">PHP</span><span class="tag">CakePHP</span><span class="tag">MySQL</span></div>
+                </div>
+
+                <div class="company-card" id="softimais">
+                    <div class="company-card__header">
+                        <div class="company-card__name">Softimais — Sistemas e Portais</div>
+                        <div class="company-card__date">2010 – 2011</div>
+                    </div>
+                    <div class="company-card__role">Analista Desenvolvedor Web</div>
+                    <p class="company-card__desc">Desenvolvimento de sistemas e portais web em PHP. Criação e manutenção de sistemas internos para clientes.</p>
+                    <div class="company-card__tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">jQuery</span></div>
+                </div>
+
+                <div class="company-card" id="sesc">
+                    <div class="company-card__header">
+                        <div class="company-card__name">SESC — Serviço Social do Comércio · DF</div>
+                        <div class="company-card__date">abr/2001 – jun/2010 · 9 anos e 3 meses</div>
+                    </div>
+                    <div class="company-card__role">Técnico em Contabilidade</div>
+                    <p class="company-card__desc">Contabilidade, conciliação bancária. PHP e MySQL conforme demandas internas. Início da jornada em desenvolvimento.</p>
+                    <div class="company-card__tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Contabilidade</span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIS INFORMAÇÕES -->
+    <section class="section section--white" aria-labelledby="mais-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Acesso rápido</p><h2 id="mais-h" class="section__title">Mais Informações</h2></div>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3 class="info-card__title">Currículo completo</h3>
+                    <p class="info-card__desc">Histórico profissional detalhado, experiências por empresa, competências técnicas e formação acadêmica.</p>
+                    <div class="info-card__actions">
+                        <a class="btn btn--primary" href="resume.html">Abrir currículo</a>
+                        <a class="btn btn--ghost" href="../assets/file/Curriculo_Hirlei_Carlos_RH.pdf" target="_blank" rel="noopener">↓ Baixar PDF</a>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3 class="info-card__title">GitHub</h3>
+                    <p class="info-card__desc">Repositórios públicos, projetos técnicos, extensões Joomla open source e o Docker Development Server.</p>
+                    <div class="info-card__actions">
+                        <a class="btn btn--primary" href="https://github.com/hirleicarlos" target="_blank" rel="noopener">Acessar GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </main>
 
-<script src="../assets/js/masonry.js"></script>
-
+<footer class="site-footer">
+    <div class="wrap site-footer__inner">
+        <a href="../index.html" class="site-footer__brand" aria-label="Hirlei Carlos — Início">
+            <img src="../assets/img/site/icon_hirlei.svg" alt="Ícone Hirlei Carlos" style="height:26px;width:auto;">
+            <span>Hirlei <em>Carlos</em></span>
+        </a>
+        <nav class="site-footer__nav" aria-label="Links do rodapé">
+            <a href="../index.html">Início</a>
+            <a href="projects.html">Cases</a>
+            <a href="resume.html">Currículo</a>
+            <a href="articles.html">Artigos</a>
+            <a href="https://github.com/hirleicarlos" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+        <span class="site-footer__copy">© 2026 Hirlei Carlos</span>
+    </div>
+</footer>
+<script src="../assets/js/nav.js"></script>
 </body>
 </html>

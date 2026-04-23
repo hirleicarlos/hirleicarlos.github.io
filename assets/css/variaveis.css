@@ -1,43 +1,75 @@
+/* =====================================================
+   VARIAVEIS.CSS
+   Tokens de design. Importado por todos os CSS.
+   Não contém regras de componentes ou layout.
+   Hirlei Carlos · 2026
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Inter:wght@300;400;500;600&display=swap');
+
 :root {
-    --bg: #070b14;
 
-    --surface: rgba(255, 255, 255, 0.035);
-    --surface2: rgba(255, 255, 255, 0.055);
+    /* ── Marca ── */
+    --red: #C41E20;
+    --red-dark: #8B1010;
+    --red-bg: rgba(196, 30, 32, 0.07);
+    --red-border: rgba(196, 30, 32, 0.20);
+    --red-shadow: 0 8px 24px rgba(196, 30, 32, 0.22);
 
-    --surface-soft: rgba(255, 255, 255, 0.03);
-    --surface-strong: rgba(255, 255, 255, 0.04);
+    /* ── Neutros ── */
+    --bg: #F5F4F0;
+    --bg2: #ECEAE5;
+    --white: #FFFFFF;
+    --dark: #0F0F0F;
+    --dark2: #1C1C1C;
 
-    --text-strong: rgba(255, 255, 255, 0.95);
+    /* ── Texto ── */
+    --text: #111111;
+    --text2: #333333;
+    --muted: #6B6B6B;
+    --muted2: #9E9E9E;
 
-    --accent-surface: rgba(134, 174, 252, 0.12);
-    --accent-border-strong: rgba(134, 174, 252, 0.35);
+    /* ── Bordas ── */
+    --border: rgba(0, 0, 0, 0.08);
+    --border2: rgba(0, 0, 0, 0.14);
+    --border3: rgba(0, 0, 0, 0.24);
 
-    --eyebrow-size: 11px;
-    --resume-headline-max: 1370px;
+    /* ── Sombras ── */
+    --sh-sm: 0 1px 4px rgba(0, 0, 0, .06), 0 1px 2px rgba(0, 0, 0, .04);
+    --sh: 0 4px 16px rgba(0, 0, 0, .08), 0 1px 4px rgba(0, 0, 0, .05);
+    --sh-lg: 0 12px 40px rgba(0, 0, 0, .10), 0 2px 8px rgba(0, 0, 0, .06);
 
-    --text: rgba(255, 255, 255, 0.92);
-    --muted: rgba(255, 255, 255, 0.70);
-    --muted2: rgba(255, 255, 255, 0.58);
+    /* ── Tipografia ── */
+    --font-title: 'Roboto', system-ui, sans-serif; /* títulos, labels, nav */
+    --font-body: 'Inter', system-ui, sans-serif; /* corpo, parágrafos    */
 
-    --border: rgba(255, 255, 255, 0.10);
-    --border2: rgba(255, 255, 255, 0.16);
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
 
-    --accent: #86aefc;
-    --accent2: #78ffd0;
+    /* ── Escala tipográfica ── */
+    --text-xs: 11px;
+    --text-sm: 12px;
+    --text-base: 14px;
+    --text-md: 15px;
+    --text-lg: 17px;
+    --text-xl: 20px;
+    --text-2xl: clamp(20px, 2.2vw, 26px);
+    --text-3xl: clamp(26px, 3.2vw, 40px);
+    --text-hero: clamp(36px, 5vw, 58px);
 
-    --shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
-    --shadowInset: 0 1px 0 rgba(255, 255, 255, 0.03) inset;
+    /* ── Raio ── */
+    --r-xs: 6px;
+    --r-sm: 10px;
+    --r: 14px;
+    --r-lg: 20px;
+    --r-xl: 28px;
 
-    --radius: 16px;
-    --radius2: 12px;
+    /* ── Layout ── */
+    --maxw: 1320px;
+    --nav-h: 62px;
 
-    --maxw: 1370px;
-
-    --h1: clamp(30px, 3vw, 46px);
-    --h2: 15px;
-    --h3: 16px;
-    --p: 14px;
-
-    --anchorOffset: 18px;
-    --masonryRow: 10px;
 }

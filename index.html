@@ -1,598 +1,608 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-    <title>Hirlei Carlos | Página Inicial</title>
-    <meta name="description" content="Hirlei Carlos Pereira de Araújo — Desenvolvedor Full Stack Sênior | PHP &amp; Joomla | Portais e Sistemas em Escala | Governo, Cooperativismo e Educação. Currículo, cases, artigos e contato."/>
-
-    <meta property="og:title" content="Hirlei Carlos Pereira de Araújo — Desenvolvedor Full Stack Sênior | PHP &amp; Joomla | Portais e Sistemas em Escala | Governo, Cooperativismo e Educação"/>
-    <meta property="og:description"
-          content="Arquitetura e evolução de portais institucionais e sistemas web em PHP & Joomla — do requisito à sustentação, com foco em escala, estabilidade e resultado."/>
-    <meta property="og:type" content="website"/>
-
-    <link rel="stylesheet" href="assets/css/variaveis.css"/>
-    <link rel="stylesheet" href="assets/css/default.css"/>
-    <link rel="stylesheet" href="assets/css/home.css"/>
-
-    <link rel="icon" href="assets/img/favicon.ico" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hirlei Carlos | Desenvolvedor Full Stack Sênior — PHP &amp; Joomla</title>
+    <meta name="description"
+          content="Hirlei Carlos Pereira de Araújo — Desenvolvedor Full Stack Sênior em PHP &amp; Joomla. 13+ anos, 60+ portais entregues. Governo, Cooperativismo e Educação.">
+    <meta property="og:title" content="Hirlei Carlos — Desenvolvedor Full Stack Sênior | PHP &amp; Joomla">
+    <meta property="og:description" content="Arquitetura e evolução de portais institucionais em PHP &amp; Joomla. 13+ anos, 60+ entregas.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/img/site/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="assets/img/site/icon_hirlei.svg">
+    <link rel="stylesheet" href="assets/css/variaveis.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 </head>
-
-<body class="home">
+<body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-<header class="hero">
-    <div class="wrap">
-        <h1 class="name">Hirlei Carlos Pereira de Araújo</h1>
+<!-- ═══════ NAVBAR ═══════ -->
+<nav class="navbar" id="navbar" aria-label="Navegação principal">
+    <div class="wrap navbar__inner">
 
-        <p class="headline">
-            Arquitetura e evolução de <strong>portais institucionais</strong> e <strong>sistemas web</strong>
-            em <strong>PHP &amp; Joomla</strong> — do requisito à sustentação, com foco em escala, estabilidade e resultado.<br/>
-            Desenvolvedor Full Stack Sênior | PHP &amp; Joomla | Portais e Sistemas em Escala |
-            Governo, Cooperativismo e Educação
-        </p>
+        <!-- Logo SVG -->
+        <a class="navbar__logo" href="index.html" aria-label="Hirlei Carlos — Página inicial">
+            <img src="assets/img/site/logo_hirlei.svg" alt="Hirlei Carlos">
+        </a>
 
-        <p class="sub">Águas Claras, Distrito Federal, Brasil</p>
-
-        <div class="actions">
-            <a class="btn btn-accent" href="html/projects.html">Cases e Atuação</a>
-            <a class="btn btn-ghost" href="html/resume.html">Ver Currículo</a>
-            <a class="btn btn-ghost" href="html/articles.html">Artigos</a>
-            <a class="btn btn-ghost" href="assets/file/Curriculo_Hirlei_Carlos_RH.pdf" target="_blank" rel="noopener">Baixar CV (PDF)</a>
-            <a class="btn btn-ghost" href="https://github.com/hirleicarlos" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn btn-ghost" href="#contato">Contato</a>
+        <!-- Links -->
+        <div class="navbar__links" id="navbar-links">
+            <!-- Ícone Home -->
+            <a href="index.html" class="home-link" aria-label="Início" title="Início">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                Início
+            </a>
+            <a href="html/projects.html">Cases &amp; Atuação</a>
+            <a href="html/resume.html">Currículo</a>
+            <a href="html/articles.html">Artigos</a>
+            <a href="#contato">Contato</a>
         </div>
 
-        <div class="hero-highlight">
-            <p>
-                <strong>Emprego atual:</strong> Sistema OCB, com foco em ecossistemas institucionais, evolução de portais em Joomla,
-                sustentação técnica e padronização. Em paralelo, mantenho projetos autorais de engenharia Joomla e infraestrutura local com Docker.
-            </p>
+        <div class="navbar__right">
+            <a class="navbar__cv" href="assets/file/Curriculo_Hirlei_Carlos_RH.pdf" target="_blank" rel="noopener">
+                ↓ Baixar CV
+            </a>
+            <button class="navbar__toggle" id="navbar-toggle" aria-expanded="false" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+    </div>
+</nav>
+
+<!-- ═══════ HERO ═══════ -->
+<header class="hero">
+    <div class="wrap">
+        <div class="hero__grid">
+            <div>
+                <p class="hero__eyebrow">Desenvolvedor Full Stack Sênior</p>
+                <h1 class="hero__name">Hirlei Carlos<em>Pereira de Araújo</em></h1>
+                <p class="hero__desc">
+                    Arquitetura e evolução de <strong>portais institucionais</strong> e <strong>sistemas web</strong> em <strong>PHP &amp; Joomla</strong> — do requisito à
+                    sustentação, com foco em escala, estabilidade e resultado.
+                </p>
+                <div class="hero__numbers" aria-label="Indicadores de carreira">
+                    <div class="hero__num">
+                        <span class="hero__num-val">13+</span>
+                        <span class="hero__num-lbl">anos de experiência</span>
+                    </div>
+                    <div class="hero__num">
+                        <span class="hero__num-val">60+</span>
+                        <span class="hero__num-lbl">portais entregues</span>
+                    </div>
+                    <div class="hero__num">
+                        <span class="hero__num-val">3</span>
+                        <span class="hero__num-lbl">setores de atuação</span>
+                    </div>
+                    <div class="hero__num">
+                        <span class="hero__num-val">5+</span>
+                        <span class="hero__num-lbl">anos docência universitária</span>
+                    </div>
+                </div>
+                <!-- SEM botões aqui — navegação já está no menu -->
+            </div>
+            <aside class="hero__aside" aria-label="Perfil">
+                <div class="photo-box">
+                    <img src="assets/img/hirlei.jpg" alt="Hirlei Carlos Pereira de Araújo — Desenvolvedor Full Stack Sênior">
+                </div>
+                <div class="status-badge">
+                    <div class="status-badge__dot" aria-hidden="true"></div>
+                    <div class="status-badge__info">
+                        <strong>Aberto a oportunidades</strong>
+                        <span>Sistema OCB · Brasília, DF</span>
+                    </div>
+                </div>
+            </aside>
         </div>
     </div>
 </header>
 
-<main id="conteudo" class="wrap content">
+<!-- ═══════ TECH STRIP ═══════ -->
+<div class="tech-strip" aria-label="Stack principal">
+    <div class="wrap tech-strip__inner">
+        <div class="tech-strip__item"><span class="tech-strip__val">PHP</span><span class="tech-strip__lbl">Desde 2001</span></div>
+        <div class="tech-strip__item"><span class="tech-strip__val">Joomla 4/5/6</span><span class="tech-strip__lbl">Desde 2013</span></div>
+        <div class="tech-strip__item"><span class="tech-strip__val">Requisitos</span><span class="tech-strip__lbl">Análise</span></div>
+        <div class="tech-strip__item"><span class="tech-strip__val">Docker</span><span class="tech-strip__lbl">Infra &amp; Dev</span></div>
+        <div class="tech-strip__item"><span class="tech-strip__val">React Native</span><span class="tech-strip__lbl">Mobile</span></div>
+        <div class="tech-strip__item"><span class="tech-strip__val">MySQL · MariaDB</span><span class="tech-strip__lbl">Banco de dados</span></div>
+    </div>
+</div>
 
-    <section class="section">
-        <h2>O que eu entrego</h2>
+<main id="conteudo">
 
-        <p>
-            Atuo do <strong>levantamento de requisitos</strong> à <strong>entrega</strong> e
-            <strong>sustentação</strong> de portais e sistemas. Desenvolvo soluções em
-            <strong>Joomla</strong> e <strong>WordPress</strong>, crio
-            <strong>funcionalidades sob medida</strong>, realizo
-            <strong>integrações</strong> e <strong>migração de dados</strong>,
-            sempre com foco em arquitetura organizada, manutenção evolutiva e previsibilidade.
-        </p>
-
-        <div class="chips" style="margin-top:12px;">
-            <span class="chip">Joomla 4/5</span>
-            <span class="chip">PHP</span>
-            <span class="chip">Portais institucionais</span>
-            <span class="chip">Sistemas corporativos</span>
-            <span class="chip">Integrações / APIs</span>
-            <span class="chip">Migração de plataformas</span>
-            <span class="chip">Manutenção evolutiva</span>
-        </div>
-    </section>
-
-    <section class="section" aria-label="Indicadores">
-        <h2>Indicadores</h2>
-
-        <div class="stats-cards">
-            <div class="card stat-card">
-                <div class="stat-label">Experiência</div>
-                <div class="stat-value">13+ anos</div>
+    <!-- ═══════ DESTAQUES ═══════ -->
+    <section class="section section--white" aria-labelledby="destaques-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Trabalhos recentes</p>
+                    <h2 id="destaques-h" class="section__title">Destaques &amp; Atuação</h2></div>
+                <a class="section__more" href="html/projects.html">Ver todos os cases</a>
             </div>
-
-            <div class="card stat-card">
-                <div class="stat-label">Stack principal</div>
-                <div class="stat-value">PHP • Joomla</div>
-            </div>
-
-            <div class="card stat-card">
-                <div class="stat-label">Portais &amp; sistemas</div>
-                <div class="stat-value">60+ entregas</div>
-            </div>
-
-            <div class="card stat-card stat-total">
-                <div class="stat-label">Ecossistemas</div>
-                <div class="stat-value">Coop • Edu • Gov</div>
-            </div>
-        </div>
-
-        <p class="small" style="margin-top:10px;">
-            *Números apresentados como recortes do portfólio. Alguns detalhes podem ser limitados por NDA.
-        </p>
-    </section>
-
-    <section class="section" aria-label="Destaques principais">
-        <h2>Destaques principais</h2>
-
-        <div class="feature-grid">
-            <article class="card feature-card card-primary">
-                <div class="feature-kicker">Empresa atual</div>
-                <h3 class="card-title">Sistema OCB</h3>
-                <p class="card-text">
-                    Atuação em ambiente corporativo com múltiplos portais, sustentação, evolução contínua,
-                    padronização e governança de soluções em Joomla/PHP.
-                </p>
-                <div class="chips" style="margin-top:12px;">
-                    <span class="chip">Cooperativismo</span>
-                    <span class="chip">Portais em escala</span>
-                    <span class="chip">Sustentação</span>
-                    <span class="chip">Joomla</span>
-                </div>
-                <div class="actions" style="margin-top:14px;">
-                    <a class="btn" href="html/sistemaocb.html">Ver atuação</a>
-                </div>
-            </article>
-
-            <article class="card feature-card">
-                <div class="feature-kicker">Especialidade</div>
-                <h3 class="card-title">Engenharia Joomla</h3>
-                <p class="card-text">
-                    Desenvolvimento de extensões, integrações, manutenção evolutiva, compatibilidade entre versões
-                    e soluções sob medida para portais e sistemas web.
-                </p>
-                <div class="chips" style="margin-top:12px;">
-                    <span class="chip">Plugins</span>
-                    <span class="chip">Módulos</span>
-                    <span class="chip">Componentes</span>
-                    <span class="chip">APIs</span>
-                </div>
-                <div class="actions" style="margin-top:14px;">
-                    <a class="btn" href="html/cmsjoomla.html">Ver engenharia Joomla</a>
-                </div>
-            </article>
-
-            <article class="card feature-card">
-                <div class="feature-kicker">Projeto técnico</div>
-                <h3 class="card-title">Docker Development Server</h3>
-                <p class="card-text">
-                    Ambiente local para desenvolvimento web com Docker, Apache, PHP e SSL,
-                    pensado para isolar projetos, padronizar setup e acelerar manutenção.
-                </p>
-
-                <div class="chips" style="margin-top:12px;">
-                    <span class="chip">Docker Compose</span>
-                    <span class="chip">Apache</span>
-                    <span class="chip">PHP</span>
-                    <span class="chip">SSL local</span>
-                    <span class="chip">vHosts</span>
-                    <span class="chip">GitHub</span>
-                </div>
-
-                <div class="actions" style="margin-top:14px;">
-                    <a class="btn" href="html/projects.html#servidor">Ver case</a>
-                    <a class="btn btn-ghost" href="https://github.com/hirleicarlos/docker-dev-server" target="_blank" rel="noopener">Repositório</a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>Acesso rápido</h2>
-
-        <div class="grid-2">
-            <div class="card card-primary">
-                <h3 class="card-title">Cases e atuação</h3>
-                <p class="card-text">
-                    Portfólio em formato de cases: contexto, entregas e tecnologias.
-                    Ecossistemas por setor, projetos autorais e infraestrutura.
-                </p>
-                <div class="actions">
-                    <a class="btn" href="html/projects.html">Explorar cases</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">Currículo</h3>
-                <p class="card-text">
-                    Histórico profissional detalhado, experiências por empresa,
-                    competências técnicas e formação acadêmica.
-                </p>
-                <div class="actions">
-                    <a class="btn" href="html/resume.html">Ver currículo completo</a>
-                </div>
+            <div class="highlights">
+                <article class="hl hl--featured">
+                    <p class="card__kicker">Empresa atual</p>
+                    <h3 class="card__title">Sistema OCB</h3>
+                    <p class="card__text">Atuação com múltiplos portais institucionais, sustentação técnica, evolução contínua, padronização e governança em Joomla / PHP no
+                        ecossistema do cooperativismo nacional.</p>
+                    <div class="tags hl__tags">
+                        <span class="tag">Cooperativismo</span>
+                        <span class="tag">Portais em escala</span>
+                        <span class="tag">Joomla 5</span>
+                        <span class="tag">Sustentação</span>
+                    </div>
+                    <a class="hl__arrow" href="html/sistemaocb.html">Ver atuação completa</a>
+                </article>
+                <article class="hl">
+                    <p class="card__kicker">Especialidade</p>
+                    <h3 class="card__title">Engenharia Joomla</h3>
+                    <p class="card__text">Extensões sob medida, integrações REST, manutenção evolutiva, compatibilidade entre versões e soluções para portais complexos.</p>
+                    <div class="tags hl__tags">
+                        <span class="tag tag--red">Plugins</span>
+                        <span class="tag tag--red">Módulos</span>
+                        <span class="tag tag--red">APIs REST</span>
+                    </div>
+                    <a class="hl__arrow" href="html/cmsjoomla.html">Ver engenharia Joomla</a>
+                </article>
+                <article class="hl">
+                    <p class="card__kicker">Projeto técnico</p>
+                    <h3 class="card__title">Docker Dev Server</h3>
+                    <p class="card__text">Ambiente local com Docker, Apache, PHP e SSL — projetos isolados, setup padronizado e manutenção acelerada. Open source.</p>
+                    <div class="tags hl__tags">
+                        <span class="tag tag--red">Docker Compose</span>
+                        <span class="tag tag--red">Open Source</span>
+                    </div>
+                    <a class="hl__arrow" href="html/projects.html#servidor">Ver case</a>
+                </article>
             </div>
         </div>
     </section>
 
-    <section class="section" aria-label="Destaques">
-        <h2>Projetos isolados</h2>
-
-        <div class="card card-primary">
-            <h3 class="card-title">Cases autorais</h3>
-
-            <p class="card-text">
-                Projetos com narrativa própria, escopo fechado e identidade independente.
-                Aqui entram cases de produto, cliente e infraestrutura.
-            </p>
-
-            <div class="projects-mini-grid" data-random="false" data-limit="10">
-                <a class="mini" href="html/projects.html#servidor">
-                    <strong>Docker Development Server</strong>
-                    <span>Ambiente local com Apache, PHP e SSL</span>
-                </a>
-
-                <a class="mini" href="html/projects.html#pousada">
-                    <strong>Pousada Licor de Caju</strong>
-                    <span>Site &amp; Sistema de Reservas</span>
-                </a>
-
-                <a class="mini" href="html/projects.html#examerapido">
-                    <strong>Exame Rápido</strong>
-                    <span>Agendamento de Consultas/Exames</span>
-                </a>
-
-                <a class="mini" href="html/projects.html#icap">
-                    <strong>ICAP Instituto</strong>
-                    <span>Portal Educacional &amp; Cursos</span>
-                </a>
+    <!-- ═══════ PROJETOS ISOLADOS ═══════ -->
+    <section class="section section--alt" aria-labelledby="projetos-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Cases autorais</p>
+                    <h2 id="projetos-h" class="section__title">Projetos Isolados</h2></div>
+                <a class="section__more" href="html/projects.html">Ver portfólio completo</a>
             </div>
+            <p class="projetos-desc">Projetos com narrativa própria, escopo fechado e identidade independente — cases de produto, cliente e infraestrutura desenvolvidos de
+                forma autoral.</p>
+            <div class="projetos-grid">
 
-            <div class="actions" style="margin-top:18px;">
-                <a class="btn" href="html/projects.html">Ver todos os projetos</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" aria-label="Artigos e newsletter">
-        <h2>Artigos &amp; Newsletter</h2>
-
-        <div class="card card-primary">
-            <p class="card-text">
-                Espaço para acompanhar meus artigos e a newsletter <strong>Dev &amp; Versos</strong>.
-                Um lugar para tecnologia, reflexões, aprendizados e também versos.
-            </p>
-
-            <div class="articles-home-grid" style="margin-top:18px;">
-
-                <article class="card article-home-card">
-                    <figure class="project-media">
-                        <img src="assets/img/artigos/NewsletterDev&Versos_2.png" alt="Dev & Versos">
-                    </figure>
-
-                    <div class="feature-kicker">Newsletter</div>
-
-                    <h3 class="card-title article-title-clamp">Dev &amp; Versos</h3>
-
-                    <p class="card-text article-text-clamp">
-                        Conteúdos reais sobre desenvolvimento, carreira, decisões e experiências do dia a dia.
-                    </p>
-
-                    <div class="actions">
-                        <a class="btn btn-accent"
-                           href="https://www.linkedin.com/newsletters/7444040790156419072/?displayConfirmation=true"
-                           target="_blank" rel="noopener">
-                            Seguir newsletter
-                        </a>
-
-                        <a class="btn btn-ghost"
-                           href="html/articles.html">
-                            Ver artigos
-                        </a>
+                <article class="projeto-card projeto-card--vago">
+                    <div class="projeto-card__top">
+                        <span class="projeto-card__badge">Em desenvolvimento</span>
+                    </div>
+                    <h3 class="projeto-card__title">Lanner Especialidades</h3>
+                    <p class="projeto-card__desc">Portal institucional para clínica de especialidades médicas. Presença digital completa — em construção.</p>
+                    <div class="projeto-card__tags">
+                        <span class="tag">Joomla</span><span class="tag">PHP</span><span class="tag">Saúde</span>
                     </div>
                 </article>
 
-                <!-- ARTIGO #4 (NOVO) -->
-                <article class="card article-home-card">
-
-                    <figure class="project-media">
-                        <img src="assets/img/artigos/DEV_&_Versos_4_2026.png" alt="HTML semântico">
-                    </figure>
-
-                    <div class="feature-kicker">DEV &amp; Versos #4/2026</div>
-
-                    <h3 class="card-title article-title-clamp">
-                        🧱 HTML semântico: da bagunça das divs à estrutura correta
-                    </h3>
-
-                    <p class="card-text article-text-clamp">
-                        Entenda como sair do uso excessivo de divs e construir páginas com semântica, organização e propósito.
-                    </p>
-
-                    <div class="actions">
-                        <a class="btn btn-ghost"
-                           href="https://www.linkedin.com/pulse/dev-versos-42026-html-sem%C3%A2ntico-da-bagun%C3%A7a-das-divs-%C3%A0-hirlei-carlos-ravxf"
-                           target="_blank" rel="noopener">
-                            Ver artigo
-                        </a>
+                <article class="projeto-card">
+                    <div class="projeto-card__top">
+                        <span class="projeto-card__badge projeto-card__badge--ativo">Ativo</span>
                     </div>
-
+                    <h3 class="projeto-card__title">Pousada Licor de Caju</h3>
+                    <p class="projeto-card__desc">Site institucional e sistema de reservas. Desenvolvimento completo com Joomla e visual personalizado.</p>
+                    <div class="projeto-card__tags">
+                        <span class="tag">Joomla</span><span class="tag">PHP</span><span class="tag">Reservas</span>
+                    </div>
                 </article>
 
-                <article class="card article-home-card">
-
-                    <figure class="project-media">
-                        <img src="assets/img/artigos/DEV_&_Versos_3_2026.png" alt="HTML não é linguagem de programação">
-                    </figure>
-
-                    <div class="feature-kicker">DEV &amp; Versos #3/2026</div>
-
-                    <h3 class="card-title article-title-clamp">
-                        🌐 HTML não é linguagem de programação — e entender isso muda tudo
-                    </h3>
-
-                    <p class="card-text article-text-clamp">
-                        Entenda o papel real do HTML na web e por que isso separa quem só monta tela de quem constrói de verdade.
-                    </p>
-
-                    <div class="actions">
-                        <a class="btn btn-ghost"
-                           href="https://www.linkedin.com/pulse/dev-versos-32026-html-n%C3%A3o-%C3%A9-linguagem-de-programa%C3%A7%C3%A3o-hirlei-carlos-dyddf"
-                           target="_blank" rel="noopener">
-                            Ver artigo
-                        </a>
+                <article class="projeto-card">
+                    <div class="projeto-card__top">
+                        <span class="projeto-card__badge projeto-card__badge--ativo">Ativo</span>
                     </div>
-
+                    <h3 class="projeto-card__title">Exame Rápido</h3>
+                    <p class="projeto-card__desc">Plataforma de agendamento de consultas e exames com gestão de horários e pacientes.</p>
+                    <div class="projeto-card__tags">
+                        <span class="tag">Joomla</span><span class="tag">PHP</span><span class="tag">Agendamento</span>
+                    </div>
                 </article>
 
-                <article class="card article-home-card">
-
-                    <figure class="project-media">
-                        <img src="assets/img/artigos/DEV_&_Versos_2_2026.png" alt="Front-end não é só interface">
-                    </figure>
-
-                    <div class="feature-kicker">DEV &amp; Versos #2/2026</div>
-
-                    <h3 class="card-title article-title-clamp">
-                        🚀 Front-end não é só interface. É onde o código vira experiência
-                    </h3>
-
-                    <p class="card-text article-text-clamp">
-                        Front-end vai além da tela: é performance, interação e experiência real do usuário.
-                    </p>
-
-                    <div class="actions">
-                        <a class="btn btn-ghost"
-                           href="https://www.linkedin.com/pulse/dev-versos-22026-front-end-n%C3%A3o-%C3%A9-s%C3%B3-interface-onde-o-hirlei-carlos-6b8nf"
-                           target="_blank" rel="noopener">
-                            Ver artigo
-                        </a>
+                <article class="projeto-card">
+                    <div class="projeto-card__top">
+                        <span class="projeto-card__badge projeto-card__badge--ativo">Ativo</span>
                     </div>
-
+                    <h3 class="projeto-card__title">ICAP Instituto</h3>
+                    <p class="projeto-card__desc">Portal educacional com catálogo de cursos, área do aluno e gestão de matrículas.</p>
+                    <div class="projeto-card__tags">
+                        <span class="tag">Joomla</span><span class="tag">PHP</span><span class="tag">Educação</span>
+                    </div>
                 </article>
+
 
             </div>
         </div>
     </section>
 
-    <section class="section" aria-label="Perfis e atuação profissional">
-        <h2>Perfis & Atuação</h2>
-
-        <article class="card">
-            <p class="card-text">
-                Ao longo da minha trajetória, atuei em diferentes papéis dentro do desenvolvimento,
-                engenharia de software e arquitetura de soluções, conectando negócio, tecnologia e entrega.
-            </p>
-
-            <div class="chips" style="margin-top:12px;">
-
-                <!-- BASE DEV -->
-                <span class="chip">Desenvolvedor Full Stack</span>
-                <span class="chip">Desenvolvedor Sênior</span>
-                <span class="chip">Desenvolvedor Web</span>
-                <span class="chip">Desenvolvedor Backend</span>
-                <span class="chip">Desenvolvedor Frontend</span>
-
-                <!-- ANÁLISE -->
-                <span class="chip">Analista Desenvolvedor</span>
-                <span class="chip">Analista de Sistemas</span>
-                <span class="chip">Analista Web</span>
-                <span class="chip">Analista de Requisitos</span>
-
-                <!-- ARQUITETURA -->
-                <span class="chip">Engenharia de Software</span>
-                <span class="chip">Arquitetura de Sistemas</span>
-                <span class="chip">Arquitetura Web</span>
-
-                <!-- BASE -->
-                <span class="chip">Cientista da Computação</span>
-
-                <!-- PROCESSO -->
-                <span class="chip">Levantamento de requisitos</span>
-                <span class="chip">Sustentação de sistemas</span>
-                <span class="chip">Manutenção evolutiva</span>
-
-                <!-- DESIGN -->
-                <span class="chip">Web Design</span>
-                <span class="chip">UI/UX</span>
-
-                <!-- EDUCAÇÃO -->
-                <span class="chip">Professor Universitário</span>
-                <span class="chip">Professor Técnico</span>
-
-                <!-- CONTEXTO -->
-                <span class="chip">Sistemas corporativos</span>
-                <span class="chip">Portais institucionais</span>
-                <span class="chip">Integrações entre sistemas</span>
-
+    <!-- ═══════ STACK ═══════ -->
+    <section class="section section--white" aria-labelledby="stack-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Competências</p>
+                    <h2 id="stack-h" class="section__title">Stack &amp; Proficiência</h2></div>
+                <a class="section__more" href="html/resume.html">Ver currículo completo</a>
             </div>
-        </article>
+            <div class="stack">
+                <div class="stack__col">
+                    <div class="stack__col-title">Stack principal</div>
+                    <div class="bar">
+                        <div class="bar__label"><span>Levantamento de requisitos</span><em>Análise</em></div>
+                        <div class="bar__track">
+                            <div class="bar__fill" style="width:92%"></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar__label"><span>PHP</span><em>Expert · 13+ anos</em></div>
+                        <div class="bar__track">
+                            <div class="bar__fill" style="width:96%"></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar__label"><span>Joomla 4 / 5 / 6</span><em>Especialidade · CMS</em></div>
+                        <div class="bar__track">
+                            <div class="bar__fill" style="width:95%"></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar__label"><span>MySQL / MariaDB</span><em>Avançado</em></div>
+                        <div class="bar__track">
+                            <div class="bar__fill" style="width:88%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack__col">
+                    <div class="stack__col-title">Frontend &amp; Infra</div>
+                    <div class="bar">
+                        <div class="bar__label"><span>HTML5 / CSS3</span><em>Expert</em></div>
+                        <div class="bar__track">
+                            <div class="bar__fill" style="width:94%"></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar__label"><span>JavaScript / jQuery</span><em>Avançado</em></div>
+                        <div class="bar__track">
+                            <div class="bar__fill" style="width:82%"></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar__label"><span>Docker / Compose</span><em>Avançado</em></div>
+                        <div class="bar__track">
+                            <div class="bar__fill" style="width:81%"></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar__label"><span>Git · GitHub · GitLab</span><em>Avançado</em></div>
+                        <div class="bar__track">
+                            <div class="bar__fill" style="width:86%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack__col">
+                    <div class="stack__col-title">Complementar</div>
+                    <div class="bar">
+                        <div class="bar__label"><span>React Native</span><em>Mobile</em></div>
+                        <div class="bar__track">
+                            <div class="bar__fill" style="width:63%"></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar__label"><span>Node.js</span><em>Intermediário</em></div>
+                        <div class="bar__track">
+                            <div class="bar__fill" style="width:58%"></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar__label"><span>Python</span><em>Intermediário</em></div>
+                        <div class="bar__track">
+                            <div class="bar__fill" style="width:55%"></div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar__label"><span>PostgreSQL · Oracle</span><em>Intermediário</em></div>
+                        <div class="bar__track">
+                            <div class="bar__fill" style="width:60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="section" aria-label="Stack tecnológica">
-        <h2>Stack Tecnológica</h2>
 
-        <article class="card card-primary">
-            <p class="card-text">
-                Tecnologias centrais que utilizo em projetos de portais, sistemas corporativos,
-                integrações, manutenção evolutiva e ambientes de desenvolvimento.
-            </p>
-
-            <div class="chips" style="margin-top:12px;">
-                <span class="chip">PHP</span>
-                <span class="chip">Joomla</span>
-                <span class="chip">WordPress</span>
-                <span class="chip">React</span>
-                <span class="chip">Next.js</span>
-                <span class="chip">Node.js</span>
-                <span class="chip">Angular</span>
-                <span class="chip">React Native</span>
-                <span class="chip">Python</span>
-                <span class="chip">HTML5</span>
-                <span class="chip">CSS</span>
-                <span class="chip">Sass</span>
-                <span class="chip">JavaScript</span>
-                <span class="chip">jQuery</span>
-                <span class="chip">MySQL</span>
-                <span class="chip">MariaDB</span>
-                <span class="chip">PostgreSQL</span>
-                <span class="chip">SQL Server</span>
-                <span class="chip">Oracle</span>
-                <span class="chip">Docker</span>
-                <span class="chip">Docker Compose</span>
+    <!-- ═══════ STACK TECNOLÓGICA ═══════ -->
+    <section class="section section--alt" aria-labelledby="stack-tec-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Tecnologias</p>
+                    <h2 id="stack-tec-h" class="section__title">Stack Tecnológica</h2></div>
             </div>
-        </article>
+            <p class="section__desc">Tecnologias centrais que utilizo em projetos de portais, sistemas corporativos, integrações, manutenção evolutiva e ambientes de
+                desenvolvimento.</p>
+            <div class="stack-tags">
+                <span class="tag">PHP</span>
+                <span class="tag tag--red">Joomla</span>
+                <span class="tag">WordPress</span>
+                <span class="tag">React</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Angular</span>
+                <span class="tag tag--red">React Native</span>
+                <span class="tag">Python</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Sass</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">jQuery</span>
+                <span class="tag tag--red">MySQL</span>
+                <span class="tag">MariaDB</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">Oracle</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Docker Compose</span>
+            </div>
+        </div>
     </section>
 
-    <section class="section" aria-label="Engenharia e práticas">
-        <h2>Engenharia &amp; Práticas</h2>
-
-        <article class="card">
-            <p class="card-text">
-                Frentes técnicas e práticas de engenharia aplicadas em ecossistemas institucionais,
-                extensões Joomla, integrações, sustentação e evolução contínua.
-            </p>
-
-            <div class="chips" style="margin-top:12px;">
-                <span class="chip">Arquitetura de sistemas</span>
-                <span class="chip">Extensões Joomla (Componentes, Módulos, Plugins)</span>
-                <span class="chip">Integrações REST / APIs</span>
-                <span class="chip">Webhooks</span>
-                <span class="chip">Automação / Robôs (RPA)</span>
-                <span class="chip">Migração de sistemas</span>
-                <span class="chip">Migração Joomla → Joomla</span>
-                <span class="chip">Migração Outros → Joomla</span>
-                <span class="chip">Padronização de ecossistemas</span>
-                <span class="chip">Sustentação e manutenção evolutiva</span>
-                <span class="chip">Revisão de código</span>
-                <span class="chip">OOP</span>
-                <span class="chip">Performance e otimização</span>
-                <span class="chip">Segurança (CSRF, validação)</span>
-                <span class="chip">Versionamento de aplicações</span>
+    <!-- ═══════ FERRAMENTAS & AMBIENTE ═══════ -->
+    <section class="section section--white" aria-labelledby="ferramentas-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Dia a dia</p>
+                    <h2 id="ferramentas-h" class="section__title">Ferramentas &amp; Ambiente</h2></div>
             </div>
-        </article>
-    </section>
-
-    <section class="section" aria-label="Ferramentas e ambiente">
-        <h2>Ferramentas &amp; Ambiente</h2>
-
-        <div class="card tools-card">
-            <p class="card-text">
-                Ferramentas que utilizo no dia a dia para desenvolvimento, versionamento,
-                banco de dados, APIs, design, containers e testes em ambiente local.
-            </p>
-
+            <p class="section__desc">Ferramentas que utilizo no dia a dia para desenvolvimento, versionamento, banco de dados, APIs, design, containers e testes em ambiente
+                local.</p>
             <div class="tools-grid">
-                <div class="tool-item">
-                    <strong>Git</strong>
-                    <span>Base de versionamento para projetos, branches e histórico de alterações</span>
+                <div class="tool-card">
+                    <div class="tool-card__name">Git</div>
+                    <p class="tool-card__desc">Base de versionamento para projetos, branches e histórico de alterações</p>
                 </div>
-
-                <div class="tool-item">
-                    <strong>GitHub</strong>
-                    <span>Repositórios públicos, projetos técnicos, open source e versionamento</span>
+                <div class="tool-card">
+                    <div class="tool-card__name">GitHub</div>
+                    <p class="tool-card__desc">Repositórios públicos, projetos técnicos, open source e versionamento</p>
                 </div>
-
-                <div class="tool-item">
-                    <strong>GitLab</strong>
-                    <span>Fluxo corporativo de versionamento, repositórios privados e colaboração</span>
+                <div class="tool-card">
+                    <div class="tool-card__name">GitLab</div>
+                    <p class="tool-card__desc">Fluxo corporativo de versionamento, repositórios privados e colaboração</p>
                 </div>
-
-                <div class="tool-item">
-                    <strong>PhpStorm</strong>
-                    <span>IDE principal para PHP, Joomla e projetos web</span>
+                <div class="tool-card">
+                    <div class="tool-card__name">PhpStorm</div>
+                    <p class="tool-card__desc">IDE principal para PHP, Joomla e projetos web</p>
                 </div>
-
-                <div class="tool-item">
-                    <strong>VS Code</strong>
-                    <span>Edição rápida, apoio em front-end e ajustes diversos</span>
+                <div class="tool-card">
+                    <div class="tool-card__name">VS Code</div>
+                    <p class="tool-card__desc">Edição rápida, apoio em front-end e ajustes diversos</p>
                 </div>
-
-                <div class="tool-item">
-                    <strong>DBeaver</strong>
-                    <span>Administração e análise de bancos de dados</span>
+                <div class="tool-card">
+                    <div class="tool-card__name">DBeaver</div>
+                    <p class="tool-card__desc">Administração e análise de bancos de dados</p>
                 </div>
-
-                <div class="tool-item">
-                    <strong>Docker Desktop</strong>
-                    <span>Containers, ambientes locais e padronização de setup</span>
+                <div class="tool-card">
+                    <div class="tool-card__name">Docker Desktop</div>
+                    <p class="tool-card__desc">Containers, ambientes locais e padronização de setup</p>
                 </div>
-
-                <div class="tool-item">
-                    <strong>Postman</strong>
-                    <span>Testes de APIs, endpoints e integrações</span>
+                <div class="tool-card">
+                    <div class="tool-card__name">Postman</div>
+                    <p class="tool-card__desc">Testes de APIs, endpoints e integrações</p>
                 </div>
-
-                <div class="tool-item">
-                    <strong>Android Studio</strong>
-                    <span>Estudos, testes e projetos mobile</span>
+                <div class="tool-card">
+                    <div class="tool-card__name">Android Studio</div>
+                    <p class="tool-card__desc">Estudos, testes e projetos mobile</p>
                 </div>
-
-                <div class="tool-item">
-                    <strong>Figma</strong>
-                    <span>Apoio em interfaces, organização visual e referência de layout</span>
+                <div class="tool-card">
+                    <div class="tool-card__name">Figma</div>
+                    <p class="tool-card__desc">Apoio em interfaces, organização visual e referência de layout</p>
                 </div>
-
-                <div class="tool-item">
-                    <strong>Affinity Designer</strong>
-                    <span>Criação e ajuste de peças visuais, interfaces e vetores</span>
+                <div class="tool-card">
+                    <div class="tool-card__name">Affinity Designer</div>
+                    <p class="tool-card__desc">Criação e ajuste de peças visuais, interfaces e vetores</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="contato">
-        <h2>Contato</h2>
+    <!-- ═══════ ENGENHARIA & PRÁTICAS ═══════ -->
+    <section class="section section--alt" aria-labelledby="engenharia-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Práticas técnicas</p>
+                    <h2 id="engenharia-h" class="section__title">Engenharia &amp; Práticas</h2></div>
+            </div>
+            <p class="section__desc">Frentes técnicas e práticas de engenharia aplicadas em ecossistemas institucionais, extensões Joomla, integrações, sustentação e evolução
+                contínua.</p>
+            <div class="stack-tags">
+                <span class="tag">Arquitetura de sistemas</span>
+                <span class="tag tag--red">Extensões Joomla (Componentes, Módulos, Plugins)</span>
+                <span class="tag">Integrações REST / APIs</span>
+                <span class="tag">Webhooks</span>
+                <span class="tag">Automação / Robôs (RPA)</span>
+                <span class="tag">Migração de sistemas</span>
+                <span class="tag tag--red">Migração Joomla → Joomla</span>
+                <span class="tag">Migração Outros → Joomla</span>
+                <span class="tag">Padronização de ecossistemas</span>
+                <span class="tag tag--red">Sustentação e manutenção evolutiva</span>
+                <span class="tag">Revisão de código</span>
+                <span class="tag">OOP</span>
+                <span class="tag">Performance e otimização</span>
+                <span class="tag">Segurança (CSRF, validação)</span>
+                <span class="tag">Versionamento de aplicações</span>
+                <span class="tag">Levantamento de requisitos</span>
+                <span class="tag">Análise e documentação</span>
+            </div>
+        </div>
+    </section>
 
-        <div class="grid-2">
-            <div class="card cta-card">
-                <h3 class="card-title">Vamos conversar?</h3>
+    <!-- ═══════ ARTIGOS ═══════ -->
+    <section class="section section--white" aria-labelledby="artigos-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Newsletter &amp; Conteúdo</p>
+                    <h2 id="artigos-h" class="section__title">Dev &amp; Versos</h2></div>
+                <a class="section__more" href="html/articles.html">Ver todos os artigos</a>
+            </div>
+            <div class="articles">
+                <article class="article">
+                    <div class="article__thumb at-nl"><span class="article__thumb-num">NL</span><span class="article__thumb-lbl">Newsletter</span></div>
+                    <div class="article__body">
+                        <p class="article__kicker">Newsletter · LinkedIn</p>
+                        <h3 class="article__title">Dev &amp; Versos — Assine a newsletter</h3>
+                        <p class="article__desc">Conteúdos reais sobre desenvolvimento, carreira, decisões e experiências do dia a dia de um dev sênior.</p>
+                        <a class="article__link" href="https://www.linkedin.com/newsletters/7444040790156419072/" target="_blank" rel="noopener">Seguir no LinkedIn</a>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__thumb at-3"><span class="article__thumb-num">#5</span><span class="article__thumb-lbl">Dev &amp; Versos 5/2026</span></div>
+                    <div class="article__body">
+                        <p class="article__kicker">Dev &amp; Versos · 5/2026</p>
+                        <h3 class="article__title">HTML5 na prática — elementos, atributos e a estrutura que o browser realmente lê</h3>
+                        <p class="article__desc">HTML5 não é só decorar tag — é entender o que o browser faz com cada linha. Vídeo, áudio, picture, data-* e muito mais.</p>
+                        <a class="article__link" href="https://www.linkedin.com/pulse/dev-versos-52026-html5-na-pr%C3%A1tica-elementos-atributos-hirlei-carlos-i0xhf"
+                           target="_blank" rel="noopener">Ler artigo</a>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__thumb at-1"><span class="article__thumb-num">#4</span><span class="article__thumb-lbl">Dev &amp; Versos 4/2026</span></div>
+                    <div class="article__body">
+                        <p class="article__kicker">Dev &amp; Versos · 4/2026</p>
+                        <h3 class="article__title">HTML semântico: da bagunça das divs à estrutura correta</h3>
+                        <p class="article__desc">Como sair do uso excessivo de divs e construir páginas com semântica, organização e propósito.</p>
+                        <a class="article__link" href="https://www.linkedin.com/pulse/dev-versos-42026-html-sem%C3%A2ntico-da-bagun%C3%A7a-das-divs-%C3%A0-hirlei-carlos-ravxf"
+                           target="_blank" rel="noopener">Ler artigo</a>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__thumb at-2"><span class="article__thumb-num">#3</span><span class="article__thumb-lbl">Dev &amp; Versos 3/2026</span></div>
+                    <div class="article__body">
+                        <p class="article__kicker">Dev &amp; Versos · 3/2026</p>
+                        <h3 class="article__title">HTML não é linguagem de programação — e entender isso muda tudo</h3>
+                        <p class="article__desc">O papel real do HTML na web e por que isso separa quem monta tela de quem constrói de verdade.</p>
+                        <a class="article__link"
+                           href="https://www.linkedin.com/pulse/dev-versos-32026-html-n%C3%A3o-%C3%A9-linguagem-de-programa%C3%A7%C3%A3o-hirlei-carlos-dyddf" target="_blank"
+                           rel="noopener">Ler artigo</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-                <p class="card-text">
-                    Se você é recrutador, cliente ou equipe técnica: posso ajudar com
-                    manutenção, evolução e criação de soluções web
-                    em Joomla, WordPress e sistemas sob medida.
+    <!-- ═══════ CONTATO — fundo branco, 4 colunas, ícones SVG ═══════ -->
+    <section class="section contact-section" id="contato" aria-labelledby="contato-h">
+        <div class="wrap">
+
+            <div class="contact-top">
+                <p class="section__eyebrow">Vamos conversar?</p>
+                <h2 id="contato-h" class="section__title">Pronto para o próximo desafio</h2>
+                <p class="contact-top__desc">
+                    Se você é recrutador, cliente ou equipe técnica: posso ajudar com manutenção,
+                    evolução e criação de soluções web em Joomla, PHP e sistemas sob medida.
                 </p>
-
-                <div class="actions">
-                    <a class="btn" href="mailto:prof.hirleicarlos@gmail.com">Enviar e-mail</a>
-                    <a class="btn btn-ghost" href="https://wa.me/5561986056392" target="_blank" rel="noopener">WhatsApp</a>
-                    <a class="btn btn-ghost" href="tel:+5561986056392">Ligar</a>
-                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">LinkedIn</a>
+                <div class="contact-top__btns">
+                    <a class="btn btn--primary" href="mailto:prof.hirleicarlos@gmail.com">Enviar e-mail</a>
+                    <a class="btn--red-outline" href="https://wa.me/5561986056392" target="_blank" rel="noopener">WhatsApp</a>
+                    <a class="btn--red-outline" href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="btn--red-outline" href="https://www.instagram.com/hirleicarlos/" target="_blank" rel="noopener">Instagram</a>
+                    <a class="btn--red-outline" href="https://www.facebook.com/hirleicarlos" target="_blank" rel="noopener">Facebook</a>
+                    <a class="btn--red-outline" href="https://www.threads.com/@hirleicarlos" target="_blank" rel="noopener">Threads</a>
+                    <a class="btn--red-outline" href="https://x.com/hirleicarlos" target="_blank" rel="noopener">X</a>
                 </div>
             </div>
 
-            <div class="card">
-                <ul class="list" aria-label="Dados de contato">
-                    <li><span class="k">Local</span><span class="v">Águas Claras • DF</span></li>
-                    <li><span class="k">Telefone</span><span class="v"><a href="tel:+5561986056392">(61) 98605-6392</a></span></li>
-                    <li><span class="k">Email</span><span class="v"><a href="mailto:prof.hirleicarlos@gmail.com">prof.hirleicarlos@gmail.com</a></span></li>
-                    <li><span class="k">LinkedIn</span><span class="v"><a href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">linkedin.com/in/hirleicarlos</a></span></li>
-                    <li><span class="k">GitHub</span><span class="v"><a href="https://github.com/hirleicarlos" target="_blank" rel="noopener">github.com/hirleicarlos</a></span></li>
-                    <li><span class="k">Site</span><span class="v"><a href="https://hirleicarlos.github.io/" target="_blank" rel="noopener">hirleicarlos.github.io</a></span></li>
-                </ul>
+            <!-- 4 colunas com ícones SVG reais -->
+            <div class="contact-grid">
+
+                <div class="contact-card contact-card--row">
+                    <div class="contact-card__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div class="contact-card__body">
+                        <p class="contact-card__label">Localização</p>
+                        <p class="contact-card__value">Águas Claras · DF · Brasil</p>
+                        <p class="contact-card__sub">Presencial e remoto</p>
+                    </div>
+                </div>
+
+                <a class="contact-card contact-card--row" href="mailto:prof.hirleicarlos@gmail.com">
+                    <div class="contact-card__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <div class="contact-card__body">
+                        <p class="contact-card__label">E-mail</p>
+                        <p class="contact-card__value">prof.hirleicarlos@gmail.com</p>
+                        <p class="contact-card__sub">E-mail profissional</p>
+                    </div>
+                </a>
+
+                <a class="contact-card contact-card--row" href="tel:+5561986056392">
+                    <div class="contact-card__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.42 2 2 0 0 1 3.59 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.07 6.07l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-card__body">
+                        <p class="contact-card__label">Telefone</p>
+                        <p class="contact-card__value">(61) 98605-6392</p>
+                        <p class="contact-card__sub">WhatsApp disponível</p>
+                    </div>
+                </a>
+
+                <a class="contact-card contact-card--row" href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">
+                    <div class="contact-card__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </div>
+                    <div class="contact-card__body">
+                        <p class="contact-card__label">LinkedIn</p>
+                        <p class="contact-card__value">linkedin.com/in/hirleicarlos</p>
+                        <p class="contact-card__sub">Perfil profissional</p>
+                    </div>
+                </a>
+
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <p>© 2026 — Hirlei Carlos</p>
-        <p class="small">
-            Página principal •
-            <a href="html/projects.html">Cases e Atuação</a> •
-            <a href="html/resume.html">Currículo</a>
-        </p>
-    </footer>
 </main>
 
-<script src="assets/js/main.js" defer></script>
+<!-- ═══════ FOOTER ═══════ -->
+<footer class="site-footer">
+    <div class="wrap site-footer__inner">
+        <a href="index.html" class="site-footer__brand" aria-label="Hirlei Carlos — Início">
+            <img src="assets/img/site/icon_hirlei.svg" alt="Ícone Hirlei Carlos" style="height:26px;width:auto;">
+            <span>Hirlei <em>Carlos</em></span>
+        </a>
+        <nav class="site-footer__nav" aria-label="Links do rodapé">
+            <a href="index.html">Início</a>
+            <a href="html/projects.html">Cases</a>
+            <a href="html/resume.html">Currículo</a>
+            <a href="html/articles.html">Artigos</a>
+            <a href="https://github.com/hirleicarlos" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+        <span class="site-footer__copy">© 2026 Hirlei Carlos</span>
+    </div>
+</footer>
+
+<script src="assets/js/nav.js"></script>
 </body>
 </html>
