@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updates>
+
+    <update>
+        <name>System - WhatsApp Button</name>
+        <description>Floating WhatsApp button compatible with Joomla 4, 5 and 6.</description>
+        <element>btnwhatsapp</element>
+        <type>plugin</type>
+        <folder>system</folder>
+
+        <version>3.0.0</version>
+
+        <infourl title="System - WhatsApp Button">
+            https://github.com/hirleicarlos/plg_system_btnwhatsapp
+        </infourl>
+
+        <downloads>
+            <downloadurl type="full" format="zip">
+                https://github.com/hirleicarlos/plg_system_btnwhatsapp/releases/download/v3.0.0/plg_system_btnwhatsapp.zip
+            </downloadurl>
+        </downloads>
+
+        <targetplatform name="joomla" version="4.0-6.0"/>
+
+        <php_minimum>8.3</php_minimum>
+
+    </update>
+
+</updates>
