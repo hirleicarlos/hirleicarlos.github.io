@@ -13,60 +13,240 @@
 Este repositório contém:
 
 - 🌐 Site profissional estático — completamente redesenhado em 2026
-- 📄 Currículo online (HTML) com sistema de geração de PDF
-- 🖨 Sistema automatizado de geração de PDF via Python + WeasyPrint
-- 🧠 Motor de ordenação semântica via classes `pdfN`
+- 📄 Currículo online (HTML) com sistema de geração de PDF automatizado
+- 🖨 Motor de geração de PDF via Python + WeasyPrint
+- 🧠 Ordenação semântica de seções via classes `pdfN`
 - 🚀 Hospedagem via GitHub Pages
 
 O projeto separa completamente:
 
-- **Camada de apresentação Web**
-- **Camada de impressão (PDF)**
-- **Camada de processamento e geração**
+- **Camada de apresentação Web** — HTML + CSS responsivo
+- **Camada de impressão (PDF)** — template isolado + CSS de impressão
+- **Camada de processamento** — Python + BeautifulSoup
 
 ---
 
-## 🔄 Redesign 2026 — O que mudou
+## 📁 Estrutura do Projeto
 
-O site passou por um **redesign completo** em abril de 2026. Todas as páginas foram reescritas do zero com um novo design system, mantendo o sistema de geração de PDF inalterado.
+```
+hirleicarlos.github.io/
+│
+├── index.html                              ← Home
+│
+├── html/
+│   ├── projects.html                       ← Cases & Atuação
+│   ├── resume.html                         ← Currículo (fonte do PDF)
+│   ├── articles.html                       ← Artigos & Newsletter
+│   ├── sistemaocb.html                     ← Case: Sistema OCB
+│   ├── cmsjoomla.html                      ← Case: Engenharia Joomla
+│   └── ufg.html                            ← Case: UFG
+│
+├── assets/
+│   ├── css/
+│   │   ├── variaveis.css                   ← Tokens globais de design
+│   │   ├── global.css                      ← Reset, navbar, footer, botões, tags
+│   │   ├── home.css                        ← Exclusivo da home
+│   │   ├── projects.css                    ← Exclusivo de Cases & Atuação
+│   │   ├── resume.css                      ← Exclusivo do currículo
+│   │   ├── articles.css                    ← Exclusivo de artigos
+│   │   └── subpage.css                     ← Compartilhado: sistemaocb, cmsjoomla, ufg
+│   ├── js/
+│   │   ├── nav.js                          ← Navbar responsiva
+│   │   ├── main.js
+│   │   └── masonry.js
+│   ├── img/
+│   │   ├── site/                           ← favicon.ico, favicon.svg, icon_hirlei.svg, logo_hirlei.svg
+│   │   ├── case/                           ← Imagens dos projetos (.webp)
+│   │   ├── artigos/                        ← Capas Dev & Versos (.png)
+│   │   ├── hirlei.jpg                      ← Foto do perfil
+│   │   └── social.png                      ← Imagem Open Graph (1200×630)
+│   └── file/
+│       ├── Curriculo_Hirlei_Carlos_RH.pdf  ← Versão fixa (atualizada com --latest)
+│       └── Curriculo_Hirlei_Carlos_RH_YYYYMMDD_HHMM.pdf  ← Versionado por data/hora
+│
+├── automacao/
+│   └── cv/
+│       ├── scripts/
+│       │   └── build_cv.py                 ← Script Python de geração do PDF
+│       ├── templates/
+│       │   ├── cv-print.html               ← Template de impressão
+│       │   └── .tmp/cv-rendered.html       ← HTML intermediário (gerado automaticamente)
+│       └── styles/
+│           └── cv-print.css                ← CSS exclusivo para PDF
+│
+└── updates/
+    ├── mod_hc_socialmedia.xml              ← Update server: módulo HC Mídias Sociais
+    └── plg_system_btnwhatsapp.xml          ← Update server: plugin WhatsApp flutuante
+```
 
-### Design System
+---
+
+## 🎨 Design System — variaveis.css
+
+Todos os arquivos CSS importam `variaveis.css` como fonte única de tokens.
+
+### Marca
 
 | Token | Valor |
 |-------|-------|
-| Fonte títulos | Roboto (700/900) |
-| Fonte corpo | Inter (400/500/600) |
-| Cor primária | `#C41E20` (vermelho) |
-| Fundo | `#F5F4F0` (off-white) |
-| Dark footer | `#0F0F0F` |
-| Max-width | `1320px` |
-| Nav height | `62px` |
+| `--red` | `#C41E20` |
+| `--red-dark` | `#8B1010` |
+| `--red-bg` | `rgba(196, 30, 32, 0.07)` |
+| `--red-border` | `rgba(196, 30, 32, 0.20)` |
+| `--red-shadow` | `0 8px 24px rgba(196, 30, 32, 0.22)` |
 
-### Páginas redesenhadas
+### Neutros
 
-| Arquivo | Descrição |
-|---------|-----------|
-| `index.html` | Home — hero com foto, tech strip, destaques, stack, artigos, contato |
-| `html/projects.html` | Cases & Atuação — 5 seções com alternância branco/cinza |
-| `html/resume.html` | Currículo — timeline vertical, stats, formação, cursos, PDF identifiers |
-| `html/articles.html` | Artigos — grid 3 colunas, 5 artigos + newsletter |
-| `html/sistemaocb.html` | Case Sistema OCB — ecossistema cooperativista completo |
-| `html/cmsjoomla.html` | Case Joomla — extensões, open source, NDA |
-| `html/ufg.html` | Case UFG — ecossistema universitário, 4 colunas |
+| Token | Valor |
+|-------|-------|
+| `--bg` | `#F5F4F0` |
+| `--bg2` | `#ECEAE5` |
+| `--white` | `#FFFFFF` |
+| `--dark` | `#0F0F0F` |
+| `--dark2` | `#1C1C1C` |
 
-### CSS — Arquitetura de folhas de estilo
+### Texto
 
-| Arquivo | Escopo |
-|---------|--------|
-| `variaveis.css` | Tokens globais: cores, tipografia, espaçamentos, sombras |
-| `global.css` | Reset, navbar, footer, botões, tags, seções |
-| `home.css` | Exclusivo da home (hero, tech strip, highlights, contact grid) |
-| `projects.css` | Exclusivo de Cases & Atuação |
-| `resume.css` | Exclusivo do currículo (timeline, stats, two-col, PDF classes) |
-| `articles.css` | Exclusivo da página de artigos |
-| `subpage.css` | Compartilhado entre sistemaocb, cmsjoomla e ufg |
+| Token | Valor |
+|-------|-------|
+| `--text` | `#111111` |
+| `--text2` | `#333333` |
+| `--muted` | `#6B6B6B` |
+| `--muted2` | `#9E9E9E` |
 
-### Grids do subpage.css
+### Bordas
+
+| Token | Valor |
+|-------|-------|
+| `--border` | `rgba(0, 0, 0, 0.08)` |
+| `--border2` | `rgba(0, 0, 0, 0.14)` |
+| `--border3` | `rgba(0, 0, 0, 0.24)` |
+
+### Tipografia
+
+| Token | Valor |
+|-------|-------|
+| `--font-title` | `'Roboto'` — títulos, labels, nav |
+| `--font-body` | `'Inter'` — corpo, parágrafos |
+| `--fw-light` | `300` |
+| `--fw-regular` | `400` |
+| `--fw-medium` | `500` |
+| `--fw-semi` | `600` |
+| `--fw-bold` | `700` |
+| `--fw-black` | `900` |
+
+### Escala tipográfica
+
+| Token | Valor |
+|-------|-------|
+| `--text-xs` | `11px` |
+| `--text-sm` | `12px` |
+| `--text-base` | `14px` |
+| `--text-md` | `15px` |
+| `--text-lg` | `17px` |
+| `--text-xl` | `20px` |
+| `--text-2xl` | `clamp(20px, 2.2vw, 26px)` |
+| `--text-3xl` | `clamp(26px, 3.2vw, 40px)` |
+| `--text-hero` | `clamp(36px, 5vw, 58px)` |
+
+### Border radius
+
+| Token | Valor |
+|-------|-------|
+| `--r-xs` | `6px` |
+| `--r-sm` | `10px` |
+| `--r` | `14px` |
+| `--r-lg` | `20px` |
+| `--r-xl` | `28px` |
+
+### Layout
+
+| Token | Valor |
+|-------|-------|
+| `--maxw` | `1320px` |
+| `--nav-h` | `62px` |
+
+---
+
+## 📄 Páginas — Estrutura de Seções
+
+### `index.html` — Home
+
+| Seção | Título |
+|-------|--------|
+| Hero | Desenvolvedor Full Stack Sênior |
+| Tech strip | PHP · Joomla · Docker · React Native · MySQL |
+| `section--white` | Destaques & Atuação |
+| `section--alt` | Projetos Isolados |
+| `section--white` | Stack & Proficiência |
+| `section--alt` | Stack Tecnológica |
+| `section--white` | Ferramentas & Ambiente |
+| `section--alt` | Engenharia & Práticas |
+| `section--white` | Dev & Versos |
+| Contato | Pronto para o próximo desafio |
+
+### `html/projects.html` — Cases & Atuação
+
+| Seção | Título |
+|-------|--------|
+| `section--white` | Resumo do Portfólio |
+| `section--alt` | Atuação, Ecossistemas & Stack |
+| `section--white` | Projetos Isolados |
+| `section--alt` | Experiência Corporativa |
+| `section--white` | Mais Informações |
+
+### `html/resume.html` — Currículo
+
+| Seção | Título |
+|-------|--------|
+| Hero | Hirlei Carlos Pereira de Araújo |
+| `section--white` | Resumo Profissional |
+| `section--alt` | Resumo de Experiência |
+| `section--white` | Experiência Profissional |
+| `section--alt` | Formação & Habilidades |
+| `section--white` | Cursos / Conhecimentos |
+
+### `html/articles.html` — Artigos
+
+| Seção | Título |
+|-------|--------|
+| `section--alt` | Dev & Versos (newsletter) |
+| `section--white` | Artigos publicados |
+| `section--alt` | Sobre a Dev & Versos |
+
+### `html/sistemaocb.html` — Sistema OCB
+
+| Seção | Título |
+|-------|--------|
+| `section--white` | O Ecossistema |
+| `section--alt` | Núcleo do Ecossistema |
+| `section--white` | Portais Estaduais |
+
+### `html/cmsjoomla.html` — Engenharia Joomla
+
+| Seção | Título |
+|-------|--------|
+| `section--white` | Engenharia Joomla |
+| `section--alt` | Como eu organizo extensões |
+| `section--white` | Open Source |
+| `section--alt` | Projetos Corporativos (NDA) |
+| `section--white` | Direção técnica |
+
+### `html/ufg.html` — UFG
+
+| Seção | Título |
+|-------|--------|
+| `section--white` | O Ecossistema UFG |
+| `section--alt` | Stack e frentes de atuação |
+| `section--white` | Capacidades e entregas |
+| `section--alt` | Sites e sistemas |
+| `section--white` | Portais Temáticos |
+
+---
+
+## 🏗 Arquitetura CSS — subpage.css
+
+Grids disponíveis para as subpáginas:
 
 | Classe | Colunas | Usado em |
 |--------|---------|----------|
@@ -78,149 +258,76 @@ O site passou por um **redesign completo** em abril de 2026. Todas as páginas f
 
 ---
 
-## 🏗 Arquitetura do Sistema de PDF
+## 🖨 Sistema de PDF — Classes `pdfN`
 
-```
-┌─────────────────────────────┐
-│   Camada de Apresentação    │
-│   (HTML / CSS - Web)        │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│   Camada de Processamento   │
-│   (Python + BeautifulSoup)  │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│   Template de Impressão     │
-│   (HTML isolado para PDF)   │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│   Motor de Renderização     │
-│       (WeasyPrint)          │
-└─────────────────────────────┘
-```
+O script lê `html/resume.html`, extrai os blocos marcados com `pdfN` e os injeta — ordenados numericamente — no template de impressão.
 
----
-
-## 📁 Estrutura do Projeto
-
-```
-hirleicarlos.github.io/
-│
-├── index.html                          ← Home
-├── gerar-cv.bat                        ← Atalho Windows para gerar PDF
-│
-├── html/
-│   ├── resume.html                     ← Currículo (fonte do PDF)
-│   ├── projects.html                   ← Cases & Atuação
-│   ├── articles.html                   ← Artigos & Newsletter
-│   ├── sistemaocb.html                 ← Case: Sistema OCB
-│   ├── cmsjoomla.html                  ← Case: Engenharia Joomla
-│   └── ufg.html                        ← Case: UFG
-│
-├── assets/
-│   ├── css/
-│   │   ├── variaveis.css               ← Tokens globais
-│   │   ├── global.css                  ← Componentes globais
-│   │   ├── home.css                    ← Estilos da home
-│   │   ├── projects.css                ← Estilos de cases
-│   │   ├── resume.css                  ← Estilos do currículo
-│   │   ├── articles.css                ← Estilos de artigos
-│   │   └── subpage.css                 ← Estilos das subpáginas
-│   ├── js/
-│   │   ├── nav.js                      ← Navbar responsiva
-│   │   ├── main.js
-│   │   └── masonry.js
-│   ├── img/
-│   │   ├── site/                       ← favicon, logo, icon SVG
-│   │   ├── case/                       ← imagens dos projetos (.webp)
-│   │   ├── artigos/                    ← capas Dev & Versos (.png)
-│   │   └── hirlei.jpg                  ← foto do perfil
-│   └── file/
-│       └── Curriculo_Hirlei_Carlos_RH.pdf
-│
-└── automacao/
-    └── cv/
-        ├── scripts/
-        │   └── build_cv.py             ← Script de geração do PDF
-        ├── templates/
-        │   └── cv-print.html           ← Template de impressão
-        └── styles/
-            └── cv-print.css            ← CSS específico para PDF
-```
-
----
-
-## 📄 Sistema de PDF — Classes `pdfN`
-
-O currículo `html/resume.html` usa classes `pdfN` para controlar quais blocos são extraídos e em que ordem aparecem no PDF:
-
-| Classe | Seção |
-|--------|-------|
-| `pdf1` | Cabeçalho — nome, contato, título |
+| Classe | Bloco extraído |
+|--------|---------------|
+| `pdf1` | `<header class="page-hero">` — nome, contato, título |
 | `pdf2` | Resumo Profissional |
-| `pdf3` | Competências Técnicas |
+| `pdf3` | Competências Técnicas (dentro do `two-col`) |
 | `pdf4` | Experiência Profissional |
-| `pdf5` | Formação Acadêmica, Técnica e Idiomas |
+| `pdf5` | Formação Acadêmica, Técnica e Idiomas (dentro do `two-col`) |
 | `pdf6` | Cursos / Conhecimentos |
 
 ```html
 <header class="page-hero pdf1">...</header>
 <section class="section pdf2">...</section>
-<div class="two-col-card pdf3">...</div>
 <section class="section pdf4">...</section>
+<div class="two-col-card pdf5">...</div>
+<div class="two-col-card pdf3">...</div>
+<section class="section pdf6">...</section>
 ```
 
-O script Python identifica apenas blocos com `pdfN`, ordena numericamente e injeta no template de impressão. O layout Web permanece intacto.
+> A ordem das classes no HTML não importa. O script ordena numericamente por `N`.
 
 ---
 
 ## 🔄 Fluxo de Geração do PDF
 
 ```
-resume.html
-     │
-     ▼
-Extração dos blocos com classe pdfN
-     │
-     ▼
-Ordenação numérica (pdf1 → pdf2 → ... → pdf6)
-     │
-     ▼
-Injeção no template cv-print.html
-     │
-     ▼
-Aplicação do cv-print.css
-     │
-     ▼
-Renderização via WeasyPrint
-     │
-     ▼
-Geração do PDF versionado
+html/resume.html
+      │
+      ▼
+build_cv.py — BeautifulSoup
+  ├─ extrai <header class="page-hero"> inteiro
+  └─ extrai todos os blocos com classe pdfN do <main>
+      │
+      ▼
+Ordenação numérica: pdf1 → pdf2 → pdf3 → ... → pdf6
+      │
+      ▼
+Injeção no template: automacao/cv/templates/cv-print.html
+      │
+      ▼
+HTML intermediário salvo em: automacao/cv/templates/.tmp/cv-rendered.html
+      │
+      ▼
+Renderização via WeasyPrint + cv-print.css
+      │
+      ▼
+assets/file/Curriculo_Hirlei_Carlos_RH_YYYYMMDD_HHMM.pdf
+      │ (se --latest)
+      ▼
+assets/file/Curriculo_Hirlei_Carlos_RH.pdf  ← versão fixa atualizada
 ```
 
 ---
 
-## 🖨 Geração Automatizada do PDF
+## ⚙️ Geração do PDF
 
 ### Requisitos
-
-- Python 3.10+
-- WeasyPrint
-- BeautifulSoup4
-
-### Instalação
 
 ```bash
 pip install weasyprint beautifulsoup4
 ```
 
-### Gerar PDF com timestamp
+- Python 3.10+
+- WeasyPrint
+- BeautifulSoup4
+
+### Gerar com timestamp
 
 ```bash
 python automacao/cv/scripts/build_cv.py
@@ -234,95 +341,78 @@ Saída: `assets/file/Curriculo_Hirlei_Carlos_RH_YYYYMMDD_HHMM.pdf`
 python automacao/cv/scripts/build_cv.py --latest
 ```
 
-Também atualiza: `assets/file/Curriculo_Hirlei_Carlos_RH.pdf`
+Atualiza também: `assets/file/Curriculo_Hirlei_Carlos_RH.pdf`
 
-### Windows (atalho)
+### Parâmetros opcionais
 
-```
-gerar-cv.bat
-```
-
----
-
-## 🎯 Princípios de Engenharia Aplicados
-
-| Princípio | Aplicação |
-|-----------|-----------|
-| Separação Web × Impressão | Layout Web não interfere no PDF |
-| Fonte única de verdade | Todo conteúdo vem de `resume.html` |
-| Ordenação semântica | Controlada via classes `pdfN` |
-| CSS de impressão isolado | `cv-print.css` sem conflitos com o site |
-| Versionamento automatizado | Arquivos PDF gerados com data/hora |
-| Design system compartilhado | `variaveis.css` alimenta todos os CSSs |
-| CSS por escopo | Cada página tem seu CSS específico |
+| Parâmetro | Padrão | Descrição |
+|-----------|--------|-----------|
+| `--resume` | `html/resume.html` | Caminho do HTML fonte |
+| `--template` | `automacao/cv/templates/cv-print.html` | Template de impressão |
+| `--css` | `automacao/cv/styles/cv-print.css` | CSS de impressão |
+| `--outdir` | `assets/file/` | Diretório de saída |
+| `--prefix` | `Curriculo_Hirlei_Carlos_RH` | Prefixo do nome do arquivo |
+| `--latest` | `False` | Atualiza também o arquivo fixo |
 
 ---
 
-## 🧾 Estratégia de CSS para Impressão
+## 🔌 Extensões Joomla Open Source
 
-O arquivo `automacao/cv/styles/cv-print.css` realiza:
+Repositórios públicos com update server via XML em `updates/`:
 
-- Remoção de navegação e footer
-- Neutralização de grids e layouts responsivos
-- Controle tipográfico para A4
-- Controle de quebras de página entre seções
-- Otimização para formato A4
+| Extensão | Tipo | Repositório |
+|----------|------|-------------|
+| HC Mídias Sociais | Módulo Joomla 4/5/6 | [mod_hc_socialmedia](https://github.com/hirleicarlos/mod_hc_socialmedia) |
+| Botão WhatsApp | Plugin System Joomla | [plg_system_btnwhatsapp](https://github.com/hirleicarlos/plg_system_btnwhatsapp) |
 
 ---
 
-## 🧠 Decisões Técnicas
+## 🌐 Open Graph / Social Meta
 
-| Decisão | Justificativa |
-|---------|---------------|
-| BeautifulSoup | Parsing HTML robusto e confiável |
-| WeasyPrint | Renderização baseada em CSS real, suporta print media |
-| Classes `pdfN` | Controle semântico, escalável e não invasivo |
-| Template isolado | Separação clara entre layout web e PDF |
-| CSS específico para print | Controle total de quebra de página |
-| Subpage.css compartilhado | DRY entre sistemaocb, cmsjoomla e ufg |
-| Grids por modificador | `.proj-grid`, `.proj-grid--2`, `.proj-grid--4` |
+Todas as páginas têm meta tags completas para redes sociais:
+
+- `og:type`, `og:url`, `og:site_name`, `og:locale` (pt_BR)
+- `og:title`, `og:description`
+- `og:image` → `assets/img/social.png` (1200×630)
+- `twitter:card` → `summary_large_image`
+- `apple-touch-icon`
+- `favicon.ico` + `icon_hirlei.svg`
 
 ---
 
 ## 🚀 Hospedagem
 
-Site hospedado via GitHub Pages:
-
 ```
 https://hirleicarlos.github.io
 ```
 
-Push para `main` → deploy automático.
+Push para `main` → deploy automático via GitHub Pages.
 
 ---
 
-## 📌 Tecnologias Utilizadas
+## 🧾 Princípios de Engenharia
 
-- HTML5 semântico com `aria-*` e roles de acessibilidade
-- CSS3 — Grid, Custom Properties (variáveis), Flexbox
-- Python 3.10+ — BeautifulSoup4, WeasyPrint
-- GitHub Pages
-
----
-
-## 📈 Roadmap
-
-- [ ] Pipeline CI para geração automática de PDF no push
-- [ ] Dockerização do motor de geração
-- [ ] Dark mode
-- [ ] Exportação estruturada (JSON)
-- [ ] Analytics
+| Princípio | Aplicação |
+|-----------|-----------|
+| Separação Web × Impressão | Layout Web não interfere no PDF |
+| Fonte única de verdade | Todo conteúdo do PDF vem de `resume.html` |
+| Ordenação semântica | Classes `pdfN` controlam ordem no PDF |
+| CSS de impressão isolado | `cv-print.css` sem conflitos com o site |
+| Versionamento automático | PDF gerado com data/hora em America/Sao_Paulo |
+| Design system compartilhado | `variaveis.css` alimenta todos os arquivos CSS |
+| CSS por escopo | Cada página tem seu CSS específico |
+| Modificadores de grid | `.proj-grid`, `.proj-grid--2`, `.proj-grid--4` |
 
 ---
 
 ## 📬 Contato
 
-- 🌐 Site: https://hirleicarlos.github.io
-- 💼 LinkedIn: https://linkedin.com/in/hirleicarlos
-- 🐙 GitHub: https://github.com/hirleicarlos
+- 🌐 Site: [hirleicarlos.github.io](https://hirleicarlos.github.io)
+- 💼 LinkedIn: [linkedin.com/in/hirleicarlos](https://linkedin.com/in/hirleicarlos)
+- 🐙 GitHub: [github.com/hirleicarlos](https://github.com/hirleicarlos)
 - ✉ E-mail: prof.hirleicarlos@gmail.com
 
 ---
 
-© 2026 — Hirlei Carlos
+© 2026 — Hirlei Carlos  
 Desenvolvedor Full Stack Sênior | PHP & Joomla | Sistemas Corporativos | Governo e Educação
