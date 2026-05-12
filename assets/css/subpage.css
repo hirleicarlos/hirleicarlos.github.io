@@ -250,6 +250,22 @@
     color: var(--red);
 }
 
+a.proj-card__badge {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--red);
+    border-color: var(--red-border);
+    transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
+}
+
+a.proj-card__badge:hover,
+a.proj-card__badge:focus-visible {
+    background: var(--red);
+    border-color: var(--red);
+    color: var(--white);
+    transform: translateY(-1px);
+}
+
 .proj-card__title {
     font-family: var(--font-title);
     font-size: var(--text-lg);

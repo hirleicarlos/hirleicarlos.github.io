@@ -143,42 +143,61 @@
 
                 <article class="proj-card proj-card--red">
                     <div class="proj-card__meta">
-                        <span class="proj-card__badge proj-card__badge--red">Open source</span>
+                        <span class="proj-card__badge proj-card__badge--red">Novo</span>
                         <span class="proj-card__badge">Módulo</span>
                         <span class="proj-card__badge">Joomla 4/5/6</span>
+                        <span class="proj-card__badge">v1.0.0</span>
                     </div>
-                    <h3 class="proj-card__title">Módulo Joomla — HC Mídias Sociais</h3>
-                    <p class="proj-card__text">Módulo de site para exibição <strong>personalizada</strong> de links de mídias sociais, com suporte a <strong>SVG</strong>,
-                        <strong>imagem</strong> e <strong>classes CSS</strong>. Itens configuráveis e repetíveis no admin, com opções de layout e estilo.</p>
+                    <h3 class="proj-card__title">Módulo Joomla — HC IgPulse (Instagram Feed)</h3>
+                    <p class="proj-card__text">Módulo de site para exibir <strong>posts e reels do Instagram</strong> via <strong>Graph API</strong>, com cache configurável e <strong>4 layouts responsivos</strong> (carousel, grid, mosaic, strip). HTML semântico, sem frameworks externos.</p>
                     <ul class="proj-card__list">
-                        <li><strong>Contexto:</strong> Projeto próprio / Open Source</li>
-                        <li><strong>Entregas:</strong> itens repetíveis, suporte a SVG/Imagem, modos de layout</li>
-                        <li><strong>Tecnologias:</strong> Joomla 4/5/6, PHP, XML (params), CSS</li>
+                        <li><strong>Contexto:</strong> Projeto próprio / Open Source · MIT</li>
+                        <li><strong>Entregas:</strong> integração Instagram Graph API, 4 layouts, cache, aspect ratio configurável, lightbox/newtab/instagram</li>
+                        <li><strong>Tecnologias:</strong> Joomla 4/5/6, PHP 8+, Graph API, XML (params), CSS</li>
                         <li><strong>Status:</strong> Código público no GitHub</li>
                     </ul>
                     <div class="proj-card__actions">
-                        <a class="btn btn--primary" href="https://github.com/hirleicarlos/mod_hc_socialmedia" target="_blank" rel="noopener">Ver repositório no GitHub ↗</a>
+                        <a class="btn btn--primary" href="https://github.com/hirleicarlos/mod_hc_igpulse" target="_blank" rel="noopener">Ver repositório no GitHub ↗</a>
                     </div>
                 </article>
 
                 <article class="proj-card">
                     <div class="proj-card__meta">
-                        <span class="proj-card__badge proj-card__badge--red">Open source</span>
                         <span class="proj-card__badge">Plugin System</span>
-                        <span class="proj-card__badge">WhatsApp</span>
+                        <span class="proj-card__badge">Joomla 4/5/6</span>
+                        <a class="proj-card__badge" href="https://extensions.joomla.org/extension/social-web/social-presence/system-whatsapp-button/" target="_blank" rel="noopener" title="Ver no Joomla Extensions Directory">JED ↗</a>
+                        <span class="proj-card__badge">v3.1.0</span>
                     </div>
                     <h3 class="proj-card__title">Plugin Joomla — Botão Flutuante de WhatsApp</h3>
-                    <p class="proj-card__text">Plugin do tipo <strong>System</strong> para inclusão de botão flutuante de WhatsApp, com configuração via painel administrativo.
-                    </p>
+                    <p class="proj-card__text">Plugin do tipo <strong>System</strong> que injeta um <strong>botão flutuante de WhatsApp</strong> no frontend sem alterar template. Configuração completa via painel, com <strong>overrides para mobile</strong>, <strong>horário de atendimento</strong> por dia da semana e animações.</p>
                     <ul class="proj-card__list">
-                        <li><strong>Contexto:</strong> Projeto próprio / Open Source</li>
-                        <li><strong>Entregas:</strong> instalação via ZIP, parâmetros configuráveis</li>
-                        <li><strong>Tecnologias:</strong> PHP, Joomla Framework, HTML, CSS, XML</li>
-                        <li><strong>Status:</strong> Código público no GitHub</li>
+                        <li><strong>Contexto:</strong> Projeto próprio / Open Source · GPL v2+</li>
+                        <li><strong>Entregas:</strong> overrides mobile, schedule com timezone, animações (slide/bounce/fade), tooltip, controle por menu/dispositivo</li>
+                        <li><strong>Tecnologias:</strong> PHP 8.3+, Joomla 4/5/6, DI (Service Provider), WebAssetManager, CSS, JS</li>
+                        <li><strong>Status:</strong> Código público no GitHub · Update server ativo</li>
                     </ul>
                     <div class="proj-card__actions">
-                        <a class="btn btn--primary" href="https://github.com/hirleicarlos/plg_system_btnwhatsapp" target="_blank" rel="noopener">Ver repositório no GitHub
-                            ↗</a>
+                        <a class="btn btn--primary" href="https://github.com/hirleicarlos/plg_system_btnwhatsapp" target="_blank" rel="noopener">Ver repositório no GitHub ↗</a>
+                    </div>
+                </article>
+
+                <article class="proj-card">
+                    <div class="proj-card__meta">
+                        <span class="proj-card__badge">Módulo</span>
+                        <span class="proj-card__badge">Joomla 4/5/6</span>
+                        <a class="proj-card__badge" href="https://extensions.joomla.org/extension/social-web/social-media/hc-social-media/" target="_blank" rel="noopener" title="Ver no Joomla Extensions Directory">JED ↗</a>
+                        <span class="proj-card__badge">v1.0.0</span>
+                    </div>
+                    <h3 class="proj-card__title">Módulo Joomla — HC Mídias Sociais</h3>
+                    <p class="proj-card__text">Módulo de site para exibição <strong>personalizada</strong> de links de mídias sociais, com suporte a <strong>SVG</strong>, <strong>imagem</strong> e <strong>classes CSS</strong>. Itens repetíveis no admin, <strong>5 layouts</strong> (default, minimal, inline, boxed, stacked) e arquitetura Dispatcher + Helper.</p>
+                    <ul class="proj-card__list">
+                        <li><strong>Contexto:</strong> Projeto próprio / Open Source · GPL v2+</li>
+                        <li><strong>Entregas:</strong> 5 layouts, itens repetíveis, suporte a SVG/Imagem, CSS Variables por item, modos icon/text/both</li>
+                        <li><strong>Tecnologias:</strong> Joomla 4/5/6, PHP 8+, Dispatcher/HelperFactory, XML (params), CSS</li>
+                        <li><strong>Status:</strong> Código público no GitHub · Update server ativo</li>
+                    </ul>
+                    <div class="proj-card__actions">
+                        <a class="btn btn--primary" href="https://github.com/hirleicarlos/mod_hc_socialmedia" target="_blank" rel="noopener">Ver repositório no GitHub ↗</a>
                     </div>
                 </article>
 
