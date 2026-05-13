@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <updates>
     <update>
-        <name>HC IgPulse — Instagram Feed</name>
+        <name>HC IgPulse - Instagram Feed</name>
         <description>Instagram feed module (posts and reels) via Graph API, with 4 responsive layouts. Compatible with Joomla 4, 5 and 6.</description>
 
         <element>mod_hc_igpulse</element>
@@ -10,13 +10,15 @@
 
         <version>1.0.0</version>
 
-        <infourl title="HC IgPulse — Instagram Feed">https://github.com/hirleicarlos/mod_hc_igpulse</infourl>
+        <infourl title="HC IgPulse - Instagram Feed">https://github.com/hirleicarlos/mod_hc_igpulse</infourl>
 
         <downloads>
             <downloadurl type="full" format="zip">https://github.com/hirleicarlos/mod_hc_igpulse/releases/download/v1.0.0/mod_hc_igpulse.zip</downloadurl>
         </downloads>
 
-        <targetplatform name="joomla" version="4.0-6.0" />
+        <targetplatform name="joomla" version="4\.[0-9]+(\.[0-9]+)*" />
+        <targetplatform name="joomla" version="5\.[0-9]+(\.[0-9]+)*" />
+        <targetplatform name="joomla" version="6\.[0-9]+(\.[0-9]+)*" />
         <php_minimum>8.0</php_minimum>
     </update>
 </updates>
