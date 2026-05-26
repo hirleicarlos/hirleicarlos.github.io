@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DEV &amp; Versos #10/2026 | O site abre rápido, mas responde devagar</title>
+  <meta name="description" content="Performance não é só carregar rápido. Entenda o que o INP ensina sobre resposta visual, interação real e experiência do usuário.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hirleicarlos.github.io/html/dev-versos-10-2026-inp.html">
+  <meta property="og:site_name" content="Hirlei Carlos">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="DEV &amp; Versos #10/2026 | O site abre rápido, mas responde devagar">
+  <meta property="og:description" content="Performance não é só carregar rápido. Entenda o que o INP ensina ao dev sobre responsividade e experiência real.">
+  <meta property="og:image" content="https://hirleicarlos.github.io/assets/img/artigos/DEV_&_Versos_10_2026.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Capa DEV &amp; Versos #10/2026 — O site abre rápido, mas responde devagar">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://hirleicarlos.github.io/html/dev-versos-10-2026-inp.html">
+  <meta name="twitter:title" content="DEV &amp; Versos #10/2026 | O site abre rápido, mas responde devagar">
+  <meta name="twitter:description" content="O que o INP ensina ao dev sobre performance percebida, interação real e UX.">
+  <meta name="twitter:image" content="https://hirleicarlos.github.io/assets/img/artigos/DEV_&_Versos_10_2026.png">
+  <meta name="twitter:image:alt" content="Capa DEV &amp; Versos #10/2026 — O site abre rápido, mas responde devagar">
+
+  <link rel="icon" href="../assets/img/site/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/site/icon_hirlei.svg">
+  <link rel="apple-touch-icon" href="../assets/img/site/icon_hirlei.svg">
+
+  <link rel="stylesheet" href="../assets/css/variaveis.css">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/articles.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<nav class="navbar" id="navbar" aria-label="Navegação principal">
+  <div class="wrap navbar__inner">
+    <a class="navbar__logo" href="../index.html" aria-label="Hirlei Carlos — Página inicial">
+      <img src="../assets/img/site/logo_hirlei.svg" alt="Hirlei Carlos">
+    </a>
+    <div class="navbar__links" id="navbar-links">
+      <a href="../index.html" class="home-link" aria-label="Início" title="Início">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        Início
+      </a>
+      <a href="projects.html">Cases &amp; Atuação</a>
+      <a href="resume.html">Currículo</a>
+      <a href="articles.html">Artigos</a>
+      <a href="../index.html#contato">Contato</a>
+    </div>
+    <div class="navbar__right">
+      <a class="navbar__cv" href="../assets/file/Curriculo_Hirlei_Carlos_RH.pdf" target="_blank" rel="noopener">↓ Baixar CV</a>
+      <button class="navbar__toggle" id="navbar-toggle" aria-expanded="false" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="article-hero">
+  <div class="wrap article-hero__grid">
+    <div class="article-hero__text">
+      <p class="article-hero__eyebrow">Dev &amp; Versos · 10/2026</p>
+      <h1 class="article-hero__title">⚡ O site abre rápido, mas responde devagar</h1>
+      <p class="article-hero__sub">O que o INP ensina ao dev sobre performance percebida, resposta visual e experiência real do usuário.</p>
+      <div class="tags article-hero__tags">
+        <span class="tag tag--red">INP</span>
+        <span class="tag">Core Web Vitals</span>
+        <span class="tag">Web Performance</span>
+        <span class="tag">UX</span>
+      </div>
+    </div>
+    <figure class="article-hero__media">
+      <img src="../assets/img/artigos/DEV_&_Versos_10_2026.png" alt="Capa DEV &amp; Versos #10/2026 — O site abre rápido, mas responde devagar">
+    </figure>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section class="section section--white article-page-section">
+    <div class="wrap article-page-wrap">
+      <article class="article-page">
+          <p>Performance não é só carregar rápido. É responder bem quando o usuário clica, digita, abre um menu, usa um filtro ou tenta concluir uma ação.</p>
+          <p>📌 <strong>Ideia central:</strong> um site pode passar bem no carregamento e ainda entregar uma experiência ruim na interação.</p>
+          <h2>🚀 A cena que todo dev já viu</h2>
+          <p>A página abre rápido.</p>
+          <p>O conteúdo principal aparece. O layout parece estável. O banner carrega. O menu está visível. A primeira impressão é boa.</p>
+          <p>Mas aí o usuário tenta usar.</p>
+          <p>👉 Toca no menu e ele demora. 👉 Clica no botão e nada parece acontecer. 👉 Digita no formulário e a interface engasga. 👉 Aplica um filtro e a listagem fica pesada. 👉 Abre uma área dinâmica e o site parece travado.</p>
+          <p>Foi aí que eu entendi uma coisa importante:</p>
+          <p><strong>Nem todo site rápido parece rápido.</strong></p>
+          <p>E essa diferença muda bastante a forma como a gente olha para performance.</p>
+          <h2>🧠 Performance percebida: o usuário não mede, ele sente</h2>
+          <p>Quando falamos em performance web, é comum pensar primeiro em carregamento.</p>
+          <ul>
+            <li>Quanto tempo a página leva para abrir?</li>
+            <li>Quando o conteúdo principal aparece?</li>
+            <li>O servidor está respondendo bem?</li>
+            <li>As imagens estão otimizadas?</li>
+            <li>O cache está funcionando?</li>
+          </ul>
+          <p>Tudo isso importa. Mas performance percebida vai além.</p>
+          <p>Ela envolve quatro camadas:</p>
+          <ul>
+            <li><strong>Carregar rápido:</strong> o conteúdo chega logo.</li>
+            <li><strong>Parecer rápido:</strong> a página dá sinais de progresso.</li>
+            <li><strong>Responder rápido:</strong> cliques, toques e digitação têm retorno visual.</li>
+            <li><strong>Ser agradável de usar:</strong> a interface acompanha a intenção do usuário.</li>
+          </ul>
+          <p>O usuário não abre o DevTools para medir milissegundos.</p>
+          <p>Ele sente atraso.</p>
+          <p>Ele sente quando o menu não abre. Ele sente quando o botão não dá retorno. Ele sente quando o campo trava. Ele sente quando a interface não acompanha o dedo no celular.</p>
+          <p>Performance, no fim, é sensação de fluidez.</p>
+          <h2>⚡ Onde entra o INP</h2>
+          <p>INP significa <strong>Interaction to Next Paint</strong>.</p>
+          <p>Em linguagem simples, o INP mede quanto tempo a página leva para dar uma resposta visual depois de uma interação do usuário.</p>
+          <p>Ele observa interações como:</p>
+          <ul>
+            <li>clique com mouse;</li>
+            <li>toque em tela sensível ao toque;</li>
+            <li>tecla pressionada no teclado;</li>
+            <li>abertura de menu;</li>
+            <li>acionamento de botão;</li>
+            <li>digitação em campo;</li>
+            <li>uso de filtros;</li>
+            <li>envio de formulário;</li>
+            <li>navegação em componentes dinâmicos.</li>
+          </ul>
+          <p>Segundo o web.dev, o INP avalia a responsividade da página observando a latência das interações durante a vida útil da visita. Um INP baixo indica que a página respondeu rapidamente para todas, ou quase todas, as interações.</p>
+          <p>📌 <strong>Como ler o INP:</strong></p>
+          <ul>
+            <li>✅ <strong>Até 200 ms:</strong> boa responsividade.</li>
+            <li>⚠️ <strong>Entre 200 ms e 500 ms:</strong> precisa melhorar.</li>
+            <li>🚨 <strong>Acima de 500 ms:</strong> experiência ruim.</li>
+          </ul>
+          <p>O ponto mais importante é este:</p>
+          <p><strong>INP não pergunta apenas se a página apareceu. Ele pergunta se a página respondeu.</strong></p>
+          <h2>🧩 LCP, CLS e INP: cada métrica olha uma parte da experiência</h2>
+          <p>As Core Web Vitals ajudam a separar problemas diferentes.</p>
+          <ul>
+            <li><strong>LCP - Largest Contentful Paint:</strong> mede quando o conteúdo principal aparece.</li>
+            <li><strong>CLS - Cumulative Layout Shift:</strong> mede estabilidade visual, ou seja, se os elementos ficam pulando.</li>
+            <li><strong>INP - Interaction to Next Paint:</strong> mede a resposta visual depois da interação do usuário.</li>
+          </ul>
+          <p>Uma página pode ter bom LCP e ainda ter INP ruim.</p>
+          <p>Exemplo simples:</p>
+          <ul>
+            <li>A home de um portal institucional abre rápido.</li>
+            <li>O banner aparece.</li>
+            <li>As notícias carregam.</li>
+            <li>O menu está visível.</li>
+            <li>A nota parece boa.</li>
+          </ul>
+          <p>Mas no celular:</p>
+          <ul>
+            <li>o menu demora para abrir;</li>
+            <li>o campo de busca trava;</li>
+            <li>o formulário não dá feedback;</li>
+            <li>o filtro da listagem engasga;</li>
+            <li>o clique parece não ter sido reconhecido.</li>
+          </ul>
+          <p>O usuário não vai dizer:</p>
+          <p>"Interessante, o LCP estava bom."</p>
+          <p>Ele vai dizer:</p>
+          <p>"Esse site está travando."</p>
+          <p>E, para a experiência real, ele está certo.</p>
+          <h2>🧱 Por que um site responde devagar</h2>
+          <p>Um site pode responder devagar por várias razões. Em projetos reais, quase nunca é uma causa única. Normalmente é acúmulo.</p>
+          <p>Principais causas:</p>
+          <ul>
+            <li>JavaScript pesado demais.</li>
+            <li>Eventos de clique fazendo trabalho caro.</li>
+            <li>DOM grande e difícil de recalcular.</li>
+            <li>Componentes renderizando mais do que precisam.</li>
+            <li>Scripts de terceiros competindo pela thread principal.</li>
+            <li>Plugins carregados em páginas onde não são usados.</li>
+            <li>Templates e page builders adicionando camadas extras.</li>
+            <li>Sliders, galerias, menus e widgets mal configurados.</li>
+            <li>Código legado crescendo sem revisão.</li>
+            <li>Falta de teste em celular real.</li>
+          </ul>
+          <p>Em CMSs como Joomla, WordPress, Drupal e portais institucionais, isso aparece muito.</p>
+          <p>Às vezes o servidor está bom. O cache está ativo. A página abre. O conteúdo aparece.</p>
+          <p>Mas o front-end está carregando trabalho demais.</p>
+          <p>Na hora do clique, o navegador precisa processar script, recalcular layout, aplicar estilo, renderizar e só então pintar a próxima resposta.</p>
+          <p>Quando esse caminho fica pesado, o usuário sente.</p>
+          <h2>🧭 O olhar do dev full stack</h2>
+          <p>Performance não mora em uma única camada.</p>
+          <p>Quem trabalha com portal, CMS, template, extensão, banco e regra de negócio precisa olhar o caminho inteiro:</p>
+          <ul>
+            <li>HTML;</li>
+            <li>CSS;</li>
+            <li>JavaScript;</li>
+            <li>banco de dados;</li>
+            <li>CMS;</li>
+            <li>plugin;</li>
+            <li>template;</li>
+            <li>cache;</li>
+            <li>imagens;</li>
+            <li>scripts externos;</li>
+            <li>experiência mobile;</li>
+            <li>fluxo real do usuário.</li>
+          </ul>
+          <p>O problema pode estar:</p>
+          <ul>
+            <li>em uma consulta lenta no banco;</li>
+            <li>em um plugin carregado globalmente;</li>
+            <li>em uma biblioteca JavaScript pesada;</li>
+            <li>em um menu mobile mal implementado;</li>
+            <li>em um componente que recalcula tudo a cada clique;</li>
+            <li>em um formulário que não dá feedback visual;</li>
+            <li>em uma página com DOM grande demais.</li>
+          </ul>
+          <p>O olhar full stack ajuda porque muda a pergunta.</p>
+          <p>Não é só:</p>
+          <p>"O site está lento?"</p>
+          <p>É:</p>
+          <p>"Qual parte do caminho está atrasando a resposta que o usuário espera?"</p>
+          <h2>🛠️ 5 ferramentas principais para verificar INP e Core Web Vitals</h2>
+          <p>Abaixo estão as ferramentas que eu usaria primeiro em uma auditoria técnica. Cada uma responde uma pergunta diferente. Nenhuma substitui a outra.</p>
+          <h3>1. PageSpeed Insights</h3>
+          <p>🔗 Link: <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">https://pagespeed.web.dev/</a> 📚 Documentação: <a href="https://developers.google.com/speed/docs/insights/v5/about" target="_blank" rel="noopener">About PageSpeed Insights - Google for Developers</a></p>
+          <p><strong>O que faz:</strong></p>
+          <ul>
+            <li>Analisa uma URL em mobile e desktop.</li>
+            <li>Mostra dados de campo, quando há dados suficientes do Chrome User Experience Report.</li>
+            <li>Mostra dados de laboratório gerados pelo Lighthouse.</li>
+            <li>Aponta oportunidades de melhoria.</li>
+          </ul>
+          <p><strong>O que verifica:</strong></p>
+          <ul>
+            <li>LCP;</li>
+            <li>INP;</li>
+            <li>CLS;</li>
+            <li>FCP;</li>
+            <li>TTFB;</li>
+            <li>TBT;</li>
+            <li>peso de recursos;</li>
+            <li>JavaScript e CSS bloqueantes;</li>
+            <li>imagens e oportunidades de carregamento.</li>
+          </ul>
+          <p><strong>O que valida:</strong></p>
+          <ul>
+            <li>Se a página passa ou não nas Core Web Vitals.</li>
+            <li>Se o problema aparece em dados reais de usuários.</li>
+            <li>Se mobile e desktop têm comportamentos diferentes.</li>
+          </ul>
+          <p><strong>Cuidado técnico:</strong></p>
+          <ul>
+            <li>PageSpeed é ótimo para visão inicial, mas não simula todos os cliques reais do usuário.</li>
+            <li>Se o INP estiver ruim, ele aponta o problema, mas você ainda precisa investigar a interação específica.</li>
+          </ul>
+          <h3>2. Chrome DevTools - Performance</h3>
+          <p>🔗 Link: <a href="https://developer.chrome.com/docs/devtools/performance/reference" target="_blank" rel="noopener">Chrome DevTools Performance features reference</a></p>
+          <p><strong>O que faz:</strong></p>
+          <ul>
+            <li>Grava uma sessão real de uso da página.</li>
+            <li>Permite clicar, abrir menu, digitar, filtrar e interagir enquanto a gravação acontece.</li>
+            <li>Mostra o que o navegador estava fazendo na thread principal.</li>
+          </ul>
+          <p><strong>O que verifica:</strong></p>
+          <ul>
+            <li>long tasks;</li>
+            <li>event handlers lentos;</li>
+            <li>scripts pesados;</li>
+            <li>tempo de renderização;</li>
+            <li>recálculo de estilos;</li>
+            <li>layout;</li>
+            <li>paint;</li>
+            <li>interações acima de 200 ms;</li>
+            <li>atraso entre input, processamento e apresentação visual.</li>
+          </ul>
+          <p><strong>O que valida:</strong></p>
+          <ul>
+            <li>Se o gargalo está antes do handler, durante o JavaScript ou na renderização.</li>
+            <li>Se o clique demora por causa de script, layout, pintura ou trabalho concorrente.</li>
+            <li>Qual função, arquivo ou componente está consumindo tempo.</li>
+          </ul>
+          <p><strong>Cuidado técnico:</strong></p>
+          <ul>
+            <li>Grave fluxos reais, não só o carregamento.</li>
+            <li>Use CPU throttling para simular aparelhos menos potentes.</li>
+            <li>Teste menu, formulário, busca, filtro e componentes dinâmicos.</li>
+          </ul>
+          <h3>3. Lighthouse</h3>
+          <p>🔗 Link: <a href="https://developer.chrome.com/docs/lighthouse" target="_blank" rel="noopener">Lighthouse - Chrome for Developers</a></p>
+          <p><strong>O que faz:</strong></p>
+          <ul>
+            <li>Executa auditorias automatizadas em ambiente controlado.</li>
+            <li>Pode ser usado no Chrome DevTools, PageSpeed Insights, linha de comando ou Node.</li>
+            <li>Avalia performance, acessibilidade, boas práticas e SEO.</li>
+          </ul>
+          <p><strong>O que verifica:</strong></p>
+          <ul>
+            <li>performance score;</li>
+            <li>métricas de carregamento;</li>
+            <li>Total Blocking Time;</li>
+            <li>recursos bloqueantes;</li>
+            <li>JavaScript não utilizado;</li>
+            <li>imagens não otimizadas;</li>
+            <li>acessibilidade;</li>
+            <li>boas práticas;</li>
+            <li>SEO técnico básico.</li>
+          </ul>
+          <p><strong>O que valida:</strong></p>
+          <ul>
+            <li>Se existe regressão técnica entre uma versão e outra.</li>
+            <li>Se há oportunidades claras de otimização.</li>
+            <li>Se o site tem problemas de performance em laboratório.</li>
+          </ul>
+          <p><strong>Cuidado técnico:</strong></p>
+          <ul>
+            <li>Lighthouse ajuda muito, mas a nota não conta a história inteira.</li>
+            <li>Uma pontuação boa não garante que todas as interações reais estejam rápidas.</li>
+          </ul>
+          <h3>4. Google Search Console - Core Web Vitals</h3>
+          <p>🔗 Link: <a href="https://support.google.com/webmasters/answer/9205520?hl=pt-BR" target="_blank" rel="noopener">Relatório de Core Web Vitals - Search Console</a></p>
+          <p><strong>O que faz:</strong></p>
+          <ul>
+            <li>Mostra dados reais de usuários para páginas indexadas.</li>
+            <li>Agrupa URLs por status: bom, precisa melhorar ou ruim.</li>
+            <li>Separa dados por dispositivo, como mobile e desktop.</li>
+          </ul>
+          <p><strong>O que verifica:</strong></p>
+          <ul>
+            <li>grupos de URLs afetadas;</li>
+            <li>LCP;</li>
+            <li>INP;</li>
+            <li>CLS;</li>
+            <li>status por tipo de dispositivo;</li>
+            <li>evolução do problema ao longo do tempo.</li>
+          </ul>
+          <p><strong>O que valida:</strong></p>
+          <ul>
+            <li>Se o problema é isolado ou afeta várias páginas.</li>
+            <li>Se uma correção melhorou um grupo de URLs.</li>
+            <li>Se o problema aparece em uso real, não só no laboratório.</li>
+          </ul>
+          <p><strong>Cuidado técnico:</strong></p>
+          <ul>
+            <li>Ele não mostra a função JavaScript culpada.</li>
+            <li>Ele mostra onde há problema em escala. Para descobrir a causa, combine com DevTools, PageSpeed e testes reais.</li>
+          </ul>
+          <h3>5. WebPageTest</h3>
+          <p>🔗 Link: <a href="https://www.webpagetest.org/" target="_blank" rel="noopener">https://www.webpagetest.org/</a> 📚 Documentação: <a href="https://docs.webpagetest.org/getting-started/" target="_blank" rel="noopener">WebPageTest Documentation</a></p>
+          <p><strong>O que faz:</strong></p>
+          <ul>
+            <li>Testa páginas em locais, conexões e dispositivos configuráveis.</li>
+            <li>Mostra waterfall, filmstrip, tempo de carregamento e comportamento visual.</li>
+            <li>Ajuda a comparar cenários de rede e performance.</li>
+          </ul>
+          <p><strong>O que verifica:</strong></p>
+          <ul>
+            <li>carregamento inicial;</li>
+            <li>waterfall de recursos;</li>
+            <li>bloqueios de rede;</li>
+            <li>peso da página;</li>
+            <li>tempo de renderização;</li>
+            <li>Core Web Vitals observadas no teste;</li>
+            <li>comportamento visual ao longo do carregamento.</li>
+          </ul>
+          <p><strong>O que valida:</strong></p>
+          <ul>
+            <li>Se o problema muda conforme localidade, rede ou dispositivo.</li>
+            <li>Se scripts de terceiros atrasam o carregamento.</li>
+            <li>Se recursos críticos estão bloqueando a experiência.</li>
+          </ul>
+          <p><strong>Cuidado técnico:</strong></p>
+          <ul>
+            <li>WebPageTest é excelente para laboratório e comparação controlada.</li>
+            <li>Para INP, continue testando interações reais no DevTools e, quando possível, com dados de campo.</li>
+          </ul>
+          <h2>🔗 Outras ferramentas úteis</h2>
+          <p>Essas entram como apoio, monitoramento ou investigação mais avançada:</p>
+          <ul>
+            <li><a href="https://cruxvis.withgoogle.com/" target="_blank" rel="noopener">CrUX Vis</a> - visualiza histórico de dados reais do Chrome UX Report.</li>
+            <li><a href="https://developer.chrome.com/docs/crux/vis" target="_blank" rel="noopener">Documentação do CrUX Vis</a> - explica dados históricos, URL/origin e dispositivos.</li>
+            <li><a href="https://github.com/GoogleChrome/web-vitals" target="_blank" rel="noopener">web-vitals JavaScript library</a> - mede Web Vitals em usuários reais dentro da aplicação.</li>
+            <li><a href="https://developers.google.com/speed/docs/insights/v5/get-started" target="_blank" rel="noopener">PageSpeed Insights API</a> - permite automatizar consultas de performance.</li>
+            <li><a href="https://github.com/GoogleChrome/lighthouse-ci" target="_blank" rel="noopener">Lighthouse CI</a> - ajuda a monitorar regressões em pipelines.</li>
+            <li><a href="https://www.debugbear.com/inp-debugger" target="_blank" rel="noopener">DebugBear INP Debugger</a> - testa interações e ajuda a encontrar elementos com atraso.</li>
+            <li><a href="https://www.debugbear.com/docs/web-vitals-report" target="_blank" rel="noopener">DebugBear Web Vitals Report</a> - combina dados de laboratório, CrUX e monitoramento.</li>
+            <li><a href="https://httparchive.org/reports/chrome-ux-report" target="_blank" rel="noopener">HTTP Archive - CrUX</a> - relatórios públicos com dados agregados de experiência real.</li>
+          </ul>
+          <h2>🧪 Roteiro prático de investigação</h2>
+          <p>Eu seguiria este fluxo:</p>
+          <ol>
+            <li><strong>Comece pelo PageSpeed Insights.</strong></li>
+          </ol>
+          <ul>
+            <li>Veja se há dados de campo.</li>
+            <li>Compare mobile e desktop.</li>
+            <li>Observe LCP, CLS e INP separadamente.</li>
+          </ul>
+          <ol>
+            <li><strong>Abra o Search Console.</strong></li>
+          </ol>
+          <ul>
+            <li>Veja se o problema aparece em grupos de URLs.</li>
+            <li>Priorize páginas com maior impacto.</li>
+            <li>Separe problemas mobile de desktop.</li>
+          </ul>
+          <ol>
+            <li><strong>Reproduza o problema no navegador.</strong></li>
+          </ol>
+          <ul>
+            <li>Use um celular real.</li>
+            <li>Teste rede comum.</li>
+            <li>Clique em menus.</li>
+            <li>Digite em formulários.</li>
+            <li>Use filtros, buscas, modais e sliders.</li>
+          </ul>
+          <ol>
+            <li><strong>Grave no Chrome DevTools Performance.</strong></li>
+          </ol>
+          <ul>
+            <li>Interaja durante a gravação.</li>
+            <li>Procure long tasks.</li>
+            <li>Observe a trilha de interações.</li>
+            <li>Veja se o atraso está no input delay, processing duration ou presentation delay.</li>
+          </ul>
+          <ol>
+            <li><strong>Use Lighthouse e WebPageTest para hipóteses controladas.</strong></li>
+          </ol>
+          <ul>
+            <li>Compare antes e depois.</li>
+            <li>Meça impacto de scripts, imagens e terceiros.</li>
+            <li>Documente cada alteração.</li>
+          </ul>
+          <h2>⚠️ Erros comuns</h2>
+          <p>Alguns erros aparecem com frequência em auditorias:</p>
+          <ul>
+            <li>Achar que nota alta resolve tudo.</li>
+            <li>Testar só no desktop potente.</li>
+            <li>Medir apenas carregamento inicial.</li>
+            <li>Ignorar cliques, menus e formulários.</li>
+            <li>Instalar plugin para resolver problema de arquitetura.</li>
+            <li>Carregar script global para recurso usado em uma única página.</li>
+            <li>Otimizar imagem e esquecer JavaScript.</li>
+            <li>Ignorar mobile.</li>
+            <li>Confundir cache com experiência.</li>
+            <li>Celebrar LCP bom enquanto o INP está ruim.</li>
+          </ul>
+          <p>Nota ajuda. Relatório ajuda. Gráfico ajuda.</p>
+          <p>Mas se o usuário clica e a interface não responde, a experiência continua ruim.</p>
+          <h2>✅ Boas práticas para melhorar resposta e INP</h2>
+          <p>Algumas decisões costumam ajudar bastante:</p>
+          <ul>
+            <li>Reduzir JavaScript desnecessário.</li>
+            <li>Carregar scripts apenas onde são usados.</li>
+            <li>Dividir tarefas longas em partes menores.</li>
+            <li>Evitar handlers de clique pesados.</li>
+            <li>Dar feedback visual rápido.</li>
+            <li>Simplificar DOM.</li>
+            <li>Revisar componentes que renderizam demais.</li>
+            <li>Remover plugins duplicados ou sem uso.</li>
+            <li>Evitar sliders e builders pesados sem necessidade.</li>
+            <li>Reduzir scripts de terceiros.</li>
+            <li>Usar cache com critério.</li>
+            <li>Testar fluxos reais.</li>
+            <li>Medir em mobile.</li>
+            <li>Monitorar depois da publicação.</li>
+          </ul>
+          <p>Em portais institucionais, uma revisão simples já pode revelar muita coisa:</p>
+          <ul>
+            <li>Quais plugins carregam em todas as páginas?</li>
+            <li>Quais scripts são realmente usados?</li>
+            <li>O template injeta CSS e JS demais?</li>
+            <li>O menu mobile depende de biblioteca pesada?</li>
+            <li>A busca faz trabalho demais a cada tecla?</li>
+            <li>O formulário dá feedback imediato?</li>
+            <li>O usuário sabe que a ação foi recebida?</li>
+          </ul>
+          <p>Pequenas decisões técnicas viram sensação de velocidade.</p>
+          <h2>🧾 Conclusão</h2>
+          <p>Performance não é vaidade técnica.</p>
+          <p>É respeito pelo tempo do usuário.</p>
+          <p>Um site bom não é apenas o que aparece rápido. É o que responde quando alguém precisa dele.</p>
+          <p>O INP lembra o dev de uma coisa simples e importante:</p>
+          <ul>
+            <li>a experiência não termina no carregamento;</li>
+            <li>ela continua em cada clique;</li>
+            <li>continua em cada toque;</li>
+            <li>continua em cada campo preenchido;</li>
+            <li>continua em cada menu aberto;</li>
+            <li>continua em cada ação concluída.</li>
+          </ul>
+          <p>No fim, performance real é quando a interface acompanha a intenção.</p>
+          <h2>📚 Fontes e links citados</h2>
+          <ul>
+            <li><a href="https://web.dev/articles/inp" target="_blank" rel="noopener">Interaction to Next Paint (INP) - web.dev</a></li>
+            <li><a href="https://web.dev/articles/vitals" target="_blank" rel="noopener">Core Web Vitals - web.dev</a></li>
+            <li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">PageSpeed Insights</a></li>
+            <li><a href="https://developers.google.com/speed/docs/insights/v5/about" target="_blank" rel="noopener">About PageSpeed Insights - Google for Developers</a></li>
+            <li><a href="https://developer.chrome.com/docs/devtools/performance/reference" target="_blank" rel="noopener">Chrome DevTools Performance features reference</a></li>
+            <li><a href="https://developer.chrome.com/docs/performance/insights/inp-breakdown" target="_blank" rel="noopener">INP breakdown - Chrome for Developers</a></li>
+            <li><a href="https://developer.chrome.com/docs/lighthouse" target="_blank" rel="noopener">Lighthouse - Chrome for Developers</a></li>
+            <li><a href="https://support.google.com/webmasters/answer/9205520?hl=pt-BR" target="_blank" rel="noopener">Relatório de Core Web Vitals - Search Console</a></li>
+            <li><a href="https://www.webpagetest.org/" target="_blank" rel="noopener">WebPageTest</a></li>
+            <li><a href="https://docs.webpagetest.org/getting-started/" target="_blank" rel="noopener">WebPageTest Documentation</a></li>
+            <li><a href="https://cruxvis.withgoogle.com/" target="_blank" rel="noopener">CrUX Vis</a></li>
+            <li><a href="https://developer.chrome.com/docs/crux/vis" target="_blank" rel="noopener">CrUX Vis documentation</a></li>
+            <li><a href="https://github.com/GoogleChrome/web-vitals" target="_blank" rel="noopener">web-vitals JavaScript library</a></li>
+          </ul>
+          <h2>❓ Para continuar a conversa</h2>
+          <ul>
+            <li>Você já viu um site carregar rápido, mas travar quando precisava clicar em algo?</li>
+            <li>Nos seus projetos, o maior problema costuma estar no JavaScript, no CMS, nos plugins ou no template?</li>
+            <li>Qual ferramenta mais te ajuda hoje: PageSpeed, DevTools, Lighthouse, Search Console ou WebPageTest?</li>
+          </ul>
+          <h2>📣 Gostou? Então ajude a série a chegar em mais devs</h2>
+          <p>Se este artigo te ajudou a olhar performance com mais critério:</p>
+          <p>👍 Curta para apoiar a série <strong>DEV &amp; Versos</strong>. 💬 Comente qual ferramenta você usa para medir performance. 🔁 Compartilhe com alguém que trabalha com front-end, CMS, SEO técnico ou portais institucionais. 🔖 Salve para consultar quando for auditar um site.</p>
+          <h2>#️⃣ Hashtags</h2>
+          <p>#WebPerformance #CoreWebVitals #INP #InteractionToNextPaint #PageSpeedInsights #ChromeDevTools #Lighthouse #Frontend #FullStack #JavaScript #UX #SEOTecnico #Joomla #CMS #PerformanceWeb #DesenvolvimentoWeb #DevEVersos</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <nav class="site-footer__nav" aria-label="Links do rodapé">
+      <a href="../index.html">Início</a>
+      <a href="projects.html">Cases</a>
+      <a href="resume.html">Currículo</a>
+      <a href="articles.html">Artigos</a>
+      <a href="https://github.com/hirleicarlos" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+    <span class="site-footer__copy">© 2026 Hirlei Carlos</span>
+  </div>
+</footer>
+<script src="../assets/js/nav.js"></script>
+</body>
+</html>
