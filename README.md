@@ -75,8 +75,13 @@ hirleicarlos.github.io/
 │           └── cv-print.css                ← CSS exclusivo para PDF
 │
 └── updates/
-    ├── mod_hc_socialmedia.xml              ← Update server: módulo HC Mídias Sociais
-    └── plg_system_btnwhatsapp.xml          ← Update server: plugin WhatsApp flutuante
+    ├── mod_hc_socialmedia.xml                  ← Update server: módulo HC Mídias Sociais
+    ├── mod_hc_igpulse.xml                     ← Update server: módulo HC IgPulse
+    ├── pkg_hcimageoptimizer.xml               ← Update server: pacote HC Image Optimizer
+    ├── plg_media-action_hcimageoptimizer.xml  ← Update server: integração do Gerenciador de Mídia
+    ├── plg_system_btnwhatsapp.xml             ← Update server: plugin WhatsApp flutuante
+    ├── plg_system_hcimageoptimizer.xml        ← Update server: plugin HC Image Optimizer
+    └── tpl_hc_carlix.xml                      ← Update server: template HC Carlix
 ```
 
 ---
@@ -364,6 +369,8 @@ Repositórios públicos com update server via XML em `updates/`:
 |----------|------|-------------|
 | HC Mídias Sociais | Módulo Joomla 4/5/6 | [mod_hc_socialmedia](https://github.com/hirleicarlos/mod_hc_socialmedia) |
 | Botão WhatsApp | Plugin System Joomla | [plg_system_btnwhatsapp](https://github.com/hirleicarlos/plg_system_btnwhatsapp) |
+| HC Image Optimizer | Pacote Joomla 5/6 | [hc-image-optimizer](https://github.com/hirleicarlos/hc-image-optimizer) |
+| HC Image Optimizer Media Action | Plugin Media Action Joomla 5/6 | [hc-image-optimizer](https://github.com/hirleicarlos/hc-image-optimizer) |
 
 ---
 
