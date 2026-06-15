@@ -1,4 +1,4 @@
-# 👨‍💻 Hirlei Carlos — Portfólio Profissional & Sistema Automatizado de Currículo
+# Hirlei Carlos - Portfólio Profissional e Currículo Automatizado
 
 ![Status](https://img.shields.io/badge/status-ativo-success)
 ![Stack](https://img.shields.io/badge/stack-HTML%20%7C%20CSS%20%7C%20Python-blue)
@@ -17,6 +17,7 @@ Este repositório contém:
 - 🖨 Motor de geração de PDF via Python + WeasyPrint
 - 🧠 Ordenação semântica de seções via classes `pdfN`
 - 🚀 Hospedagem via GitHub Pages
+- 🐳 Desenvolvimento local pelo Docker Desktop integrado ao Ubuntu/WSL
 
 O projeto separa completamente:
 
@@ -29,9 +30,10 @@ O projeto separa completamente:
 ## 📁 Estrutura do Projeto
 
 ```
-hirleicarlos.github.io/
+hirleicarlos-github-io/
 │
 ├── index.html                              ← Home
+├── gerar-cv.bat                            ← Atalho Windows para geração do currículo
 │
 ├── html/
 │   ├── projects.html                       ← Cases & Atuação
@@ -82,6 +84,53 @@ hirleicarlos.github.io/
     ├── plg_system_btnwhatsapp.xml             ← Update server: plugin WhatsApp flutuante
     ├── plg_system_hcimageoptimizer.xml        ← Update server: plugin HC Image Optimizer
     └── tpl_hc_carlix.xml                      ← Update server: template HC Carlix
+```
+
+---
+
+## 🐳 Desenvolvimento Local
+
+O repositório Git atual está em:
+
+```text
+/home/hirleicarlos/projetos/meg-load/hirleicarlos-github-io
+```
+
+No Windows e no GitHub Desktop, use:
+
+```text
+\\wsl.localhost\Ubuntu\home\hirleicarlos\projetos\meg-load\hirleicarlos-github-io
+```
+
+Repositório remoto:
+
+```text
+https://github.com/hirleicarlos/hirleicarlos.github.io.git
+```
+
+O ambiente local é fornecido pelo projeto `/home/hirleicarlos/docker-server`, executado via Docker Compose dentro do Ubuntu/WSL.
+
+| Ambiente | URL | Arquitetura |
+|----------|-----|-------------|
+| Apache | `https://hirleicarlos-github-io.1.localhost/` | HAProxy → Apache + PHP 8.3 |
+| Nginx | `https://hirleicarlos-github-io.2.localhost/` | HAProxy → Nginx → PHP-FPM 8.3 |
+| Produção | `https://hirleicarlos.github.io/` | GitHub Pages |
+
+O Nginx não passa pelo Apache. Os dois ambientes usam as portas padrão 80/443 do HAProxy, portanto não é necessário informar portas nas URLs.
+
+Subir ou conferir o ambiente pelo Ubuntu/WSL:
+
+```bash
+cd /home/hirleicarlos/docker-server
+docker compose config
+docker compose up -d
+docker compose ps
+```
+
+Subir pelo PowerShell:
+
+```powershell
+wsl -d Ubuntu --cd /home/hirleicarlos/docker-server -- docker compose up -d
 ```
 
 ---
@@ -348,6 +397,8 @@ python automacao/cv/scripts/build_cv.py --latest
 
 Atualiza também: `assets/file/Curriculo_Hirlei_Carlos_RH.pdf`
 
+No Windows, o atalho `gerar-cv.bat` executa o script pelo WSL usando o caminho atual do repositório.
+
 ### Parâmetros opcionais
 
 | Parâmetro | Padrão | Descrição |
@@ -397,6 +448,37 @@ Push para `main` → deploy automático via GitHub Pages.
 
 ---
 
+## ✅ Validação
+
+Verificar os dois servidores locais:
+
+```bash
+curl -k -I https://hirleicarlos-github-io.1.localhost/
+curl -k -I https://hirleicarlos-github-io.2.localhost/
+```
+
+Validar o script de geração do currículo:
+
+```bash
+python3 -m py_compile automacao/cv/scripts/build_cv.py
+```
+
+---
+
+## 🔒 Arquivos Locais Não Versionados
+
+| Caminho | Motivo |
+|---------|--------|
+| `.idea/` e `.vscode/` | Configurações locais de IDE |
+| `.venv/`, `venv/` e `__pycache__/` | Ambientes e cache Python |
+| `antigo/` | Arquivos históricos fora da publicação atual |
+| `*.zip` | Cópias e exportações locais |
+| PDFs gerados com timestamp | Artefatos locais de currículo |
+
+Certificados, chaves, bancos e volumes pertencem ao projeto `docker-server` e não devem ser adicionados a este repositório.
+
+---
+
 ## 🧾 Princípios de Engenharia
 
 | Princípio | Aplicação |
@@ -417,9 +499,9 @@ Push para `main` → deploy automático via GitHub Pages.
 - 🌐 Site: [hirleicarlos.github.io](https://hirleicarlos.github.io)
 - 💼 LinkedIn: [linkedin.com/in/hirleicarlos](https://linkedin.com/in/hirleicarlos)
 - 🐙 GitHub: [github.com/hirleicarlos](https://github.com/hirleicarlos)
-- ✉ E-mail: prof.hirleicarlos@gmail.com
+- ✉️ E-mail: prof.hirleicarlos@gmail.com
 
 ---
 
-© 2026 — Hirlei Carlos  
-Desenvolvedor Full Stack Sênior | PHP & Joomla | Sistemas Corporativos | Governo e Educação
+© 2026 — Hirlei Carlos<br>
+Desenvolvedor Full Stack Sênior | PHP & Joomla | Sistemas Corporativos | Docker | Governo e Educação

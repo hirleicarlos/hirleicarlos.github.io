@@ -34,7 +34,7 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="../assets/css/variaveis.css">
     <link rel="stylesheet" href="../assets/css/global.css">
-    <link rel="stylesheet" href="../assets/css/projects.css">
+    <link rel="stylesheet" href="../assets/css/projects.css?v=20260612">
 </head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
@@ -206,10 +206,17 @@
                         <span class="proj__badge">Infraestrutura</span>
                     </div>
                     <h3 class="proj__title">Docker Development Server</h3>
-                    <p class="proj__sub">Ambiente local autoral para desenvolvimento web</p>
-                    <p class="proj__text">Ambiente Docker com Apache, PHP multi-versão, SSL local, vHosts e Docker Compose para isolar projetos, padronizar setup e acelerar manutenção. Projeto autoral publicado no GitHub.</p>
+                    <p class="proj__sub">Arquitetura local autoral para projetos PHP e Joomla</p>
+                    <p class="proj__text">Ambiente executado com Docker Desktop integrado ao Ubuntu/WSL, projetado para reproduzir cenários reais de hospedagem. O HAProxy centraliza as portas 80 e 443 e encaminha cada domínio diretamente para servidores Apache ou Nginx independentes, com SSL local e volumes Linux compartilhados.</p>
+                    <ul class="proj__bullets">
+                        <li><strong>Roteamento:</strong> HAProxy 3.2 com entrada única em 80/443 e acesso sem portas adicionais na URL</li>
+                        <li><strong>Servidores:</strong> Apache em <code>*.1.localhost</code> e Nginx direto ao PHP-FPM em <code>*.2.localhost</code>, sem passar pelo Apache</li>
+                        <li><strong>PHP 8.3:</strong> GD com WebP, PDO, Intl, ZIP, SOAP, sockets, OPcache e extensões para Joomla</li>
+                        <li><strong>Dados e ferramentas:</strong> MariaDB 11, PostgreSQL 17, phpMyAdmin e Node.js 20</li>
+                        <li><strong>Organização:</strong> projetos e repositórios Git mantidos em volumes Linux dentro do WSL</li>
+                    </ul>
                     <div class="tags" style="margin-bottom:14px">
-                        <span class="tag tag--red">Docker Compose</span><span class="tag">Apache</span><span class="tag">PHP</span><span class="tag">SSL local</span><span class="tag">vHosts</span><span class="tag">Open Source</span>
+                        <span class="tag tag--red">Docker Compose</span><span class="tag">HAProxy</span><span class="tag">Apache</span><span class="tag">Nginx</span><span class="tag">PHP-FPM 8.3</span><span class="tag">MariaDB 11</span><span class="tag">PostgreSQL 17</span><span class="tag">SSL local</span>
                     </div>
                     <div class="proj__actions">
                         <a class="btn btn--primary" href="https://github.com/hirleicarlos/docker-dev-server" target="_blank" rel="noopener">Ver no GitHub</a>

@@ -163,6 +163,7 @@
     padding: 24px;
     display: flex;
     flex-direction: column;
+    min-width: 0;
     transition: border-color .18s, box-shadow .18s, transform .18s;
     scroll-margin-top: calc(var(--nav-h) + 16px);
 }
@@ -332,7 +333,11 @@
 }
 
 @media (max-width: 700px) {
-    .projects-grid {
+    .projects-grid,
+    .projects-grid-2col,
+    .projects-grid-3col,
+    .proj-grid--2col,
+    #atual-h ~ .projects-grid {
         grid-template-columns: 1fr;
     }
 
