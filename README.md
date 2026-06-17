@@ -13,6 +13,7 @@
 Este repositório contém:
 
 - 🌐 Site profissional estático — completamente redesenhado em 2026
+- ✍️ Arquivo público da newsletter Dev & Versos com 17 edições
 - 📄 Currículo online (HTML) com sistema de geração de PDF automatizado
 - 🖨 Motor de geração de PDF via Python + WeasyPrint
 - 🧠 Ordenação semântica de seções via classes `pdfN`
@@ -41,7 +42,19 @@ hirleicarlos-github-io/
 │   ├── articles.html                       ← Artigos & Newsletter
 │   ├── sistemaocb.html                     ← Case: Sistema OCB
 │   ├── cmsjoomla.html                      ← Case: Engenharia Joomla
+│   ├── projetos/
+│   │   └── tpl-hc-carlix.html              ← Produto Joomla: template HC Carlix
 │   └── ufg.html                            ← Case: UFG
+│
+├── joomla/
+│   ├── hc-igpulse/
+│   │   └── index.html                      ← Produto Joomla: HC IgPulse
+│   ├── whatsapp-button/
+│   │   └── index.html                      ← Produto Joomla: WhatsApp Button
+│   ├── hc-social-media/
+│   │   └── index.html                      ← Produto Joomla: HC Social Media
+│   └── hc-image-optimizer/
+│       └── index.html                      ← Produto Joomla: HC Image Optimizer
 │
 ├── assets/
 │   ├── css/
@@ -51,7 +64,9 @@ hirleicarlos-github-io/
 │   │   ├── projects.css                    ← Exclusivo de Cases & Atuação
 │   │   ├── resume.css                      ← Exclusivo do currículo
 │   │   ├── articles.css                    ← Exclusivo de artigos
-│   │   └── subpage.css                     ← Compartilhado: sistemaocb, cmsjoomla, ufg
+│   │   ├── subpage.css                     ← Compartilhado: sistemaocb, cmsjoomla, ufg
+│   │   ├── joomla-product.css              ← Páginas individuais de produtos Joomla
+│   │   └── hc-image-optimizer.css          ← Página individual do HC Image Optimizer
 │   ├── js/
 │   │   ├── nav.js                          ← Navbar responsiva
 │   │   ├── main.js
@@ -59,7 +74,7 @@ hirleicarlos-github-io/
 │   ├── img/
 │   │   ├── site/                           ← favicon.ico, favicon.svg, icon_hirlei.svg, logo_hirlei.svg
 │   │   ├── case/                           ← Imagens dos projetos (.webp)
-│   │   ├── artigos/                        ← Capas Dev & Versos (.png)
+│   │   ├── artigos/                        ← Capas Dev & Versos #1–#17 (.png)
 │   │   ├── hirlei.jpg                      ← Foto do perfil
 │   │   └── social.png                      ← Imagem Open Graph (1200×630)
 │   └── file/
@@ -265,8 +280,20 @@ Todos os arquivos CSS importam `variaveis.css` como fonte única de tokens.
 | Seção | Título |
 |-------|--------|
 | `section--alt` | Dev & Versos (newsletter) |
-| `section--white` | Artigos publicados |
+| `section--white` | 17 artigos publicados |
 | `section--alt` | Sobre a Dev & Versos |
+
+### Newsletter Dev & Versos
+
+A home apresenta a newsletter e as três edições mais recentes. A página `html/articles.html` mantém o arquivo completo em ordem decrescente.
+
+| Edição | Tema | Publicação |
+|--------|------|------------|
+| #17/2026 | Tabelas HTML: estrutura, atributos e acessibilidade | [LinkedIn](https://www.linkedin.com/pulse/dev-versos-172026-tabelas-html-estrutura-atributos-e-hirlei-carlos-o1f5f) |
+| #16/2026 | HC Carlix: documento de apresentação e passo a passo do template Joomla 6 | [LinkedIn](https://www.linkedin.com/pulse/dev-versos-162026-hc-carlix-documento-de-apresenta%C3%A7%C3%A3o-hirlei-carlos-ela8f) |
+| #15/2026 | E-commerce em 2026: 5 plataformas para vender online com estratégia | [LinkedIn](https://www.linkedin.com/pulse/dev-versos-152026-e-commerce-em-2026-5-plataformas-pereira-de-ara%C3%BAjo-u8jmf) |
+
+As capas ficam em `assets/img/artigos/`, usando o padrão `DEV_&_Versos_N_2026.png`.
 
 ### `html/sistemaocb.html` — Sistema OCB
 
@@ -286,6 +313,41 @@ Todos os arquivos CSS importam `variaveis.css` como fonte única de tokens.
 | `section--alt` | Projetos Corporativos (NDA) |
 | `section--white` | Direção técnica |
 
+### Páginas individuais de produtos Joomla
+
+Todas usam o mesmo modelo visual em `assets/css/joomla-product.css` e a mesma sequência didática:
+
+1. Hero com nome, proposta, download e links principais
+2. Visão geral com resumo, estatísticas e âncoras
+3. Uso com problema, público e casos de uso
+4. Recursos reais da versão publicada
+5. Capturas ou imagem pública disponível
+6. Arquitetura com arquivos, camadas e requisitos
+7. Instalação com quatro passos práticos
+8. Release com versão, data e notas
+9. Artigo ou publicação relacionada com link já publicado
+10. Links oficiais do produto
+
+| Produto | Página local | Artigo ou publicação |
+|---------|--------------|----------------------|
+| HC Carlix | `html/projetos/tpl-hc-carlix.html` | [DEV & Versos #16/2026](https://www.linkedin.com/pulse/dev-versos-162026-hc-carlix-documento-de-apresenta%C3%A7%C3%A3o-hirlei-carlos-ela8f) |
+| HC IgPulse | `joomla/hc-igpulse/index.html` | Sem artigo vinculado |
+| WhatsApp Button | `joomla/whatsapp-button/index.html` | [Artigo técnico no LinkedIn](https://www.linkedin.com/pulse/desenvolvi-um-plugin-de-bot%C3%A3o-whatsapp-para-joomla-4-hirlei-carlos-jqqif) |
+| HC Social Media | `joomla/hc-social-media/index.html` | [Artigo técnico no LinkedIn](https://pt.linkedin.com/pulse/lancei-meu-novo-m%C3%B3dulo-para-joomla-456-hc-m%C3%ADdias-pereira-de-ara%C3%BAjo-3rcmf?trk=public_post_feed-article-content) |
+
+Regra editorial: exibir bloco de artigo ou publicação somente com link já publicado. Páginas sem artigo vinculado não exibem bloco editorial vazio.
+
+Passo a passo para criar nova página de produto:
+
+1. Copiar a estrutura de uma página existente que use `joomla-product.css`.
+2. Atualizar `title`, `description`, canonical, Open Graph, Twitter Card e JSON-LD.
+3. Trocar hero, estatísticas, cards de uso, recursos e arquitetura pelo conteúdo real do produto.
+4. Manter os IDs padrão: `uso`, `recursos`, `galeria`, `arquitetura`, `instalacao`, `releases`, `artigos`.
+5. Preencher instalação com comandos ou caminhos reais do Joomla, sem passos genéricos.
+6. Apontar a release oficial e o download instalável.
+7. Exibir o bloco de artigo ou publicação somente com link já publicado.
+8. Validar links, imagens, alt text e navegação por âncoras.
+
 ### `html/ufg.html` — UFG
 
 | Seção | Título |
@@ -298,7 +360,7 @@ Todos os arquivos CSS importam `variaveis.css` como fonte única de tokens.
 
 ---
 
-## 🏗 Arquitetura CSS — subpage.css
+## 🏗 Arquitetura CSS — subpage.css e joomla-product.css
 
 Grids disponíveis para as subpáginas:
 
@@ -309,6 +371,18 @@ Grids disponíveis para as subpáginas:
 | `.proj-grid--4` | 4 colunas | ufg — demais seções |
 | `.states-grid` | 4 colunas | sistemaocb — portais estaduais |
 | `.summary-stats` | 4 colunas | todas as subpáginas |
+
+Componentes disponíveis para páginas individuais de produtos Joomla:
+
+| Classe | Função | Usado em |
+|--------|--------|----------|
+| `.jproduct-hero__grid` | Hero com texto e imagem do produto | Carlix, IgPulse, WhatsApp Button, Social Media |
+| `.jproduct-grid--2` / `.jproduct-grid--3` | Cards de uso, recursos e arquitetura | Todas as páginas de produto |
+| `.jproduct-gallery` | Galeria de capturas reais | Carlix, IgPulse, WhatsApp Button, Social Media |
+| `.jproduct-steps` | Passo a passo de instalação | Todas as páginas de produto |
+| `.jproduct-release` | Bloco de versão publicada | Todas as páginas de produto |
+| `.jproduct-article` | Artigo ou post com link publicado | Páginas com publicação vinculada |
+| `.jproduct-cta` | Links oficiais finais | Todas as páginas de produto |
 
 ---
 
@@ -418,10 +492,13 @@ Repositórios públicos com update server via XML em `updates/`:
 
 | Extensão | Tipo | Repositório |
 |----------|------|-------------|
+| HC Carlix | Template Joomla 5/6 | [tpl_hc_carlix](https://github.com/hirleicarlos/tpl_hc_carlix) |
+| HC IgPulse | Módulo Joomla 4/5/6 | [mod_hc_igpulse](https://github.com/hirleicarlos/mod_hc_igpulse) |
 | HC Mídias Sociais | Módulo Joomla 4/5/6 | [mod_hc_socialmedia](https://github.com/hirleicarlos/mod_hc_socialmedia) |
 | Botão WhatsApp | Plugin System Joomla | [plg_system_btnwhatsapp](https://github.com/hirleicarlos/plg_system_btnwhatsapp) |
 | HC Image Optimizer | Pacote Joomla 5/6 | [hc-image-optimizer](https://github.com/hirleicarlos/hc-image-optimizer) |
 | HC Image Optimizer Media Action | Plugin Media Action Joomla 5/6 | [hc-image-optimizer](https://github.com/hirleicarlos/hc-image-optimizer) |
+| HC Image Optimizer System | Plugin System Joomla 5/6 | [hc-image-optimizer](https://github.com/hirleicarlos/hc-image-optimizer) |
 
 ---
 
@@ -431,7 +508,7 @@ Todas as páginas têm meta tags completas para redes sociais:
 
 - `og:type`, `og:url`, `og:site_name`, `og:locale` (pt_BR)
 - `og:title`, `og:description`
-- `og:image` → `assets/img/social.png` (1200×630)
+- `og:image` → imagem específica da página ou `assets/img/social.png` nas páginas gerais
 - `twitter:card` → `summary_large_image`
 - `apple-touch-icon`
 - `favicon.ico` + `icon_hirlei.svg`
@@ -455,6 +532,15 @@ Verificar os dois servidores locais:
 ```bash
 curl -k -I https://hirleicarlos-github-io.1.localhost/
 curl -k -I https://hirleicarlos-github-io.2.localhost/
+```
+
+Verificar páginas individuais de produtos Joomla no ambiente `meg-load`:
+
+```bash
+curl -I http://meg-load.1.localhost/hirleicarlos-github-io/html/projetos/tpl-hc-carlix.html
+curl -I http://meg-load.1.localhost/hirleicarlos-github-io/joomla/hc-igpulse/
+curl -I http://meg-load.1.localhost/hirleicarlos-github-io/joomla/whatsapp-button/
+curl -I http://meg-load.1.localhost/hirleicarlos-github-io/joomla/hc-social-media/
 ```
 
 Validar o script de geração do currículo:
@@ -491,6 +577,7 @@ Certificados, chaves, bancos e volumes pertencem ao projeto `docker-server` e n�
 | Design system compartilhado | `variaveis.css` alimenta todos os arquivos CSS |
 | CSS por escopo | Cada página tem seu CSS específico |
 | Modificadores de grid | `.proj-grid`, `.proj-grid--2`, `.proj-grid--4` |
+| Modelo único de produto | Páginas Joomla repetem estrutura e mudam apenas conteúdo, imagens, release e artigo |
 
 ---
 

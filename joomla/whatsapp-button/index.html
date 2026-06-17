@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WhatsApp Button para Joomla 4, 5 e 6 | Hirlei Carlos</title>
+    <meta name="description" content="Plugin Joomla para botão flutuante de WhatsApp com controle por página e dispositivo, aparência mobile, horários, animações e configuração sem alterar o template.">
+    <meta name="keywords" content="WhatsApp Button, plugin Joomla, botão flutuante, Joomla 4, Joomla 5, Joomla 6, WhatsApp">
+    <link rel="canonical" href="https://hirleicarlos.github.io/joomla/whatsapp-button/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hirleicarlos.github.io/joomla/whatsapp-button/">
+    <meta property="og:site_name" content="Hirlei Carlos">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="System - WhatsApp Button para Joomla">
+    <meta property="og:description" content="Botão flutuante configurável sem alterar o template, com mobile overrides, horários e controle de exibição.">
+    <meta property="og:image" content="https://hirleicarlos.github.io/assets/img/projetos/whatsapp-button/capa-jed.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="525">
+    <meta property="og:image:alt" content="System - WhatsApp Button para Joomla">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="System - WhatsApp Button para Joomla">
+    <meta name="twitter:description" content="Botão flutuante de WhatsApp para Joomla 4, 5 e 6 sem alterar o template.">
+    <meta name="twitter:image" content="https://hirleicarlos.github.io/assets/img/projetos/whatsapp-button/capa-jed.png">
+
+    <link rel="icon" href="../../assets/img/site/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="../../assets/img/site/icon_hirlei.svg">
+    <link rel="apple-touch-icon" href="../../assets/img/site/icon_hirlei.svg">
+
+    <link rel="stylesheet" href="../../assets/css/variaveis.css">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/subpage.css">
+    <link rel="stylesheet" href="../../assets/css/joomla-product.css?v=20260616">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "System - WhatsApp Button",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web server with Joomla 4, Joomla 5 or Joomla 6",
+        "softwareVersion": "3.1.0",
+        "datePublished": "2026-05-09",
+        "description": "Plugin de sistema Joomla para inserir um botão flutuante de WhatsApp configurável sem alterar o template.",
+        "license": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+        "downloadUrl": "https://github.com/hirleicarlos/plg_system_btnwhatsapp/releases/download/v3.1.0/plg_system_btnwhatsapp.zip",
+        "codeRepository": "https://github.com/hirleicarlos/plg_system_btnwhatsapp",
+        "author": {
+            "@type": "Person",
+            "name": "Hirlei Carlos",
+            "url": "https://hirleicarlos.github.io"
+        }
+    }
+    </script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<nav class="navbar" id="navbar" aria-label="Navegação principal">
+    <div class="wrap navbar__inner">
+        <a class="navbar__logo" href="../../index.html" aria-label="Hirlei Carlos - Página inicial"><img src="../../assets/img/site/logo_hirlei.svg" alt="Hirlei Carlos"></a>
+        <div class="navbar__links" id="navbar-links">
+            <a href="../../index.html" class="home-link" title="Início">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Início
+            </a>
+            <a href="../../html/projects.html" class="active" aria-current="page">Cases &amp; Atuação</a>
+            <a href="../../html/resume.html">Currículo</a>
+            <a href="../../html/articles.html">Artigos</a>
+            <a href="../../index.html#contato">Contato</a>
+        </div>
+        <div class="navbar__right">
+            <a class="navbar__cv" href="../../assets/file/Curriculo_Hirlei_Carlos_RH.pdf" target="_blank" rel="noopener">↓ Baixar CV</a>
+            <button class="navbar__toggle" id="navbar-toggle" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+
+<header class="page-hero">
+    <div class="wrap jproduct-hero__grid">
+        <div>
+            <p class="page-hero__eyebrow">Plugin de sistema · Open Source · JED</p>
+            <h1 class="page-hero__title">WhatsApp Button</h1>
+            <p class="page-hero__sub"><strong>Botão flutuante para Joomla sem alterar o template</strong></p>
+            <div class="page-hero__panel">
+                Configure telefone, mensagem, páginas, dispositivos, aparência, animações e horário de atendimento pelo administrador. O plugin injeta o botão no frontend usando a arquitetura nativa do Joomla.
+            </div>
+            <div class="page-hero__actions">
+                <a class="btn btn--primary" href="https://github.com/hirleicarlos/plg_system_btnwhatsapp/releases/download/v3.1.0/plg_system_btnwhatsapp.zip">Baixar versão 3.1.0</a>
+                <a class="btn btn--ghost" href="https://extensions.joomla.org/extension/system-whatsapp-button/" target="_blank" rel="noopener">Ver no JED ↗</a>
+                <a class="btn btn--ghost" href="https://github.com/hirleicarlos/plg_system_btnwhatsapp" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+        </div>
+        <figure class="jproduct-hero__visual"><img src="../../assets/img/projetos/whatsapp-button/capa-jed.png" alt="System WhatsApp Button para Joomla"></figure>
+    </div>
+</header>
+
+<main id="conteudo">
+    <section class="section section--white" aria-labelledby="visao-h">
+        <div class="wrap">
+            <div class="section__head"><div><p class="section__eyebrow">Visão geral</p><h2 id="visao-h" class="section__title">Contato direto administrado pelo Joomla</h2></div></div>
+            <p class="jproduct-intro">
+                O System - WhatsApp Button resolve uma necessidade específica: disponibilizar contato pelo WhatsApp no frontend sem inserir código manual no template. O administrador controla onde, quando e como o botão aparece, enquanto o plugin cuida da sanitização, da URL de destino, dos assets e da renderização.
+            </p>
+            <div class="summary-stats">
+                <div class="sstat sstat--red"><div class="sstat__label">Versão pública</div><div class="sstat__val">3.1.0</div></div>
+                <div class="sstat"><div class="sstat__label">Compatibilidade</div><div class="sstat__val">J4/5/6</div></div>
+                <div class="sstat sstat--red"><div class="sstat__label">Runtime</div><div class="sstat__val">PHP 8.3+</div></div>
+                <div class="sstat"><div class="sstat__label">Tipo</div><div class="sstat__val">PLG System</div></div>
+            </div>
+            <div class="anchor-block">
+                <p class="anchor-lbl">Seções da página</p>
+                <div class="anchor-row">
+                    <a class="btn btn--ghost" href="#uso">Uso</a>
+                    <a class="btn btn--ghost" href="#recursos">Recursos</a>
+                    <a class="btn btn--ghost" href="#galeria">Capturas</a>
+                    <a class="btn btn--ghost" href="#arquitetura">Arquitetura</a>
+                    <a class="btn btn--ghost" href="#instalacao">Instalação</a>
+                    <a class="btn btn--ghost" href="#releases">Release</a>
+                    <a class="btn btn--ghost" href="#artigos">Artigo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="uso" aria-labelledby="uso-h">
+        <div class="wrap">
+            <div class="section__head"><div><p class="section__eyebrow">Problema e público</p><h2 id="uso-h" class="section__title">Uma função simples com controle operacional</h2></div></div>
+            <div class="jproduct-grid jproduct-grid--3">
+                <article class="jproduct-card jproduct-card--accent"><p class="jproduct-card__kicker">Problema</p><h3>Evitar alterações no template</h3><p>O botão é inserido por plugin de sistema e pode ser atualizado ou desativado sem editar arquivos da camada visual.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Público</p><h3>Sites que atendem por WhatsApp</h3><p>Projetos institucionais, lojas, serviços, portais e páginas de campanha que usam o WhatsApp como canal de contato.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Casos de uso</p><h3>Contato contextual</h3><p>A mensagem aceita URL, título e nome do site, permitindo iniciar a conversa com contexto sobre a página visitada.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--white" id="recursos" aria-labelledby="recursos-h">
+        <div class="wrap">
+            <div class="section__head"><div><p class="section__eyebrow">Recursos reais</p><h2 id="recursos-h" class="section__title">Controle de exibição, visual e comportamento</h2></div></div>
+            <div class="jproduct-grid jproduct-grid--3">
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Mensagem</p><h3>Variáveis dinâmicas</h3><p>Suporte a <span class="jproduct-code">{url}</span>, <span class="jproduct-code">{title}</span> e <span class="jproduct-code">{sitename}</span>.</p></article>
+                <article class="jproduct-card jproduct-card--accent"><p class="jproduct-card__kicker">Exibição</p><h3>Página e dispositivo</h3><p>Controle para todas as páginas ou itens de menu selecionados, em desktop, mobile ou ambos.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Mobile</p><h3>Overrides próprios</h3><p>Posição, tipo de botão, forma e tamanho podem herdar do desktop ou usar valores específicos.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Layout</p><h3>Ícone, texto ou ambos</h3><p>Ícone por classe CSS, SVG sanitizado, imagem do Media Manager ou ícone padrão.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Design</p><h3>CSS configurável</h3><p>Cores, borda, sombra, hover, distâncias laterais e z-index controlados pelo painel.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Comportamento</p><h3>Animação e tooltip</h3><p>Entrada slide, bounce ou fade, atraso configurável e tooltip com interação por hover e foco.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Atendimento</p><h3>Agenda semanal</h3><p>Horários por dia, fuso horário e mensagem específica para períodos fora do atendimento.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Acessibilidade</p><h3>Movimento reduzido</h3><p>O CSS respeita <span class="jproduct-code">prefers-reduced-motion</span> e os controles respondem ao foco.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Segurança</p><h3>Dados sanitizados</h3><p>Telefone limitado a dígitos e SVG tratado para remover scripts, eventos e protocolos inseguros.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="galeria" aria-labelledby="galeria-h">
+        <div class="wrap">
+            <div class="section__head"><div><p class="section__eyebrow">Capturas administrativas</p><h2 id="galeria-h" class="section__title">Configuração completa pelo painel</h2></div></div>
+            <p class="jproduct-intro">As capturas são da documentação local da versão 3.1.0 e mostram as áreas reais disponíveis no administrador do Joomla.</p>
+            <div class="jproduct-gallery">
+                <figure class="jproduct-gallery__item"><a class="jproduct-gallery__link" href="../../assets/img/projetos/whatsapp-button/admin-plugin.png" target="_blank" rel="noopener"><img src="../../assets/img/projetos/whatsapp-button/admin-plugin.png" alt="Tela principal do plugin WhatsApp Button" loading="lazy"></a><figcaption>Estado, acesso, ordem e identificação do plugin de sistema.</figcaption></figure>
+                <figure class="jproduct-gallery__item"><a class="jproduct-gallery__link" href="../../assets/img/projetos/whatsapp-button/admin-exibicao.png" target="_blank" rel="noopener"><img src="../../assets/img/projetos/whatsapp-button/admin-exibicao.png" alt="Controle de exibição do WhatsApp Button" loading="lazy"></a><figcaption>Regras de exibição por página e dispositivo.</figcaption></figure>
+                <figure class="jproduct-gallery__item"><a class="jproduct-gallery__link" href="../../assets/img/projetos/whatsapp-button/admin-layout.png" target="_blank" rel="noopener"><img src="../../assets/img/projetos/whatsapp-button/admin-layout.png" alt="Configurações de layout do WhatsApp Button" loading="lazy"></a><figcaption>Tipo de botão, origem do ícone, texto, forma e tamanho.</figcaption></figure>
+                <figure class="jproduct-gallery__item"><a class="jproduct-gallery__link" href="../../assets/img/projetos/whatsapp-button/admin-design.png" target="_blank" rel="noopener"><img src="../../assets/img/projetos/whatsapp-button/admin-design.png" alt="Configurações de design do WhatsApp Button" loading="lazy"></a><figcaption>Cores, hover, borda, sombra, distâncias e camada visual.</figcaption></figure>
+                <figure class="jproduct-gallery__item jproduct-gallery__item--tall"><a class="jproduct-gallery__link" href="../../assets/img/projetos/whatsapp-button/admin-horarios.png" target="_blank" rel="noopener"><img src="../../assets/img/projetos/whatsapp-button/admin-horarios.png" alt="Agenda semanal do WhatsApp Button" loading="lazy"></a><figcaption>Fuso horário, mensagem fora do expediente e agenda de segunda a domingo.</figcaption></figure>
+                <figure class="jproduct-gallery__item"><a class="jproduct-gallery__link" href="../../assets/img/projetos/whatsapp-button/admin-mobile.png" target="_blank" rel="noopener"><img src="../../assets/img/projetos/whatsapp-button/admin-mobile.png" alt="Aparência móvel do WhatsApp Button" loading="lazy"></a><figcaption>Overrides móveis adicionados na versão 3.1.0, com opção de herdar valores do desktop.</figcaption></figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--white" id="arquitetura" aria-labelledby="arquitetura-h">
+        <div class="wrap">
+            <div class="section__head"><div><p class="section__eyebrow">Arquitetura</p><h2 id="arquitetura-h" class="section__title">Plugin nativo, assets versionados e layout separado</h2></div></div>
+            <div class="jproduct-grid jproduct-grid--2">
+                <article class="jproduct-card">
+                    <p class="jproduct-card__kicker">Fluxo Joomla</p>
+                    <h3>Eventos e renderização</h3>
+                    <dl class="jproduct-facts">
+                        <div><dt><span class="jproduct-code">onBeforeCompileHead</span></dt><dd>Registra CSS e JavaScript pelo WebAssetManager.</dd></div>
+                        <div><dt><span class="jproduct-code">onAfterRender</span></dt><dd>Valida contexto, página, dispositivo, horário e telefone antes da injeção.</dd></div>
+                        <div><dt>FileLayout</dt><dd>Separa apresentação e lógica do plugin.</dd></div>
+                    </dl>
+                </article>
+                <article class="jproduct-card jproduct-card--accent">
+                    <p class="jproduct-card__kicker">Base técnica</p>
+                    <h3>Requisitos e decisões</h3>
+                    <ul class="jproduct-list">
+                        <li>Joomla 4.x, 5.x ou 6.x e PHP 8.3+</li>
+                        <li>Service Provider e injeção de dependência</li>
+                        <li>WebAssetManager para CSS e JavaScript</li>
+                        <li>CSS variables para os valores configuráveis</li>
+                        <li>URLs <span class="jproduct-code">wa.me</span> no mobile e <span class="jproduct-code">api.whatsapp.com</span> no desktop</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="instalacao" aria-labelledby="instalacao-h">
+        <div class="wrap">
+            <div class="section__head"><div><p class="section__eyebrow">Instalação</p><h2 id="instalacao-h" class="section__title">Ativação em quatro etapas</h2></div></div>
+            <div class="jproduct-steps">
+                <article class="jproduct-step"><span class="jproduct-step__num">1</span><h3>Baixar</h3><p>Obtenha <span class="jproduct-code">plg_system_btnwhatsapp.zip</span> na release.</p></article>
+                <article class="jproduct-step"><span class="jproduct-step__num">2</span><h3>Instalar</h3><p>Envie o pacote em Sistema, Instalar e Extensões.</p></article>
+                <article class="jproduct-step"><span class="jproduct-step__num">3</span><h3>Ativar</h3><p>Localize WhatsApp Button em Sistema, Gerenciar e Plugins.</p></article>
+                <article class="jproduct-step"><span class="jproduct-step__num">4</span><h3>Configurar</h3><p>Preencha o telefone, salve e refine as demais abas conforme o projeto.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--white" id="releases" aria-labelledby="releases-h">
+        <div class="wrap">
+            <div class="section__head"><div><p class="section__eyebrow">Releases</p><h2 id="releases-h" class="section__title">Da função básica ao controle mobile</h2></div></div>
+            <div class="jproduct-release">
+                <div class="jproduct-release__version"><strong>3.1.0</strong><span>Publicada em 9 de maio de 2026</span></div>
+                <div>
+                    <h3>Release atual</h3>
+                    <ul class="jproduct-list">
+                        <li>Overrides de aparência para dispositivos móveis</li>
+                        <li>Herança dos valores desktop para preservar configurações existentes</li>
+                        <li>Ajustes e correções da linha 3.x</li>
+                        <li>Pacote instalável e update server mantidos no repositório</li>
+                    </ul>
+                    <div class="jproduct-links">
+                        <a class="btn btn--primary" href="https://github.com/hirleicarlos/plg_system_btnwhatsapp/releases/tag/v3.1.0" target="_blank" rel="noopener">Notas da release ↗</a>
+                        <a class="btn btn--ghost" href="https://github.com/hirleicarlos/plg_system_btnwhatsapp/tags" target="_blank" rel="noopener">Histórico de tags ↗</a>
+                    </div>
+                </div>
+            </div>
+            <div class="jproduct-grid jproduct-grid--3">
+                <article class="jproduct-card"><p class="jproduct-card__kicker">v1</p><h3>Base do plugin</h3><p>Primeira linha pública do botão flutuante.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">v2 e v3.0</p><h3>Configuração ampliada</h3><p>Histórico documentado no repositório e no DEV &amp; Versos #6/2026.</p></article>
+                <article class="jproduct-card jproduct-card--accent"><p class="jproduct-card__kicker">v3.1</p><h3>Aparência móvel</h3><p>Configurações específicas para mobile sem quebrar instalações atualizadas.</p></article>
+            </div>
+            <p class="jproduct-note"><strong>Fonte:</strong> releases e tags publicados no GitHub.</p>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="artigos" aria-labelledby="artigos-h">
+        <div class="wrap">
+            <div class="section__head"><div><p class="section__eyebrow">Artigo relacionado</p><h2 id="artigos-h" class="section__title">Botão WhatsApp para Joomla 4, 5 e 6</h2></div></div>
+            <article class="jproduct-article">
+                <img src="../../assets/img/artigos/DEV_&amp;_Versos_6_2026.png" alt="Capa do artigo sobre WhatsApp Button para Joomla" loading="lazy">
+                <div>
+                    <p class="jproduct-card__kicker">Artigo técnico dedicado</p>
+                    <h3>Simples na interface, robusto na arquitetura</h3>
+                    <p>O artigo apresenta o objetivo do plugin, a estrutura moderna com namespace, service provider, layout separado, CSS dedicado e recursos de configuração pelo administrador.</p>
+                    <a class="btn btn--primary" href="https://www.linkedin.com/pulse/desenvolvi-um-plugin-de-bot%C3%A3o-whatsapp-para-joomla-4-hirlei-carlos-jqqif" target="_blank" rel="noopener">Ler artigo no LinkedIn ↗</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="links-h">
+        <div class="wrap">
+            <div class="jproduct-cta">
+                <div><h2 id="links-h">Links oficiais do WhatsApp Button</h2><p>Acesse o repositório, o JED, a release instalável e o HUB principal de produtos Joomla.</p></div>
+                <div class="jproduct-cta__actions">
+                    <a class="btn btn--primary" href="../../html/cmsjoomla.html">Voltar ao HUB Joomla</a>
+                    <a class="btn btn--ghost" href="https://github.com/hirleicarlos/plg_system_btnwhatsapp" target="_blank" rel="noopener">GitHub ↗</a>
+                    <a class="btn btn--ghost" href="https://extensions.joomla.org/extension/system-whatsapp-button/" target="_blank" rel="noopener">JED ↗</a>
+                    <a class="btn btn--ghost" href="https://github.com/hirleicarlos/plg_system_btnwhatsapp/releases/download/v3.1.0/plg_system_btnwhatsapp.zip">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrap site-footer__inner">
+        <a href="../../index.html" class="site-footer__brand" aria-label="Hirlei Carlos - Início"><img src="../../assets/img/site/icon_hirlei.svg" alt="Ícone Hirlei Carlos"><span>Hirlei <em>Carlos</em></span></a>
+        <nav class="site-footer__nav" aria-label="Links do rodapé"><a href="../../index.html">Início</a><a href="../../html/projects.html">Cases</a><a href="../../html/resume.html">Currículo</a><a href="../../html/articles.html">Artigos</a><a href="https://github.com/hirleicarlos" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">LinkedIn</a></nav>
+        <span class="site-footer__copy">© 2026 Hirlei Carlos</span>
+    </div>
+</footer>
+<script src="../../assets/js/nav.js"></script>
+</body>
+</html>

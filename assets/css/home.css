@@ -854,7 +854,7 @@
     }
 
     .articles {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .contact-grid {
@@ -876,7 +876,7 @@
     color: var(--muted);
     line-height: 1.65;
     margin-bottom: 24px;
-    max-width: 680px;
+    max-width: 100%;
 }
 
 .projetos-grid {
@@ -983,7 +983,7 @@
     font-size: var(--text-md);
     color: var(--muted);
     line-height: 1.65;
-    max-width: 780px;
+    max-width: 100%;
     margin-bottom: 28px;
 }
 
