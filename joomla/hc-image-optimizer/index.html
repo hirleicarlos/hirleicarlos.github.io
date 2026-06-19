@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HC Image Optimizer para Joomla 5 e 6 | Hirlei Carlos</title>
-    <meta name="description" content="Converta JPG e PNG para WebP no Joomla 5 e 6, preserve proporções e gere múltiplos perfis diretamente no Gerenciador de Mídia.">
+    <meta name="description" content="Pacote Joomla para converter JPG e PNG em WebP, preservar proporções e gerar múltiplos perfis de imagem diretamente no fluxo do Gerenciador de Mídia.">
+    <meta name="keywords" content="HC Image Optimizer, Joomla, WebP, otimização de imagens, Joomla 5, Joomla 6, PHP 8.3">
     <link rel="canonical" href="https://hirleicarlos.github.io/joomla/hc-image-optimizer/">
 
     <meta property="og:type" content="website">
@@ -12,7 +13,7 @@
     <meta property="og:site_name" content="Hirlei Carlos">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:title" content="HC Image Optimizer para Joomla 5 e 6">
-    <meta property="og:description" content="WebP automático, redimensionamento proporcional e múltiplos perfis no fluxo do Joomla.">
+    <meta property="og:description" content="WebP automático, redimensionamento proporcional, perfis de imagem e processamento local pelo Joomla.">
     <meta property="og:image" content="https://hirleicarlos.github.io/assets/img/projetos/hc-image-optimizer/capa-jed.png">
     <meta property="og:image:width" content="1897">
     <meta property="og:image:height" content="829">
@@ -20,7 +21,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="HC Image Optimizer para Joomla 5 e 6">
-    <meta name="twitter:description" content="WebP automático, redimensionamento proporcional e múltiplos perfis no fluxo do Joomla.">
+    <meta name="twitter:description" content="WebP automático, redimensionamento proporcional e perfis de imagem no fluxo do Joomla.">
     <meta name="twitter:image" content="https://hirleicarlos.github.io/assets/img/projetos/hc-image-optimizer/capa-jed.png">
     <meta name="twitter:image:alt" content="HC Image Optimizer para Joomla 5 e Joomla 6">
 
@@ -29,9 +30,9 @@
     <link rel="apple-touch-icon" href="../../assets/img/site/icon_hirlei.svg">
 
     <link rel="stylesheet" href="../../assets/css/variaveis.css">
-    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/global.css?v=20260619">
     <link rel="stylesheet" href="../../assets/css/subpage.css">
-    <link rel="stylesheet" href="../../assets/css/hc-image-optimizer.css?v=20260615">
+    <link rel="stylesheet" href="../../assets/css/joomla-product.css?v=20260619">
 
     <script type="application/ld+json">
     {
@@ -41,9 +42,10 @@
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "Web server with Joomla 5 or Joomla 6",
         "softwareVersion": "1.2.2",
+        "datePublished": "2026-06-12",
         "description": "Pacote Joomla para conversão local de JPG e PNG para WebP, redimensionamento proporcional e geração de múltiplos perfis.",
         "license": "https://www.gnu.org/licenses/gpl-3.0.html",
-        "downloadUrl": "https://github.com/hirleicarlos/hc-image-optimizer/releases/tag/v1.2.2",
+        "downloadUrl": "https://github.com/hirleicarlos/hc-image-optimizer/releases/download/v1.2.2/pkg_hcimageoptimizer-1.2.2.zip",
         "codeRepository": "https://github.com/hirleicarlos/hc-image-optimizer",
         "author": {
             "@type": "Person",
@@ -76,21 +78,19 @@
         </div>
         <div class="navbar__right">
             <a class="navbar__cv" href="../../assets/file/Curriculo_Hirlei_Carlos_RH.pdf" target="_blank" rel="noopener">↓ Baixar CV</a>
-            <button class="navbar__toggle" id="navbar-toggle" aria-expanded="false" aria-label="Abrir menu">
-                <span></span><span></span><span></span>
-            </button>
+            <button class="navbar__toggle" id="navbar-toggle" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span><span></span></button>
         </div>
     </div>
 </nav>
 
-<header class="page-hero hcio-hero">
-    <div class="wrap hcio-hero__grid">
+<header class="page-hero">
+    <div class="wrap jproduct-hero__grid">
         <div>
-            <p class="page-hero__eyebrow">Projeto próprio · Open Source</p>
+            <p class="page-hero__eyebrow">Pacote Joomla · Open Source · JED</p>
             <h1 class="page-hero__title">HC Image Optimizer</h1>
-            <p class="page-hero__sub"><strong>Conversão automática para WebP no Joomla 5 e Joomla 6</strong></p>
+            <p class="page-hero__sub"><strong>WebP automático para Joomla 5 e Joomla 6</strong></p>
             <div class="page-hero__panel">
-                Processe imagens JPG, JPEG e PNG diretamente nos fluxos do Joomla. Defina tamanho e qualidade, preserve proporções, mantenha o original quando necessário e gere variantes para diferentes usos editoriais.
+                Converta JPG, JPEG e PNG diretamente nos fluxos do Joomla. O pacote preserva proporções, processa imagens localmente com GD, gera variantes e mantém controle de qualidade para uso editorial.
             </div>
             <div class="page-hero__actions">
                 <a class="btn btn--primary" href="https://github.com/hirleicarlos/hc-image-optimizer/releases/download/v1.2.2/pkg_hcimageoptimizer-1.2.2.zip">Baixar versão 1.2.2</a>
@@ -98,229 +98,85 @@
                 <a class="btn btn--ghost" href="https://github.com/hirleicarlos/hc-image-optimizer" target="_blank" rel="noopener">GitHub ↗</a>
             </div>
         </div>
-        <figure class="hcio-hero__visual">
-            <img src="../../assets/img/projetos/hc-image-optimizer/capa-jed.png" alt="Visão geral dos recursos do HC Image Optimizer para Joomla 5 e 6">
+        <figure class="jproduct-hero__visual">
+            <img src="../../assets/img/projetos/hc-image-optimizer/capa-jed.png" alt="HC Image Optimizer para Joomla 5 e 6">
         </figure>
     </div>
 </header>
 
 <main id="conteudo">
-    <section class="section section--white" aria-labelledby="visao-geral-h">
+    <section class="section section--white" aria-labelledby="visao-h">
         <div class="wrap">
             <div class="section__head">
                 <div>
                     <p class="section__eyebrow">Visão geral</p>
-                    <h2 id="visao-geral-h" class="section__title">Otimização dentro do fluxo editorial</h2>
+                    <h2 id="visao-h" class="section__title">Otimização dentro do fluxo editorial</h2>
                 </div>
             </div>
-            <p class="hcio-intro">
+            <p class="jproduct-intro">
                 O HC Image Optimizer é um pacote formado por dois plugins. O plugin de sistema executa validação, redimensionamento, conversão e geração de perfis. O plugin Media Action integra o processamento aos uploads do Gerenciador de Mídia. A versão 1.2.2 processa tudo localmente com a extensão GD do PHP.
             </p>
             <div class="summary-stats">
-                <div class="sstat sstat--red">
-                    <div class="sstat__label">Versão pública</div>
-                    <div class="sstat__val">1.2.2</div>
-                </div>
-                <div class="sstat">
-                    <div class="sstat__label">Compatibilidade</div>
-                    <div class="sstat__val">Joomla 5/6</div>
-                </div>
-                <div class="sstat sstat--red">
-                    <div class="sstat__label">Runtime</div>
-                    <div class="sstat__val">PHP 8.3+</div>
-                </div>
-                <div class="sstat">
-                    <div class="sstat__label">Processamento</div>
-                    <div class="sstat__val">GD local</div>
-                </div>
+                <div class="sstat sstat--red"><div class="sstat__label">Versão pública</div><div class="sstat__val">1.2.2</div></div>
+                <div class="sstat"><div class="sstat__label">Compatibilidade</div><div class="sstat__val">J5/6</div></div>
+                <div class="sstat sstat--red"><div class="sstat__label">Runtime</div><div class="sstat__val">PHP 8.3+</div></div>
+                <div class="sstat"><div class="sstat__label">Processamento</div><div class="sstat__val">GD local</div></div>
             </div>
             <div class="anchor-block">
                 <p class="anchor-lbl">Seções da página</p>
                 <div class="anchor-row">
+                    <a class="btn btn--ghost" href="#uso">Uso</a>
                     <a class="btn btn--ghost" href="#recursos">Recursos</a>
-                    <a class="btn btn--ghost" href="#como-funciona">Como funciona</a>
-                    <a class="btn btn--ghost" href="#perfis">Perfis</a>
+                    <a class="btn btn--ghost" href="#galeria">Capturas</a>
                     <a class="btn btn--ghost" href="#arquitetura">Arquitetura</a>
-                    <a class="btn btn--ghost" href="#galeria">Galeria</a>
-                    <a class="btn btn--ghost" href="#requisitos">Requisitos</a>
-                    <a class="btn btn--ghost" href="#faq">FAQ</a>
-                    <a class="btn btn--ghost" href="#historico">Histórico</a>
-                    <a class="btn btn--ghost" href="#autor">Autor</a>
+                    <a class="btn btn--ghost" href="#instalacao">Instalação</a>
+                    <a class="btn btn--ghost" href="#releases">Release</a>
+                    <a class="btn btn--ghost" href="#artigos">Artigo</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section section--alt" id="recursos" aria-labelledby="recursos-h">
+    <section class="section section--alt" id="uso" aria-labelledby="uso-h">
         <div class="wrap">
             <div class="section__head">
-                <div>
-                    <p class="section__eyebrow">Recursos</p>
-                    <h2 id="recursos-h" class="section__title">Principais funcionalidades</h2>
-                </div>
+                <div><p class="section__eyebrow">Problema e uso</p><h2 id="uso-h" class="section__title">Para quem o pacote foi construído</h2></div>
             </div>
-            <div class="hcio-grid hcio-grid--3">
-                <article class="hcio-card hcio-card--accent">
-                    <p class="hcio-card__kicker">Conversão</p>
-                    <h3>WebP automático</h3>
-                    <p>Converte JPG, JPEG e PNG para WebP durante uploads e fluxos compatíveis de salvamento.</p>
+            <div class="jproduct-grid jproduct-grid--3">
+                <article class="jproduct-card jproduct-card--accent">
+                    <p class="jproduct-card__kicker">Problema</p>
+                    <h3>Imagens pesadas no fluxo do site</h3>
+                    <p>O pacote reduz a necessidade de otimização manual antes do upload e mantém o processamento dentro do ambiente Joomla.</p>
                 </article>
-                <article class="hcio-card">
-                    <p class="hcio-card__kicker">Dimensões</p>
-                    <h3>Resize proporcional</h3>
-                    <p>Limita o maior lado sem cortar, deformar ou ampliar imagens que já estão dentro do limite.</p>
+                <article class="jproduct-card">
+                    <p class="jproduct-card__kicker">Público</p>
+                    <h3>Sites com publicação recorrente</h3>
+                    <p>Voltado a portais, sites institucionais, projetos editoriais e equipes que enviam imagens pelo Gerenciador de Mídia.</p>
                 </article>
-                <article class="hcio-card">
-                    <p class="hcio-card__kicker">Variantes</p>
-                    <h3>Múltiplos perfis</h3>
-                    <p>Cria imagem principal e perfis independentes, como <span class="hcio-code">thumb</span>, <span class="hcio-code">featured</span> e <span class="hcio-code">card</span>.</p>
-                </article>
-                <article class="hcio-card">
-                    <p class="hcio-card__kicker">PNG</p>
-                    <h3>Transparência preservada</h3>
-                    <p>Mantém o canal alfa durante o processamento de imagens PNG transparentes.</p>
-                </article>
-                <article class="hcio-card">
-                    <p class="hcio-card__kicker">Arquivos</p>
-                    <h3>Original configurável</h3>
-                    <p>Permite manter a imagem de origem e controlar a substituição de referências locais.</p>
-                </article>
-                <article class="hcio-card">
-                    <p class="hcio-card__kicker">Segurança</p>
-                    <h3>MIME e caminhos validados</h3>
-                    <p>Compara extensão e MIME real, normaliza nomes e restringe o processamento à pasta monitorada.</p>
+                <article class="jproduct-card">
+                    <p class="jproduct-card__kicker">Casos de uso</p>
+                    <h3>Banners, cards e miniaturas</h3>
+                    <p>Útil para transformar uma imagem de origem em WebP principal e variantes proporcionais para diferentes espaços do layout.</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <section class="section section--white" id="como-funciona" aria-labelledby="como-funciona-h">
+    <section class="section section--white" id="recursos" aria-labelledby="recursos-h">
         <div class="wrap">
             <div class="section__head">
-                <div>
-                    <p class="section__eyebrow">Fluxo</p>
-                    <h2 id="como-funciona-h" class="section__title">Como funciona</h2>
-                </div>
+                <div><p class="section__eyebrow">Recursos reais</p><h2 id="recursos-h" class="section__title">O que a versão 1.2.2 entrega</h2></div>
             </div>
-            <div class="hcio-flow" role="list" aria-label="Etapas do processamento">
-                <div class="hcio-flow__step" role="listitem">
-                    <span class="hcio-flow__num">1</span>
-                    <strong>Upload</strong>
-                    <span>Joomla recebe a imagem.</span>
-                </div>
-                <div class="hcio-flow__step" role="listitem">
-                    <span class="hcio-flow__num">2</span>
-                    <strong>Validação</strong>
-                    <span>Extensão, MIME e caminho.</span>
-                </div>
-                <div class="hcio-flow__step" role="listitem">
-                    <span class="hcio-flow__num">3</span>
-                    <strong>Dimensões</strong>
-                    <span>Cálculo pelo maior lado.</span>
-                </div>
-                <div class="hcio-flow__step" role="listitem">
-                    <span class="hcio-flow__num">4</span>
-                    <strong>WebP</strong>
-                    <span>Imagem principal codificada.</span>
-                </div>
-                <div class="hcio-flow__step" role="listitem">
-                    <span class="hcio-flow__num">5</span>
-                    <strong>Perfis</strong>
-                    <span>Variantes ativas geradas.</span>
-                </div>
-                <div class="hcio-flow__step" role="listitem">
-                    <span class="hcio-flow__num">6</span>
-                    <strong>Resultado</strong>
-                    <span>Arquivos, referência e log.</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section--alt" id="perfis" aria-labelledby="perfis-h">
-        <div class="wrap hcio-output">
-            <div>
-                <p class="section__eyebrow">Perfis de imagem</p>
-                <h2 id="perfis-h" class="section__title">Uma origem, várias saídas proporcionais</h2>
-                <p class="hcio-intro">
-                    Cada perfil possui nome, maior lado, qualidade WebP e estado ativo. A quantidade não tem limite fixo no código, mas deve considerar CPU, memória e espaço em disco.
-                </p>
-                <dl class="hcio-profile-list">
-                    <div class="hcio-profile">
-                        <dt>Principal</dt>
-                        <dd>1920 px</dd>
-                        <dd>Qualidade 85</dd>
-                    </div>
-                    <div class="hcio-profile">
-                        <dt>thumb</dt>
-                        <dd>400 px</dd>
-                        <dd>Qualidade 80</dd>
-                    </div>
-                    <div class="hcio-profile">
-                        <dt>featured</dt>
-                        <dd>800 px</dd>
-                        <dd>Qualidade 82</dd>
-                    </div>
-                </dl>
-            </div>
-            <pre class="hcio-output__code" aria-label="Exemplo de arquivos gerados"><code>produto.png
-│
-├── produto.webp
-├── produto-thumb.webp
-├── produto-featured.webp
-└── produto-card.webp</code></pre>
-        </div>
-    </section>
-
-    <section class="section section--white" id="arquitetura" aria-labelledby="arquitetura-h">
-        <div class="wrap">
-            <div class="section__head">
-                <div>
-                    <p class="section__eyebrow">Arquitetura</p>
-                    <h2 id="arquitetura-h" class="section__title">Dois plugins e serviços especializados</h2>
-                </div>
-            </div>
-            <div class="hcio-grid hcio-grid--2">
-                <article class="hcio-card hcio-card--accent">
-                    <p class="hcio-card__kicker">System</p>
-                    <h3>Processamento de imagens</h3>
-                    <ul class="hcio-list">
-                        <li>Validação de formato e caminho</li>
-                        <li>Redimensionamento proporcional</li>
-                        <li>Codificação WebP</li>
-                        <li>Perfis, referências e logs</li>
-                    </ul>
-                </article>
-                <article class="hcio-card">
-                    <p class="hcio-card__kicker">Media Action</p>
-                    <h3>Integração com o Joomla</h3>
-                    <ul class="hcio-list">
-                        <li>Observa eventos de <span class="hcio-code">com_media.file</span></li>
-                        <li>Inicializa o plugin de sistema</li>
-                        <li>Prepara o upload</li>
-                        <li>Conclui a gravação dos perfis</li>
-                    </ul>
-                </article>
-                <article class="hcio-card">
-                    <p class="hcio-card__kicker">Serviços</p>
-                    <h3>Responsabilidades separadas</h3>
-                    <ul class="hcio-list">
-                        <li><span class="hcio-code">ImageOptimizerService</span></li>
-                        <li><span class="hcio-code">ImageResizeService</span></li>
-                        <li><span class="hcio-code">WebpConverterService</span></li>
-                        <li><span class="hcio-code">ImageProfileService</span></li>
-                    </ul>
-                </article>
-                <article class="hcio-card">
-                    <p class="hcio-card__kicker">Proteção</p>
-                    <h3>Arquivos dentro do escopo</h3>
-                    <ul class="hcio-list">
-                        <li><span class="hcio-code">PathResolverService</span></li>
-                        <li><span class="hcio-code">FileNameSanitizerService</span></li>
-                        <li><span class="hcio-code">MediaReferenceService</span></li>
-                        <li>Escrita WebP por arquivo temporário</li>
-                    </ul>
-                </article>
+            <div class="jproduct-grid jproduct-grid--3">
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Conversão</p><h3>WebP automático</h3><p>Converte JPG, JPEG e PNG para WebP durante uploads e fluxos compatíveis de salvamento.</p></article>
+                <article class="jproduct-card jproduct-card--accent"><p class="jproduct-card__kicker">Dimensões</p><h3>Resize proporcional</h3><p>Limita o maior lado sem cortar, deformar ou ampliar imagens que já estão dentro do limite.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Variantes</p><h3>Múltiplos perfis</h3><p>Cria imagem principal e perfis independentes, como <span class="jproduct-code">thumb</span>, <span class="jproduct-code">featured</span> e <span class="jproduct-code">card</span>.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">PNG</p><h3>Transparência preservada</h3><p>Mantém o canal alfa durante o processamento de imagens PNG transparentes.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Arquivos</p><h3>Original configurável</h3><p>Permite manter a imagem de origem e controlar a substituição de referências locais.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Segurança</p><h3>MIME e caminhos validados</h3><p>Compara extensão e MIME real, normaliza nomes e restringe o processamento à pasta monitorada.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Integração</p><h3>Media Action</h3><p>O plugin observa eventos de <span class="jproduct-code">com_media.file</span> e integra o processamento aos uploads.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Serviços</p><h3>Responsabilidades separadas</h3><p>Processamento, resize, conversão, perfis, nomes, caminhos e referências ficam em serviços próprios.</p></article>
+                <article class="jproduct-card"><p class="jproduct-card__kicker">Processamento</p><h3>GD local</h3><p>A versão 1.2.2 não depende de serviço externo para gerar os arquivos WebP.</p></article>
             </div>
         </div>
     </section>
@@ -328,148 +184,122 @@
     <section class="section section--alt" id="galeria" aria-labelledby="galeria-h">
         <div class="wrap">
             <div class="section__head">
-                <div>
-                    <p class="section__eyebrow">Imagens reais</p>
-                    <h2 id="galeria-h" class="section__title">Configuração no Joomla</h2>
-                </div>
+                <div><p class="section__eyebrow">Capturas reais</p><h2 id="galeria-h" class="section__title">Configuração no Joomla</h2></div>
             </div>
-            <div class="hcio-gallery">
-                <figure class="hcio-gallery__item">
-                    <a class="hcio-gallery__link" href="../../assets/img/projetos/hc-image-optimizer/hc-image-optimizer-system-plugin-settings.png" target="_blank" rel="noopener">
-                        <img src="../../assets/img/projetos/hc-image-optimizer/hc-image-optimizer-system-plugin-settings.png" alt="Configuração geral do plugin Sistema HC Image Optimizer" loading="lazy">
-                    </a>
+            <p class="jproduct-intro">As capturas mostram telas reais do produto no administrator, incluindo configuração geral, perfis de imagem e integração com o Gerenciador de Mídia.</p>
+            <div class="jproduct-gallery">
+                <figure class="jproduct-gallery__item">
+                    <a class="jproduct-gallery__link" href="../../assets/img/projetos/hc-image-optimizer/hc-image-optimizer-system-plugin-settings.png" target="_blank" rel="noopener"><img src="../../assets/img/projetos/hc-image-optimizer/hc-image-optimizer-system-plugin-settings.png" alt="Configuração geral do plugin System HC Image Optimizer" loading="lazy"></a>
                     <figcaption>Conversão automática, original, referências e pasta monitorada.</figcaption>
                 </figure>
-                <figure class="hcio-gallery__item">
-                    <a class="hcio-gallery__link" href="../../assets/img/projetos/hc-image-optimizer/hc-image-optimizer-image-profiles-settings.png" target="_blank" rel="noopener">
-                        <img src="../../assets/img/projetos/hc-image-optimizer/hc-image-optimizer-image-profiles-settings.png" alt="Perfis thumb e featured configurados no HC Image Optimizer" loading="lazy">
-                    </a>
+                <figure class="jproduct-gallery__item">
+                    <a class="jproduct-gallery__link" href="../../assets/img/projetos/hc-image-optimizer/hc-image-optimizer-image-profiles-settings.png" target="_blank" rel="noopener"><img src="../../assets/img/projetos/hc-image-optimizer/hc-image-optimizer-image-profiles-settings.png" alt="Perfis de imagem configurados no HC Image Optimizer" loading="lazy"></a>
                     <figcaption>Imagem principal, perfis, qualidade, transparência e sobrescrita.</figcaption>
                 </figure>
-                <figure class="hcio-gallery__item">
-                    <a class="hcio-gallery__link" href="../../assets/img/projetos/hc-image-optimizer/hc-image-optimizer-media-action-plugin.png" target="_blank" rel="noopener">
-                        <img src="../../assets/img/projetos/hc-image-optimizer/hc-image-optimizer-media-action-plugin.png" alt="Plugin Ação de mídia HC Image Optimizer habilitado no Joomla" loading="lazy">
-                    </a>
+                <figure class="jproduct-gallery__item">
+                    <a class="jproduct-gallery__link" href="../../assets/img/projetos/hc-image-optimizer/hc-image-optimizer-media-action-plugin.png" target="_blank" rel="noopener"><img src="../../assets/img/projetos/hc-image-optimizer/hc-image-optimizer-media-action-plugin.png" alt="Plugin Media Action do HC Image Optimizer habilitado no Joomla" loading="lazy"></a>
                     <figcaption>Plugin Media Action responsável pela integração com os uploads.</figcaption>
                 </figure>
             </div>
         </div>
     </section>
 
-    <section class="section section--white" id="requisitos" aria-labelledby="requisitos-h">
-        <div class="wrap hcio-requirements">
-            <div>
-                <div class="section__head">
-                    <div>
-                        <p class="section__eyebrow">Instalação</p>
-                        <h2 id="requisitos-h" class="section__title">Requisitos e configuração inicial</h2>
-                    </div>
-                </div>
-                <ul class="hcio-list">
-                    <li>Joomla 5.x ou Joomla 6.x</li>
-                    <li>PHP 8.3 ou superior</li>
-                    <li>GD com suporte a JPEG, PNG e WebP</li>
-                    <li>Permissão de leitura e escrita na pasta monitorada</li>
-                    <li>Plugins System e Media Action habilitados</li>
-                </ul>
-                <div class="hcio-roadmap" style="margin-top:22px">
-                    <strong>Processamento:</strong> a versão 1.2.2 processa as imagens localmente com a extensão GD do PHP, gerando WebP a partir de JPG, JPEG e PNG.
-                </div>
-            </div>
-            <aside class="hcio-download" aria-label="Downloads e documentação">
-                <h3>HC Image Optimizer 1.2.2</h3>
-                <p>Instale o pacote completo para incluir os dois plugins e seus servidores de atualização.</p>
-                <div class="hcio-download__actions">
-                    <a class="btn btn--primary" href="https://github.com/hirleicarlos/hc-image-optimizer/releases/download/v1.2.2/pkg_hcimageoptimizer-1.2.2.zip">Baixar pacote</a>
-                    <a class="btn btn--ghost" href="https://github.com/hirleicarlos/hc-image-optimizer/blob/main/README.md" target="_blank" rel="noopener">Documentação ↗</a>
-                    <a class="btn btn--ghost" href="https://github.com/hirleicarlos/hc-image-optimizer/releases/tag/v1.2.2" target="_blank" rel="noopener">Release notes ↗</a>
-                </div>
-            </aside>
-        </div>
-    </section>
-
-    <section class="section section--alt" id="faq" aria-labelledby="faq-h">
+    <section class="section section--white" id="arquitetura" aria-labelledby="arquitetura-h">
         <div class="wrap">
             <div class="section__head">
-                <div>
-                    <p class="section__eyebrow">Dúvidas frequentes</p>
-                    <h2 id="faq-h" class="section__title">FAQ</h2>
-                </div>
+                <div><p class="section__eyebrow">Arquitetura</p><h2 id="arquitetura-h" class="section__title">Dois plugins e serviços especializados</h2></div>
             </div>
-            <div class="hcio-faq">
-                <details>
-                    <summary>O plugin amplia imagens pequenas?</summary>
-                    <p>Não. Quando a imagem já está dentro do limite configurado, suas dimensões são preservadas.</p>
-                </details>
-                <details>
-                    <summary>O plugin corta a imagem?</summary>
-                    <p>Não. O redimensionamento mantém a proporção original e não executa crop automático.</p>
-                </details>
-                <details>
-                    <summary>Quais formatos de entrada são aceitos?</summary>
-                    <p>JPG, JPEG e PNG. A saída da versão 1.2.2 é WebP.</p>
-                </details>
-                <details>
-                    <summary>Posso criar mais de dois perfis?</summary>
-                    <p>Sim. O Subform permite adicionar vários perfis e o código não define um limite fixo.</p>
-                </details>
-                <details>
-                    <summary>A imagem original pode ser mantida?</summary>
-                    <p>Sim. Manter o arquivo original é o comportamento padrão.</p>
-                </details>
-                <details>
-                    <summary>O processamento usa uma API externa?</summary>
-                    <p>Não. A versão atual processa as imagens localmente com a extensão GD do PHP.</p>
-                </details>
-                <details>
-                    <summary>Imagick e AVIF são suportados?</summary>
-                    <p>Não. A versão 1.2.2 trabalha com a extensão GD do PHP e saída em WebP.</p>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section--white" id="historico" aria-labelledby="historico-h">
-        <div class="wrap">
-            <div class="section__head">
-                <div>
-                    <p class="section__eyebrow">Produto open source</p>
-                    <h2 id="historico-h" class="section__title">Histórico e autoria</h2>
-                </div>
-            </div>
-            <div class="hcio-grid hcio-grid--2">
-                <article class="hcio-card hcio-card--accent">
-                    <p class="hcio-card__kicker">Release pública</p>
-                    <h3>1.2.2 · 12 de junho de 2026</h3>
-                    <p>Primeira release listada publicamente no GitHub, com pacote para Joomla 5 e 6, integração ao Gerenciador de Mídia, WebP principal e perfis adicionais.</p>
-                    <div class="hcio-download__actions">
-                        <a class="btn btn--ghost" href="https://github.com/hirleicarlos/hc-image-optimizer/releases/tag/v1.2.2" target="_blank" rel="noopener">Ver release ↗</a>
-                    </div>
+            <div class="jproduct-grid jproduct-grid--2">
+                <article class="jproduct-card jproduct-card--accent">
+                    <p class="jproduct-card__kicker">Base técnica</p>
+                    <h3>Pacote Joomla</h3>
+                    <dl class="jproduct-facts">
+                        <div><dt>Package</dt><dd><span class="jproduct-code">pkg_hcimageoptimizer</span></dd></div>
+                        <div><dt>System</dt><dd>Valida, redimensiona, converte, gera perfis, registra logs e trata referências.</dd></div>
+                        <div><dt>Media Action</dt><dd>Conecta o processamento ao fluxo de upload do Gerenciador de Mídia.</dd></div>
+                        <div><dt>PHP</dt><dd>8.3 ou superior, com GD e suporte a JPEG, PNG e WebP.</dd></div>
+                    </dl>
                 </article>
-                <article class="hcio-card" id="autor">
-                    <p class="hcio-card__kicker">Autor e mantenedor</p>
-                    <h3>Hirlei Carlos</h3>
-                    <p>Desenvolvedor Full Stack Sênior com atuação em PHP, Joomla, sistemas corporativos, Docker, governo e educação.</p>
-                    <div class="hcio-download__actions">
-                        <a class="btn btn--ghost" href="https://github.com/hirleicarlos" target="_blank" rel="noopener">GitHub ↗</a>
-                        <a class="btn btn--ghost" href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">LinkedIn ↗</a>
-                    </div>
+                <article class="jproduct-card">
+                    <p class="jproduct-card__kicker">Serviços</p>
+                    <h3>Responsabilidades separadas</h3>
+                    <ul class="jproduct-list">
+                        <li><span class="jproduct-code">ImageOptimizerService</span>, <span class="jproduct-code">ImageResizeService</span> e <span class="jproduct-code">WebpConverterService</span></li>
+                        <li><span class="jproduct-code">ImageProfileService</span> para configurar saídas proporcionais</li>
+                        <li><span class="jproduct-code">PathResolverService</span> e <span class="jproduct-code">FileNameSanitizerService</span> para controle de caminho e nome</li>
+                        <li><span class="jproduct-code">MediaReferenceService</span> para atualizar referências locais quando configurado</li>
+                    </ul>
                 </article>
             </div>
         </div>
     </section>
 
-    <section class="section section--alt" aria-labelledby="proximos-passos-h">
+    <section class="section section--alt" id="instalacao" aria-labelledby="instalacao-h">
         <div class="wrap">
-            <div class="hcio-cta">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Instalação</p><h2 id="instalacao-h" class="section__title">Do pacote ao processamento ativo</h2></div>
+            </div>
+            <div class="jproduct-steps">
+                <article class="jproduct-step"><span class="jproduct-step__num">1</span><h3>Baixar</h3><p>Use o ZIP da release oficial 1.2.2.</p></article>
+                <article class="jproduct-step"><span class="jproduct-step__num">2</span><h3>Instalar</h3><p>No Joomla, acesse Sistema, Instalar e Extensões.</p></article>
+                <article class="jproduct-step"><span class="jproduct-step__num">3</span><h3>Ativar</h3><p>Habilite os plugins System e Media Action instalados pelo pacote.</p></article>
+                <article class="jproduct-step"><span class="jproduct-step__num">4</span><h3>Configurar</h3><p>Defina pasta monitorada, qualidade, maior lado, original e perfis adicionais.</p></article>
+            </div>
+            <p class="jproduct-note"><strong>Requisitos:</strong> Joomla 5.x ou 6.x, PHP 8.3+, GD com suporte a JPEG, PNG e WebP, e permissão de leitura e escrita na pasta monitorada.</p>
+        </div>
+    </section>
+
+    <section class="section section--white" id="releases" aria-labelledby="releases-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Releases</p><h2 id="releases-h" class="section__title">Release pública documentada</h2></div>
+            </div>
+            <div class="jproduct-release">
+                <div class="jproduct-release__version"><strong>1.2.2</strong><span>Publicada em 12 de junho de 2026</span></div>
                 <div>
-                    <h2 id="proximos-passos-h">Conheça o código e acompanhe a evolução</h2>
-                    <p>O projeto é público, possui release para Joomla 5 e 6 e está disponível também no Joomla Extensions Directory.</p>
+                    <h3>Pacote para Joomla 5 e 6</h3>
+                    <ul class="jproduct-list">
+                        <li>Conversão local de JPG, JPEG e PNG para WebP</li>
+                        <li>Redimensionamento proporcional por maior lado</li>
+                        <li>Perfis adicionais como thumb, featured e card</li>
+                        <li>Integração com o Gerenciador de Mídia e servidores de atualização</li>
+                    </ul>
+                    <div class="jproduct-links">
+                        <a class="btn btn--primary" href="https://github.com/hirleicarlos/hc-image-optimizer/releases/tag/v1.2.2" target="_blank" rel="noopener">Notas da release ↗</a>
+                        <a class="btn btn--ghost" href="https://github.com/hirleicarlos/hc-image-optimizer/blob/main/README.md" target="_blank" rel="noopener">Documentação ↗</a>
+                    </div>
                 </div>
-                <div class="hcio-cta__actions">
-                    <a class="btn btn--primary" href="https://github.com/hirleicarlos/hc-image-optimizer" target="_blank" rel="noopener">Ver GitHub ↗</a>
-                    <a class="btn btn--ghost" href="https://extensions.joomla.org/extension/photos-a-images/images/hc-image-optimizer/" target="_blank" rel="noopener">Abrir no JED ↗</a>
-                    <a class="btn btn--ghost" href="../../html/cmsjoomla.html">Voltar para Joomla / CMS</a>
+            </div>
+            <p class="jproduct-note"><strong>Fonte:</strong> release e pacote instalável publicados no GitHub.</p>
+        </div>
+    </section>
+
+    <section class="section section--alt" id="artigos" aria-labelledby="artigos-h">
+        <div class="wrap">
+            <div class="section__head">
+                <div><p class="section__eyebrow">Artigo relacionado</p><h2 id="artigos-h" class="section__title">Artigo em preparação</h2></div>
+            </div>
+            <article class="jproduct-article">
+                <img src="../../assets/img/projetos/hc-image-optimizer/capa-jed.png" alt="HC Image Optimizer para Joomla 5 e 6" loading="lazy">
+                <div>
+                    <p class="jproduct-card__kicker">Status editorial</p>
+                    <h3>Espaço reservado para o artigo técnico</h3>
+                    <p>Quando o artigo do HC Image Optimizer for publicado no LinkedIn ou na newsletter Dev &amp; Versos, este bloco receberá a capa, o resumo e o link oficial.</p>
+                    <a class="btn btn--ghost" href="../../html/articles.html">Ver artigos publicados</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="links-h">
+        <div class="wrap">
+            <div class="jproduct-cta">
+                <div><h2 id="links-h">Links oficiais do HC Image Optimizer</h2><p>Consulte o código, a página no diretório oficial, a release instalável e o HUB principal de produtos Joomla.</p></div>
+                <div class="jproduct-cta__actions">
+                    <a class="btn btn--primary" href="../../html/cmsjoomla.html">Voltar ao HUB Joomla</a>
+                    <a class="btn btn--ghost" href="https://github.com/hirleicarlos/hc-image-optimizer" target="_blank" rel="noopener">GitHub ↗</a>
+                    <a class="btn btn--ghost" href="https://extensions.joomla.org/extension/photos-a-images/images/hc-image-optimizer/" target="_blank" rel="noopener">JED ↗</a>
+                    <a class="btn btn--ghost" href="https://github.com/hirleicarlos/hc-image-optimizer/releases/download/v1.2.2/pkg_hcimageoptimizer-1.2.2.zip">Download</a>
                 </div>
             </div>
         </div>
@@ -478,22 +308,14 @@
 
 <footer class="site-footer">
     <div class="wrap site-footer__inner">
-        <a href="../../index.html" class="site-footer__brand" aria-label="Hirlei Carlos - Início">
-            <img src="../../assets/img/site/icon_hirlei.svg" alt="Ícone Hirlei Carlos">
-            <span>Hirlei <em>Carlos</em></span>
-        </a>
+        <a href="../../index.html" class="site-footer__brand" aria-label="Hirlei Carlos - Início"><img src="../../assets/img/site/icon_hirlei.svg" alt="Ícone Hirlei Carlos"><span>Hirlei <em>Carlos</em></span></a>
         <nav class="site-footer__nav" aria-label="Links do rodapé">
-            <a href="../../index.html">Início</a>
-            <a href="../../html/projects.html">Cases</a>
-            <a href="../../html/resume.html">Currículo</a>
-            <a href="../../html/articles.html">Artigos</a>
-            <a href="https://github.com/hirleicarlos" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="../../index.html">Início</a><a href="../../html/projects.html">Cases</a><a href="../../html/resume.html">Currículo</a><a href="../../html/articles.html">Artigos</a>
+            <a href="https://github.com/hirleicarlos" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/hirleicarlos/" target="_blank" rel="noopener">LinkedIn</a>
         </nav>
         <span class="site-footer__copy">© 2026 Hirlei Carlos</span>
     </div>
 </footer>
-
 <script src="../../assets/js/nav.js"></script>
 </body>
 </html>

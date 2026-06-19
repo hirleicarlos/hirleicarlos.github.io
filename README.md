@@ -13,7 +13,7 @@
 Este repositório contém:
 
 - 🌐 Site profissional estático — completamente redesenhado em 2026
-- ✍️ Arquivo público da newsletter Dev & Versos com 17 edições
+- ✍️ Arquivo público da newsletter Dev & Versos com 19 edições
 - 📄 Currículo online (HTML) com sistema de geração de PDF automatizado
 - 🖨 Motor de geração de PDF via Python + WeasyPrint
 - 🧠 Ordenação semântica de seções via classes `pdfN`
@@ -40,6 +40,7 @@ hirleicarlos-github-io/
 │   ├── projects.html                       ← Cases & Atuação
 │   ├── resume.html                         ← Currículo (fonte do PDF)
 │   ├── articles.html                       ← Artigos & Newsletter
+│   ├── dev-versos-10-2026-inp.html         ← Página local de leitura do artigo sobre INP
 │   ├── sistemaocb.html                     ← Case: Sistema OCB
 │   ├── cmsjoomla.html                      ← Case: Engenharia Joomla
 │   ├── projetos/
@@ -65,16 +66,15 @@ hirleicarlos-github-io/
 │   │   ├── resume.css                      ← Exclusivo do currículo
 │   │   ├── articles.css                    ← Exclusivo de artigos
 │   │   ├── subpage.css                     ← Compartilhado: sistemaocb, cmsjoomla, ufg
-│   │   ├── joomla-product.css              ← Páginas individuais de produtos Joomla
-│   │   └── hc-image-optimizer.css          ← Página individual do HC Image Optimizer
+│   │   └── joomla-product.css              ← Páginas individuais de produtos Joomla
 │   ├── js/
 │   │   ├── nav.js                          ← Navbar responsiva
 │   │   ├── main.js
 │   │   └── masonry.js
 │   ├── img/
 │   │   ├── site/                           ← favicon.ico, favicon.svg, icon_hirlei.svg, logo_hirlei.svg
-│   │   ├── case/                           ← Imagens dos projetos (.webp)
-│   │   ├── artigos/                        ← Capas Dev & Versos #1–#17 (.png)
+│   │   ├── case/                           ← Imagens e capturas dos projetos (.webp/.png)
+│   │   ├── artigos/                        ← Capas Dev & Versos #1–#19 (.png)
 │   │   ├── hirlei.jpg                      ← Foto do perfil
 │   │   └── social.png                      ← Imagem Open Graph (1200×630)
 │   └── file/
@@ -279,9 +279,9 @@ Todos os arquivos CSS importam `variaveis.css` como fonte única de tokens.
 
 | Seção | Título |
 |-------|--------|
-| `section--alt` | Dev & Versos (newsletter) |
-| `section--white` | 17 artigos publicados |
-| `section--alt` | Sobre a Dev & Versos |
+| `section--white` | Dev & Versos (newsletter) |
+| `section--alt` | 19 artigos publicados |
+| `section--white` | Sobre a Dev & Versos |
 
 ### Newsletter Dev & Versos
 
@@ -289,9 +289,9 @@ A home apresenta a newsletter e as três edições mais recentes. A página `htm
 
 | Edição | Tema | Publicação |
 |--------|------|------------|
+| #19/2026 | Div, class e id: a diferença entre agrupar, reutilizar e identificar | [LinkedIn](https://www.linkedin.com/pulse/dev-versos-192026-div-class-e-id-diferen%C3%A7a-entre-pereira-de-ara%C3%BAjo-emksf) |
+| #18/2026 | Listas e blocos HTML: quando a página precisa de ordem | [LinkedIn](https://www.linkedin.com/pulse/dev-versos-182026-listas-e-blocos-html-quando-p%C3%A1gina-hirlei-carlos-fvbsf) |
 | #17/2026 | Tabelas HTML: estrutura, atributos e acessibilidade | [LinkedIn](https://www.linkedin.com/pulse/dev-versos-172026-tabelas-html-estrutura-atributos-e-hirlei-carlos-o1f5f) |
-| #16/2026 | HC Carlix: documento de apresentação e passo a passo do template Joomla 6 | [LinkedIn](https://www.linkedin.com/pulse/dev-versos-162026-hc-carlix-documento-de-apresenta%C3%A7%C3%A3o-hirlei-carlos-ela8f) |
-| #15/2026 | E-commerce em 2026: 5 plataformas para vender online com estratégia | [LinkedIn](https://www.linkedin.com/pulse/dev-versos-152026-e-commerce-em-2026-5-plataformas-pereira-de-ara%C3%BAjo-u8jmf) |
 
 As capas ficam em `assets/img/artigos/`, usando o padrão `DEV_&_Versos_N_2026.png`.
 
@@ -325,17 +325,18 @@ Todas usam o mesmo modelo visual em `assets/css/joomla-product.css` e a mesma se
 6. Arquitetura com arquivos, camadas e requisitos
 7. Instalação com quatro passos práticos
 8. Release com versão, data e notas
-9. Artigo ou publicação relacionada com link já publicado
+9. Artigo publicado ou bloco preparado para artigo futuro
 10. Links oficiais do produto
 
 | Produto | Página local | Artigo ou publicação |
 |---------|--------------|----------------------|
 | HC Carlix | `html/projetos/tpl-hc-carlix.html` | [DEV & Versos #16/2026](https://www.linkedin.com/pulse/dev-versos-162026-hc-carlix-documento-de-apresenta%C3%A7%C3%A3o-hirlei-carlos-ela8f) |
-| HC IgPulse | `joomla/hc-igpulse/index.html` | Sem artigo vinculado |
+| HC Image Optimizer | `joomla/hc-image-optimizer/index.html` | Artigo em preparação |
+| HC IgPulse | `joomla/hc-igpulse/index.html` | Artigo em preparação |
 | WhatsApp Button | `joomla/whatsapp-button/index.html` | [Artigo técnico no LinkedIn](https://www.linkedin.com/pulse/desenvolvi-um-plugin-de-bot%C3%A3o-whatsapp-para-joomla-4-hirlei-carlos-jqqif) |
 | HC Social Media | `joomla/hc-social-media/index.html` | [Artigo técnico no LinkedIn](https://pt.linkedin.com/pulse/lancei-meu-novo-m%C3%B3dulo-para-joomla-456-hc-m%C3%ADdias-pereira-de-ara%C3%BAjo-3rcmf?trk=public_post_feed-article-content) |
 
-Regra editorial: exibir bloco de artigo ou publicação somente com link já publicado. Páginas sem artigo vinculado não exibem bloco editorial vazio.
+Regra editorial: páginas com artigo publicado exibem capa, resumo e link oficial no bloco `artigos`. Páginas sem artigo publicado mantêm o ID `artigos` com bloco "Artigo em preparação", pronto para receber capa, resumo e link. Templates Joomla, como HC Carlix, não entram no JED; por isso não exibem botão, badge ou CTA de JED. Em templates, o hero deve preservar a imagem do produto ou a logo oficial; a capa do artigo fica reservada ao bloco de artigo relacionado.
 
 Passo a passo para criar nova página de produto:
 
@@ -345,8 +346,9 @@ Passo a passo para criar nova página de produto:
 4. Manter os IDs padrão: `uso`, `recursos`, `galeria`, `arquitetura`, `instalacao`, `releases`, `artigos`.
 5. Preencher instalação com comandos ou caminhos reais do Joomla, sem passos genéricos.
 6. Apontar a release oficial e o download instalável.
-7. Exibir o bloco de artigo ou publicação somente com link já publicado.
-8. Validar links, imagens, alt text e navegação por âncoras.
+7. Se houver artigo publicado, exibir capa, resumo e link oficial; se ainda não houver, manter bloco "Artigo em preparação".
+8. Para templates Joomla, não adicionar JED; templates usam GitHub, release e artigo quando existir.
+9. Validar links, imagens, alt text e navegação por âncoras.
 
 ### `html/ufg.html` — UFG
 
