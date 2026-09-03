@@ -53,16 +53,21 @@ main#conteudo {
 .actions,
 .btn,
 .btn-ghost,
+.section__more,
 .hero .actions,
 header .actions,
 footer.footer,
-footer.footer * {
+footer.footer *,
+.site-footer,
+.site-footer * {
     display: none !important;
 }
 
 /* Achatar hero */
 .hero,
-.hero-grid {
+.hero-grid,
+.page-hero,
+.page-hero .wrap {
     background: transparent !important;
     border: 0 !important;
     box-shadow: none !important;
@@ -71,7 +76,7 @@ footer.footer * {
 }
 
 /* Se o site tiver decoração */
-hr, .divider, .shadow, .badge, .tag {
+hr, .divider, .shadow, .badge {
     display: none !important;
 }
 
@@ -86,14 +91,41 @@ h1, .name {
     letter-spacing: -0.2px;
 }
 
+.page-hero__eyebrow,
+.section__eyebrow {
+    display: none !important;
+}
+
+.page-hero__title {
+    font-size: 19pt !important;
+    line-height: 1.10 !important;
+    margin: 0 0 6pt 0 !important;
+    font-weight: 700 !important;
+}
+
 .headline {
     margin: 0 0 4pt 0 !important;
     font-size: 10.8pt !important;
 }
 
+.page-hero__sub,
 .sub {
     margin: 0 0 6pt 0 !important;
     font-size: 9.5pt !important;
+}
+
+.page-hero__contact {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 3pt 9pt !important;
+    margin: 0 0 9pt 0 !important;
+    font-size: 8.4pt !important;
+    font-style: normal !important;
+    line-height: 1.25 !important;
+}
+
+.page-hero__contact-item {
+    display: inline !important;
 }
 
 h2 {
@@ -134,6 +166,18 @@ p {
     /* permite quebrar */
     break-inside: auto;
     page-break-inside: auto;
+}
+
+.section__head {
+    margin: 0 0 5pt 0 !important;
+    break-after: avoid;
+    page-break-after: avoid;
+}
+
+.resume-summary p,
+.resume-summary li {
+    font-size: 9.5pt !important;
+    line-height: 1.25 !important;
 }
 
 /* Cards/timeline: também podem quebrar */
@@ -202,6 +246,38 @@ article.timeline .t-head {
     margin: 0 0 2pt 0 !important;
 }
 
+.timeline-item {
+    margin: 0 0 8pt 0 !important;
+    break-inside: auto;
+    page-break-inside: auto;
+}
+
+.timeline-item__role {
+    font-size: 10pt !important;
+    font-weight: 700 !important;
+    margin: 0 0 2pt 0 !important;
+    break-after: avoid;
+    page-break-after: avoid;
+}
+
+.timeline-item__company {
+    font-size: 9.5pt !important;
+    font-weight: 700 !important;
+    color: #c5161d !important;
+    margin: 0 0 2pt 0 !important;
+}
+
+.timeline-item__date {
+    font-size: 8.4pt !important;
+    color: #555 !important;
+    margin: 0 0 4pt 0 !important;
+}
+
+.timeline-item__list {
+    margin: 4pt 0 8pt 14pt !important;
+    padding: 0 !important;
+}
+
 .t-meta {
     margin: 0 0 2pt 0 !important;
     display: flex !important;
@@ -226,6 +302,48 @@ li {
     margin: 0 0 2.5pt 0 !important;
     break-inside: auto;
     page-break-inside: auto;
+}
+
+.two-col {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12pt !important;
+}
+
+.two-col-card {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.two-col-card__title {
+    font-size: 10pt !important;
+    font-weight: 700 !important;
+    margin: 0 0 4pt 0 !important;
+}
+
+.two-col-card__title.mt {
+    margin-top: 8pt !important;
+}
+
+.tags {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 3pt !important;
+    margin: 0 !important;
+}
+
+.tag {
+    display: inline-block !important;
+    border: 1px solid #ddd !important;
+    border-radius: 10pt !important;
+    padding: 2pt 5pt !important;
+    font-size: 7.5pt !important;
+    line-height: 1.1 !important;
+    color: #111 !important;
+    background: #fff !important;
 }
 
 /* Evita que a lista comece na página seguinte

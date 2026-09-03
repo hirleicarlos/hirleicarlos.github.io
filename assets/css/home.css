@@ -260,8 +260,12 @@
 /* ── Highlights ── */
 .highlights {
     display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
+}
+
+.highlights .hl:first-child {
+    grid-column: span 2;
 }
 
 .hl {
@@ -869,7 +873,7 @@
 }
 
 
-/* ── Projetos Isolados ── */
+/* ── Projetos & Ecossistemas ── */
 .projetos-desc {
     font-family: var(--font-body);
     font-size: var(--text-base);
@@ -958,6 +962,18 @@
     flex-wrap: wrap;
     gap: 6px;
     margin-top: 4px;
+}
+
+.projeto-card__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.projeto-card__actions .btn {
+    padding: 9px 14px;
+    font-size: var(--text-sm);
 }
 
 .projetos-cta {

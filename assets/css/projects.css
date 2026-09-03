@@ -95,6 +95,15 @@
     margin-bottom: 4px;
 }
 
+.projetos-desc {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    color: var(--muted);
+    line-height: 1.65;
+    margin-bottom: 24px;
+    max-width: 100%;
+}
+
 /* ── Stats ── */
 .project-stats {
     display: grid;

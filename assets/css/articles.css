@@ -142,9 +142,16 @@
     border-color: var(--red-border);
 }
 
+.art-card__img {
+    aspect-ratio: 16 / 9;
+    background: var(--bg2);
+    overflow: hidden;
+}
+
 .art-card__img img {
     width: 100%;
-    object-fit: fill;
+    height: 100%;
+    object-fit: cover;
     object-position: center center;
     display: block;
 }

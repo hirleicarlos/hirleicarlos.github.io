@@ -13,7 +13,9 @@
 Este repositório contém:
 
 - 🌐 Site profissional estático — completamente redesenhado em 2026
-- ✍️ Arquivo público da newsletter Dev & Versos com 19 edições
+- ✍️ Arquivo público da newsletter Dev & Versos com 33 edições publicadas com capa
+- 🧭 Home com 5 frentes de atuação em destaque: Sistema OCB, Bellumi, Engenharia Joomla, Educação & Docência e Docker Development Server
+- 🧩 Grade `Projetos & Ecossistemas` com 8 cards: Bellumi, DB Sync IDE, CRM Belventos, Agendari, Lanner Especialidades, Pousada Licor de Caju, Exame Rápido e ICAP
 - 📄 Currículo online (HTML) com sistema de geração de PDF automatizado
 - 🖨 Motor de geração de PDF via Python + WeasyPrint
 - 🧠 Ordenação semântica de seções via classes `pdfN`
@@ -25,6 +27,19 @@ O projeto separa completamente:
 - **Camada de apresentação Web** — HTML + CSS responsivo
 - **Camada de impressão (PDF)** — template isolado + CSS de impressão
 - **Camada de processamento** — Python + BeautifulSoup
+
+---
+
+## 🧭 Mapa Atual do Conteúdo
+
+| Área | Conteúdo |
+|------|----------|
+| Home — Destaques & Atuação | 5 frentes principais do portfólio: Sistema OCB, Bellumi, Engenharia Joomla, Educação & Docência e Docker Development Server |
+| Home — Projetos & Ecossistemas | 8 cards para manter a página inicial objetiva: Bellumi, DB Sync IDE, CRM Belventos, Agendari, Lanner Especialidades, Pousada Licor de Caju, Exame Rápido e ICAP |
+| Página de cases | Visão completa com atuação atual, produtos autorais, laboratório técnico, cases em produção, experiência corporativa e educação |
+| Bellumi | Ecossistema digital e de marca do empreendimento de família: site Joomla em desenvolvimento, [Cardápio Digital](https://bellumieventos.com.br/cardapio/), [Cartão Digital](https://social.bellumieventos.com.br/), identidade visual, logo, artes, cartões, panfleto, cardápio PDF, SEO local, WhatsApp e presença social |
+| Lanner Especialidades | [Site Joomla em produção](https://lannerespecialidadesmed.com.br/), [cartão digital](https://lannerespecialidadesmed.com.br/links.html), SEO, configuração de e-mail profissional, criação de logo e assinatura digital |
+| Educação & Docência | Frente própria, separada da experiência corporativa, com UFG, Anhanguera, Projeção, UNIDESC, UEG, IESB e UNISABER |
 
 ---
 
@@ -42,6 +57,7 @@ hirleicarlos-github-io/
 │   ├── articles.html                       ← Artigos & Newsletter
 │   ├── dev-versos-10-2026-inp.html         ← Página local de leitura do artigo sobre INP
 │   ├── sistemaocb.html                     ← Case: Sistema OCB
+│   ├── bellumi.html                        ← Case: Ecossistema Digital Bellumi
 │   ├── cmsjoomla.html                      ← Case: Engenharia Joomla
 │   ├── projetos/
 │   │   └── tpl-hc-carlix.html              ← Produto Joomla: template HC Carlix
@@ -65,7 +81,7 @@ hirleicarlos-github-io/
 │   │   ├── projects.css                    ← Exclusivo de Cases & Atuação
 │   │   ├── resume.css                      ← Exclusivo do currículo
 │   │   ├── articles.css                    ← Exclusivo de artigos
-│   │   ├── subpage.css                     ← Compartilhado: sistemaocb, cmsjoomla, ufg
+│   │   ├── subpage.css                     ← Compartilhado: sistemaocb, bellumi, cmsjoomla, ufg
 │   │   └── joomla-product.css              ← Páginas individuais de produtos Joomla
 │   ├── js/
 │   │   ├── nav.js                          ← Navbar responsiva
@@ -74,7 +90,7 @@ hirleicarlos-github-io/
 │   ├── img/
 │   │   ├── site/                           ← favicon.ico, favicon.svg, icon_hirlei.svg, logo_hirlei.svg
 │   │   ├── case/                           ← Imagens e capturas dos projetos (.webp/.png)
-│   │   ├── artigos/                        ← Capas Dev & Versos #1–#19 (.png)
+│   │   ├── artigos/                        ← Capas Dev & Versos #1–#33 (.png)
 │   │   ├── hirlei.jpg                      ← Foto do perfil
 │   │   └── social.png                      ← Imagem Open Graph (1200×630)
 │   └── file/
@@ -127,11 +143,11 @@ O ambiente local é fornecido pelo projeto `/home/hirleicarlos/docker-server`, e
 
 | Ambiente | URL | Arquitetura |
 |----------|-----|-------------|
-| Apache | `https://hirleicarlos-github-io.1.localhost/` | HAProxy → Apache + PHP 8.3 |
-| Nginx | `https://hirleicarlos-github-io.2.localhost/` | HAProxy → Nginx → PHP-FPM 8.3 |
+| Apache | `https://hirleicarlos-github-io.1.localhost/` | HAProxy → Apache + PHP-FPM ativo 8.3/8.4/8.5 |
+| Nginx | `https://hirleicarlos-github-io.2.localhost/` | HAProxy → Nginx → PHP-FPM ativo 8.3/8.4/8.5 |
 | Produção | `https://hirleicarlos.github.io/` | GitHub Pages |
 
-O Nginx não passa pelo Apache. Os dois ambientes usam as portas padrão 80/443 do HAProxy, portanto não é necessário informar portas nas URLs.
+O Nginx não passa pelo Apache. Os dois ambientes usam as portas padrão 80/443 do HAProxy, portanto não é necessário informar portas nas URLs. O Docker Development Server mantém PHP 8.3, 8.4 e 8.5 separados para execução conforme a necessidade de cada cliente ou projeto.
 
 Subir ou conferir o ambiente pelo Ubuntu/WSL:
 
@@ -244,9 +260,9 @@ Todos os arquivos CSS importam `variaveis.css` como fonte única de tokens.
 | Seção | Título |
 |-------|--------|
 | Hero | Desenvolvedor Full Stack Sênior |
-| Tech strip | PHP · Joomla · Docker · React Native · MySQL |
-| `section--white` | Destaques & Atuação |
-| `section--alt` | Projetos Isolados |
+| Tech strip | PHP · Joomla · Requisitos · Laravel · Docker · MySQL |
+| `section--white` | Destaques & Atuação — 5 frentes |
+| `section--alt` | Projetos & Ecossistemas — 8 cards |
 | `section--white` | Stack & Proficiência |
 | `section--alt` | Stack Tecnológica |
 | `section--white` | Ferramentas & Ambiente |
@@ -260,9 +276,24 @@ Todos os arquivos CSS importam `variaveis.css` como fonte única de tokens.
 |-------|--------|
 | `section--white` | Resumo do Portfólio |
 | `section--alt` | Atuação, Ecossistemas & Stack |
+| `section--white` | Produtos Autorais & Laboratório Técnico |
 | `section--white` | Projetos Isolados |
 | `section--alt` | Experiência Corporativa |
+| `section--white` | Educação & Docência |
 | `section--white` | Mais Informações |
+
+A página `projects.html` mantém a visão completa do portfólio. A seção `Experiência Corporativa` lista somente empresas e atuações técnicas, enquanto `Educação & Docência` fica em seção própria para acompanhar a lógica do currículo.
+
+### `html/bellumi.html` — Ecossistema Digital Bellumi
+
+| Seção | Título |
+|-------|--------|
+| `section--white` | Um ecossistema em construção real |
+| `section--alt` | Responsabilidade técnica, criativa e operacional |
+| `section--white` | O que já existe no ecossistema |
+| `section--alt` | Identidade visual aplicada ao negócio |
+| `section--white` | Pontos de contato da Bellumi |
+| `section--alt` | Crescimento planejado do ecossistema |
 
 ### `html/resume.html` — Currículo
 
@@ -280,7 +311,7 @@ Todos os arquivos CSS importam `variaveis.css` como fonte única de tokens.
 | Seção | Título |
 |-------|--------|
 | `section--white` | Dev & Versos (newsletter) |
-| `section--alt` | 19 artigos publicados |
+| `section--alt` | 33 artigos publicados |
 | `section--white` | Sobre a Dev & Versos |
 
 ### Newsletter Dev & Versos
@@ -289,9 +320,9 @@ A home apresenta a newsletter e as três edições mais recentes. A página `htm
 
 | Edição | Tema | Publicação |
 |--------|------|------------|
-| #19/2026 | Div, class e id: a diferença entre agrupar, reutilizar e identificar | [LinkedIn](https://www.linkedin.com/pulse/dev-versos-192026-div-class-e-id-diferen%C3%A7a-entre-pereira-de-ara%C3%BAjo-emksf) |
-| #18/2026 | Listas e blocos HTML: quando a página precisa de ordem | [LinkedIn](https://www.linkedin.com/pulse/dev-versos-182026-listas-e-blocos-html-quando-p%C3%A1gina-hirlei-carlos-fvbsf) |
-| #17/2026 | Tabelas HTML: estrutura, atributos e acessibilidade | [LinkedIn](https://www.linkedin.com/pulse/dev-versos-172026-tabelas-html-estrutura-atributos-e-hirlei-carlos-o1f5f) |
+| #33/2026 | Antes do código: como transformar um pedido em requisito | [LinkedIn](https://pt.linkedin.com/pulse/dev-versos-332026-antes-do-c%C3%B3digo-como-transformar-um-hirlei-carlos-58sqf) |
+| #32/2026 | CSS que obedece: cascata, especificidade e herança | [LinkedIn](https://pt.linkedin.com/pulse/dev-versos-322026-css-que-obedece-cascata-e-heran%C3%A7a-hirlei-carlos-zjlof) |
+| #31/2026 | Não é o CMS: o que as CVEs de 2026 realmente ensinam | [LinkedIn](https://pt.linkedin.com/pulse/dev-versos-312026-n%C3%A3o-%C3%A9-o-cms-que-cves-de-2026-joomla-hirlei-carlos-qylwf) |
 
 As capas ficam em `assets/img/artigos/`, usando o padrão `DEV_&_Versos_N_2026.png`.
 

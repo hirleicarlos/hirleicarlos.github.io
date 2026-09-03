@@ -224,7 +224,7 @@
     border-left: 2px solid var(--border);
     padding: 0 0 28px 20px;
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: 18px;
 }
 
 .timeline-item::before {
@@ -242,6 +242,7 @@
 
 .timeline-item:last-child {
     padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .timeline-item__role {

@@ -4,7 +4,7 @@
 """
 build_cv.py
 - Lê html/resume.html
-- Extrai <header class="hero">...</header>
+- Extrai <header class="page-hero pdf1">...</header>
 - Monta <main id="conteudo"> com SOMENTE os blocos marcados com classe pdfN (pdf2, pdf3, ...)
   ordenados pelo número.
 - Injeta header + main no automacao/cv/templates/cv-print.html
@@ -130,14 +130,24 @@ def _parent_has_pdf_class(tag) -> bool:
 
 def _extract_header_hero_and_main_pdf_blocks(resume_html: str) -> tuple[str, str]:
     """
-    - Extrai <header class="hero">...</header> inteiro
+    - Extrai <header class="page-hero pdf1">...</header> inteiro
     - Monta um <main id="conteudo">...</main> NOVO contendo SOMENTE os blocos pdfN, ordenados.
     """
     soup = _parse_html(resume_html)
 
-    header = soup.find("header", class_=lambda v: v and "hero" in (v if isinstance(v, list) else str(v).split()))
+    def has_any_class(tag, expected: tuple[str, ...]) -> bool:
+        classes = tag.get("class") or []
+        return any(c in classes for c in expected)
+
+    header = soup.find(lambda tag: getattr(tag, "name", None) == "header" and has_any_class(tag, ("pdf1", "page-hero", "hero")))
     if not header:
-        raise ValueError('Não encontrei <header class="hero"> no resume.html')
+        raise ValueError('Não encontrei <header class="page-hero pdf1"> no resume.html')
+
+    for item in header.select(".page-hero__contact-item"):
+        for child in list(item.children):
+            if getattr(child, "name", None) is None:
+                child.replace_with(re.sub(r"^[^A-Za-zÀ-ÿ0-9+]+", "", str(child)).lstrip())
+                break
 
     main = soup.find("main", id="conteudo")
     if not main:
@@ -187,14 +197,14 @@ def _inject_header_and_main(template_html: str, header_html: str, main_html: str
     - o <main id="conteudo">...</main> pelo main montado (pdfN)
     """
     rendered, n1 = re.subn(
-        r'<header\b[^>]*class=["\'][^"\']*\bhero\b[^"\']*["\'][^>]*>.*?</header\s*>',
+        r'<header\b[^>]*class=["\'][^"\']*\b(?:hero|page-hero)\b[^"\']*["\'][^>]*>.*?</header\s*>',
         header_html,
         template_html,
         flags=re.IGNORECASE | re.DOTALL,
         count=1,
     )
     if n1 != 1:
-        raise ValueError("Não consegui substituir o <header class='hero'> no cv-print.html")
+        raise ValueError("Não consegui substituir o <header> no cv-print.html")
 
     rendered2, n2 = re.subn(
         r'<main\b[^>]*\bid=["\']conteudo["\'][^>]*>.*?</main\s*>',
