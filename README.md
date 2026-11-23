@@ -13,7 +13,7 @@
 Este repositório contém:
 
 - 🌐 Site profissional estático — completamente redesenhado em 2026
-- ✍️ Arquivo público da newsletter Dev & Versos com 33 edições publicadas com capa
+- ✍️ Arquivo público da newsletter Dev & Versos com 35 edições publicadas com capa
 - 🧭 Home com 5 frentes de atuação em destaque: Sistema OCB, Bellumi, Engenharia Joomla, Educação & Docência e Docker Development Server
 - 🧩 Grade `Projetos & Ecossistemas` com 8 cards: Bellumi, DB Sync IDE, CRM Belventos, Agendari, Lanner Especialidades, Pousada Licor de Caju, Exame Rápido e ICAP
 - 📄 Currículo online (HTML) com sistema de geração de PDF automatizado
@@ -90,7 +90,7 @@ hirleicarlos-github-io/
 │   ├── img/
 │   │   ├── site/                           ← favicon.ico, favicon.svg, icon_hirlei.svg, logo_hirlei.svg
 │   │   ├── case/                           ← Imagens e capturas dos projetos (.webp/.png)
-│   │   ├── artigos/                        ← Capas Dev & Versos #1–#33 (.png)
+│   │   ├── artigos/                        ← Capas Dev & Versos #1–#35 (.png)
 │   │   ├── hirlei.jpg                      ← Foto do perfil
 │   │   └── social.png                      ← Imagem Open Graph (1200×630)
 │   └── file/
@@ -320,9 +320,9 @@ A home apresenta a newsletter e as três edições mais recentes. A página `htm
 
 | Edição | Tema | Publicação |
 |--------|------|------------|
+| #35/2026 | O PHP morreu? Falhas, correções e desenvolvimento com IA | [LinkedIn](https://pt.linkedin.com/pulse/dev-versos-352026-o-php-morreu-falhas-corre%C3%A7%C3%B5es-e-com-hirlei-carlos-feipf) |
+| #34/2026 | Hardening: o mínimo que todo site precisa antes de ir ao ar | [LinkedIn](https://pt.linkedin.com/pulse/dev-versos-342026-hardening-o-m%C3%ADnimo-que-todo-site-de-hirlei-carlos-ryduf) |
 | #33/2026 | Antes do código: como transformar um pedido em requisito | [LinkedIn](https://pt.linkedin.com/pulse/dev-versos-332026-antes-do-c%C3%B3digo-como-transformar-um-hirlei-carlos-58sqf) |
-| #32/2026 | CSS que obedece: cascata, especificidade e herança | [LinkedIn](https://pt.linkedin.com/pulse/dev-versos-322026-css-que-obedece-cascata-e-heran%C3%A7a-hirlei-carlos-zjlof) |
-| #31/2026 | Não é o CMS: o que as CVEs de 2026 realmente ensinam | [LinkedIn](https://pt.linkedin.com/pulse/dev-versos-312026-n%C3%A3o-%C3%A9-o-cms-que-cves-de-2026-joomla-hirlei-carlos-qylwf) |
 
 As capas ficam em `assets/img/artigos/`, usando o padrão `DEV_&_Versos_N_2026.png`.
 
